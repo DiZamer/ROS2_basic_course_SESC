@@ -1,0 +1,189 @@
+{
+  "name": "ROS2 Jazzy Course",
+
+  // ═══════════════════════════════════════════════════════════════
+  // Общие настройки (не зависят от способа вывода GUI)
+  // ═══════════════════════════════════════════════════════════════
+
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "..",
+    "options": ["--network=host"]
+  },
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/${localWorkspaceFolderBasename},type=bind",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "remoteUser": "ubuntu",
+  "postCreateCommand": "bash /workspaces/${localWorkspaceFolderBasename}/.devcontainer/post_create.sh ${localWorkspaceFolderBasename}",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/bin/python3"
+      },
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-vscode.cpptools",
+        "ms-vscode.cpptools-extension-pack",
+        "ms-iot.vscode-ros",
+        "DotJoshJohnson.xml",
+        "mechatroner.rainbow-csv"
+      ]
+    }
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // Настройка вывода GUI — выберите ОДИН вариант из пяти ниже
+  // ═══════════════════════════════════════════════════════════════
+  //
+  // По умолчанию активен Вариант 1 (VNC/браузер — работает на всех ОС).
+  //
+  // Чтобы переключиться:
+  //   1. Закомментируйте runArgs, containerEnv, forwardPorts Варианта 1
+  //   2. Раскомментируйте блок своей ОС (runArgs, containerEnv,
+  //      forwardPorts и, при наличии, mounts)
+  //   3. Выполните Rebuild Container
+  //
+  // ───────────────────────────────────────────────────────────────
+  // ВАРИАНТ 1 (ПО УМОЛЧАНИЮ): Виртуальный дисплей (VNC/браузер)
+  // ───────────────────────────────────────────────────────────────
+  // Работает на всех ОС без установки X11-сервера на хосте.
+  //
+  // Запуск (в контейнере, после сборки):
+  //   терминал 1: start_gui.sh
+  //   браузер:    http://localhost:6080
+  //
+  // Два приложения рядом:
+  //   старт:      start_gui.sh --displays 2
+  //   окно 0:     DISPLAY=:99  rviz2
+  //   окно 1:     DISPLAY=:100 rviz2
+  //   вкладка 1:  http://localhost:6080
+  //   вкладка 2:  http://localhost:6081
+  //
+  // Альтернатива — VNC Viewer (TigerVNC / RealVNC Viewer):
+  //   подключиться к localhost:5900 (или 5901)
+  //   — меньше RAM, выше FPS, без браузера
+  // ───────────────────────────────────────────────────────────────
+
+  "runArgs": [
+    "--privileged",
+    "--shm-size=1g",
+    "-p", "5900-5903:5900-5903",
+    "-p", "6080-6083:6080-6083"
+  ],
+  "containerEnv": {
+    "QT_X11_NO_MITSHM": "1",
+    "LIBGL_ALWAYS_SOFTWARE": "1",
+    "DISPLAY": ":99",
+    "ROS_LOCALHOST_ONLY": "1",
+    "GZ_RENDER_ENGINE": "ogre"
+  },
+  "forwardPorts": [6080, 6081, 6082, 6083, 5900, 5901, 5902, 5903]
+
+  // ───────────────────────────────────────────────────────────────
+  // ВАРИАНТ 2: Прямой X11 — Ubuntu (X11 или Wayland/XWayland)
+  // ───────────────────────────────────────────────────────────────
+  // Проверено: Ubuntu 24.04 + Docker Desktop 29.6.0.
+  //
+  // На хосте (один раз):
+  //   xhost +local:docker
+  // Проверить номер дисплея:
+  //   echo $DISPLAY    # :1 (Docker Desktop, Wayland) или :0 (native)
+  //
+  // "mounts": [
+  //   "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind"
+  // ],
+  // "runArgs": [
+  //   "--privileged",
+  //   "--network=host",
+  //   "--shm-size=1g"
+  // ],
+  // "containerEnv": {
+  //   "QT_X11_NO_MITSHM": "1",
+  //   "LIBGL_ALWAYS_SOFTWARE": "1",
+  //   "DISPLAY": ":1"
+  // },
+  // "forwardPorts": [],
+
+  // ───────────────────────────────────────────────────────────────
+  // ВАРИАНТ 3: Прямой X11 — Windows (VcXsrv)
+  // ───────────────────────────────────────────────────────────────
+  // 1. Установить VcXsrv (бесплатно, open source)
+  // 2. Запустить XLaunch:
+  //    - Multiple windows
+  //    - Display number: -1
+  //    - Start no client
+  //    - ✓ Disable access control
+  //
+  // "mounts": [
+  //   "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind"
+  // ],
+  // "runArgs": [
+  //   "--privileged",
+  //   "--shm-size=1g"
+  // ],
+  // "containerEnv": {
+  //   "QT_X11_NO_MITSHM": "1",
+  //   "LIBGL_ALWAYS_SOFTWARE": "1",
+  //   "DISPLAY": "host.docker.internal:0",
+  //   "ROS_LOCALHOST_ONLY": "1"
+  // },
+  // "forwardPorts": [],
+
+  // ───────────────────────────────────────────────────────────────
+  // ВАРИАНТ 4: Прямой X11 — macOS (XQuartz)
+  // ───────────────────────────────────────────────────────────────
+  // 1. Установить XQuartz (бесплатно)
+  // 2. XQuartz → Preferences → Security → ✓ Allow connections
+  // 3. На хосте (один раз):   xhost +localhost
+  //
+  // "mounts": [
+  //   "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind"
+  // ],
+  // "runArgs": [
+  //   "--privileged",
+  //   "--shm-size=1g"
+  // ],
+  // "containerEnv": {
+  //   "QT_X11_NO_MITSHM": "1",
+  //   "LIBGL_ALWAYS_SOFTWARE": "1",
+  //   "DISPLAY": "host.docker.internal:0",
+  //   "ROS_LOCALHOST_ONLY": "1"
+  // },
+  // "forwardPorts": [],
+
+  // ───────────────────────────────────────────────────────────────
+  // ВАРИАНТ 5: Прямой X11 — Ubuntu + NVIDIA GPU
+  // ───────────────────────────────────────────────────────────────
+  // Проверено: Ubuntu 24.04 + native Docker Engine (docker-ce).
+  //
+  // Требования на хосте (однократно):
+  //   1. Установить nvidia-container-toolkit:
+  //      https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html
+  //      sudo nvidia-ctk runtime configure --runtime=docker
+  //      sudo systemctl restart docker
+  //   2. Использовать native Docker Engine (docker-ce), не Docker Desktop:
+  //      docker context use default
+  //   3. Проверить GPU-проброс:
+  //      docker run --rm --gpus all nvidia/cuda:12.8.0-runtime-ubuntu22.04 nvidia-smi
+  //   4. xhost +local:docker
+  //   5. Проверить номер дисплея: echo $DISPLAY
+  //
+  // GUI-приложения используют аппаратный рендеринг GPU.
+  //
+  // "mounts": [
+  //   "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind"
+  // ],
+  // "runArgs": [
+  //   "--privileged",
+  //   "--network=host",
+  //   "--shm-size=1g",
+  //   "--gpus", "all"
+  // ],
+  // "containerEnv": {
+  //   "QT_X11_NO_MITSHM": "1",
+  //   "DISPLAY": ":1",
+  //   "MESA_LOADER_DRIVER_OVERRIDE": "zink",
+  //   "GZ_RENDER_ENGINE": "ogre2"
+  // },
+  // "forwardPorts": []
+}

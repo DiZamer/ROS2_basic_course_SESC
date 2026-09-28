@@ -1,0 +1,104 @@
+# --- Установленные пакеты (Chrome binary) ---
+3_Robot/Home_Robot/Presentation/chrome/
+
+# --- node_modules ---
+node_modules/
+
+# --- Изображения (только бинарные — SVG оставлен) ---
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.ico
+
+# --- Презентации ---
+*.ppt
+*.pptx
+*.odp
+
+# --- PDF ---
+*.pdf
+
+# --- Медиа (видео/аудио) ---
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+*.mp3
+*.wav
+
+# --- Архивы ---
+*.zip
+*.tar.gz
+*.tar
+*.7z
+*.rar
+
+# --- Python cache ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# =============================================================================
+# TIAGo Robot (3_Robot/TIAgo_humble/ros2_ws)
+# Сборка только внутри DevContainer — исходники клонируются, артефакты генерируются
+# =============================================================================
+
+# Исходные коды ROS2-пакетов TIAGo (~230 MB)
+# Клонируются из GitHub PAL Robotics через vcs import при сборке DevContainer.
+# Каждый пакет — отдельный git-репозиторий, хранить в корневом репозитории нельзя.
+3_Robot/TIAgo_humble/ros2_ws/src/
+
+# Результат colcon build — объектные файлы, бинарники, библиотеки.
+# Генерируется заново при каждой сборке (colcon build). Не участвует в разработке.
+3_Robot/TIAgo_humble/ros2_ws/build/
+
+# Установленные пакеты — setup.bash, .cmake, .so.
+# Генерируется заново при colcon build. Не участвует в разработке.
+3_Robot/TIAgo_humble/ros2_ws/install/
+
+# Логи сборки colcon.
+# Генерируются автоматически. Не влияют на работу.
+3_Robot/TIAgo_humble/ros2_ws/log/
+
+# Лок-файл DevContainer — сгенерённый хеш Docker-образа.
+# Создаётся автоматически при первой сборке контейнера.
+3_Robot/TIAgo_humble/.devcontainer/devcontainer-lock.json
+
+# Gitfile — файл .git (не директория), указывающий на корневой репозиторий
+# Нужен, чтобы VS Code не предлагал открыть родительский репозиторий
+# при запуске DevContainer из подпапки TIAgo_humble
+3_Robot/TIAgo_humble/.git
+
+# =============================================================================
+# Учебные пакеты уровня 2 (2_code) — артефакты сборки
+# Исходники пакетов хранятся в репозитории, build/install/log генерируются
+# =============================================================================
+2_code/build/
+2_code/install/
+2_code/log/
+
+# --- Редакторы и ОС ---
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# --- Служебные и внутренние документы проекта (не для GitHub) ---
+AGENTS.md
+**/AGENTS.md
+CONTENT_TEMPLATES.md
+COURSE_ARCHITECTURE.md
+VISUAL_GUIDE.md
+QUALITY_CHECKLIST.md
+ROADMAP.md
+.opencode/
+Prompts/
+opencode.jsonc
+.obsidian/

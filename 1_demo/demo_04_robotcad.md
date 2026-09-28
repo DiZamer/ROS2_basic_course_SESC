@@ -1,0 +1,140 @@
+# Демонстрация: проект робота и URDF в RobotCAD
+
+## Цель
+
+Показать цепочку CAD → links/joints/LCS → URDF: собрать в RobotCAD простую модель «платформа + колесо», задать link, joint и LCS, рассчитать массу/инерцию и сгенерировать URDF. В финале — сравнить с настоящим URDF TIAgo и показать, что URDF — это текст, который проверяет парсер.
+
+## Подготовка до занятия
+
+1. FreeCAD 1.x с установленным верстаком RobotCAD (через Addon Manager или Docker-скрипт из [`../2_knowledge/robotcad.md`](../2_knowledge/robotcad.md)).
+2. Заранее собрана модель «платформа + колесо» и проверена генерация URDF (чтобы на занятии не искать пункты меню).
+3. Для кейса уровня 3 — контейнер `3_Robot/TIAgo_humble/` готов, либо подготовлен план Б.
+4. Подготовлен файл `simple.urdf` из плана Б практики (для смелого теста «сломанный URDF»).
+
+## Контейнер
+
+- Уровень 2: RobotCAD/FreeCAD — графическое приложение, запускается на хосте (или в Docker-образе верстака). ROS2 не требуется для генерации URDF.
+- Уровень 3: контейнер `3_Robot/TIAgo_humble/` — кейс «сосчитать звенья TIAgo» и `check_urdf` для сломанного URDF.
+
+## Контекст для студентов
+
+> «CAD — чертёж отдельных деталей. RobotCAD — сборка этих деталей в робота с подписанными осями: где колесо крутится, где „перед“ робота. Вручную считать положение, массу и инерцию каждого звена — рутина, которую RobotCAD делает за вас.»
+
+## Что показать
+
+### 1. Понятия: link, joint, LCS
+
+Открыть RobotCAD и объяснить на модели:
+
+- **link** — жёсткая часть (платформа, колесо);
+- **joint** — подвижная связь между звеньями (вращение колеса);
+- **LCS** — локальная система координат, к которой привязывают звенья и сочленения;
+- **Collisions / Visuals / Reals** — три вида геометрии: для физики, для отображения, исходная.
+
+**Что сказать**: «Link — жёсткая часть, joint — подвижная связь. Путать их нельзя: сустав, заданный как звено, не будет вращаться.»
+
+### 2. Сборка «платформа + колесо»
+
+Создать две детали (`Box` — платформа, `Cylinder` — колесо), задать link `base_link` и `wheel_link`, joint `wheel_joint` (тип `continuous`), привязать placement по грани или через LCS.
+
+**Что сказать**: «Тип `continuous` — бесконечное вращение, как у колеса. `revolute` — вращение с пределом, как у шарнира руки.»
+
+### 3. Материал и масса
+
+Назначить материал звеньям и запустить расчёт массы/инерции.
+
+**Что сказать**: «Массу и инерцию RobotCAD считает по материалу — вы не вводите их вручную. Без массы модель „улетает“ в симуляции.»
+
+### 4. Генерация URDF
+
+Запустить генерацию кода и открыть `urdf/*.urdf.xacro`:
+
+```xml
+<link name="base_link">
+  <inertial>
+    <mass value="2.5"/>
+    <origin xyz="0 0 0.1"/>
+  </inertial>
+  <visual>
+    <geometry>
+      <mesh filename="package://my_robot/meshes/base_link.stl"/>
+    </geometry>
+  </visual>
+</link>
+
+<joint name="wheel_joint" type="continuous">
+  <parent link="base_link"/>
+  <child link="wheel_link"/>
+  <axis xyz="0 1 0"/>
+</joint>
+```
+
+**Что сказать**: «URDF — паспорт тела робота: звенья, сочленения, геометрия, масса. Масса `2.5` и `xyz="0 0 0.1"` рассчитаны RobotCAD по материалу.»
+
+### 5. Кейс робота: сосчитать звенья TIAgo (уровень 3)
+
+В контейнере робота:
+
+```bash
+cd ~/ros2_ws/src/tiago_robot/tiago_description
+grep -rho "<link name=\"" robots/ urdf/ | wc -l
+grep -rho "<joint name=\"" robots/ urdf/ | wc -l
+```
+
+**Что сказать**: «Большой робот — это десятки links и joints, а не одна строка. `tiago.urdf.xacro` включает подописания `urdf/arm/`, `urdf/head/`, `urdf/torso/` и `omni_base_description` — та же логика, что у вашей модели, но разбитая на модули.»
+
+### 6. Смелый тест: сломанный URDF
+
+```bash
+cp simple.urdf broken.urdf
+sed -i 's/joint name="wheel_joint"/joint name=""/' broken.urdf
+check_urdf broken.urdf
+rm broken.urdf
+```
+
+**Что сказать**: «URDF — обычный текст, который проверяет парсер. Опечатка ломает модель — `check_urdf` сообщает об ошибке. Если `check_urdf` не установлен — `sudo apt install -y liburdfdom-tools`.»
+
+## Что сказать
+
+- «Не пишите URDF руками — пусть RobotCAD считает массу и инерцию за вас.»
+- «URDF — паспорт тела робота: звенья, сочленения, масса, инерция.»
+- «Имена links/joints должны совпадать с конфигами `ros2_control`, иначе контроллер не найдёт сустав.»
+- «Результат этой модели станет роботом, который вы оживите в занятиях 17–18.»
+
+## Ожидаемый результат
+
+- В FreeCAD собрана модель из двух звеньев с одним вращательным сочленением.
+- Сгенерирован URDF с links, joints и `<inertial>`.
+- Счётчик links/joints TIAgo заметно больше, чем у студенческой модели.
+- `check_urdf broken.urdf` сообщает об ошибке.
+
+## Типичные проблемы
+
+| Симптом | Причина | Исправление |
+| --- | --- | --- |
+| Верстак не в списке | Не перезапущен FreeCAD после установки | Перезапустить FreeCAD |
+| Нет массы в URDF | Не назначен материал | Задать материал и пересчитать массу/инерцию |
+| Симуляция пуста, RViz показывает робота | Не заданы Collisions | Добавить Collisions для каждого звена |
+| Сустав не вращается | Неверный тип joint | Для колеса — `continuous`, для шарнира — `revolute` |
+| `check_urdf` не найден | Не установлен `liburdfdom-tools` | `sudo apt install -y liburdfdom-tools` |
+
+## План Б
+
+Если RobotCAD/FreeCAD GUI недоступен или не установлен:
+
+1. Выполнить план Б практики: разобрать `simple.urdf` в текстовом виде (назвать links, joints, ось вращения).
+2. Показать URDF TIAgo `tiago_description/robots/tiago.urdf.xacro` как текст и объяснить include-структуру.
+3. Показать `meshes/` и `launch/` пакета `tiago_description`.
+4. Если и контейнер робота недоступен — разобрать структуру по [`../2_knowledge/robotcad.md`](../2_knowledge/robotcad.md) и схеме цепочки.
+
+## Ссылки на материалы курса
+
+- Статьи базы знаний — [`../2_knowledge/robotcad.md`](../2_knowledge/robotcad.md), [`../2_knowledge/urdf_xacro.md`](../2_knowledge/urdf_xacro.md).
+- Практика — [`../2_practice/04_robotcad.md`](../2_practice/04_robotcad.md).
+- Домашнее задание — [`../2_homework/hw_04_robotcad.md`](../2_homework/hw_04_robotcad.md).
+
+## Связь с роботом
+
+- URDF TIAgo: `3_Robot/TIAgo_humble/ros2_ws/src/tiago_robot/tiago_description/robots/tiago.urdf.xacro` — реальный URDF, собранный по той же логике (включает `urdf/arm/`, `urdf/head/`, `urdf/torso/`, `urdf/end_effector/` и `omni_base_description`).
+- `launch/robot_state_publisher.launch.py` и `module/10_robot_state_publisher.yaml` — описание публикуется в ROS2.
+- Простая модель студента «платформа + колесо» vs разбитый на модули URDF TIAgo — одна логика, разный масштаб.

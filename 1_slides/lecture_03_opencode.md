@@ -1,0 +1,435 @@
+---
+marp: true
+theme: default
+paginate: true
+size: 16:9
+footer: 'ROS2 Course • Занятие 3 • 120 мин (40+40+40)'
+---
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Roboto+Mono:wght@400;600&display=swap');
+
+:root {
+  --primary: #1e40af;
+  --primary-light: #2563eb;
+  --accent: #3b82f6;
+  --accent-light: #60a5fa;
+  --green: #16a34a;
+  --green-bg: #f0fdf4;
+  --green-border: #86efac;
+  --red: #dc2626;
+  --red-bg: #fef2f2;
+  --red-border: #fca5a5;
+  --yellow: #d97706;
+  --yellow-bg: #fffbeb;
+  --yellow-border: #fcd34d;
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --white: #ffffff;
+  --card-bg: #f3f7ff;
+  --card-border: #bfdbfe;
+  --font: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  --mono: 'Roboto Mono', 'Consolas', monospace;
+}
+
+section {
+  background: var(--white);
+  color: var(--gray-800);
+  font-family: var(--font);
+  font-weight: 400;
+  box-sizing: border-box;
+  border-top: 8px solid var(--primary);
+  position: relative;
+  line-height: 1.6;
+  font-size: 20px;
+  padding: 48px 56px 52px;
+}
+
+section::after { font-size: 14px; color: var(--gray-400); }
+
+h1, h2, h3, h4, h5, h6 { font-weight: 700; color: var(--primary); margin: 0; padding: 0; }
+
+h1 { font-size: 50px; line-height: 1.15; letter-spacing: -0.02em; }
+
+h2 {
+  position: absolute; top: 34px; left: 56px; right: 56px;
+  font-size: 32px; padding-bottom: 10px;
+  border-bottom: 3px solid var(--accent);
+}
+h2 + * { margin-top: 94px; }
+
+h3 { color: var(--primary-light); font-size: 22px; margin-top: 24px; margin-bottom: 8px; font-weight: 600; }
+h4 { color: var(--primary); font-size: 18px; margin-top: 14px; margin-bottom: 6px; }
+
+ul, ol { padding-left: 28px; }
+li { margin-bottom: 7px; line-height: 1.6; font-size: 18px; }
+
+strong { color: var(--primary); font-weight: 700; }
+em { color: var(--green); font-style: normal; font-weight: 600; }
+
+table { border-collapse: collapse; width: 100%; margin: 14px 0; font-size: 16px; }
+th { background: var(--primary); color: var(--white); font-weight: 700; font-size: 15px; padding: 10px 14px; text-align: left; }
+td { border: 1px solid var(--gray-300); padding: 9px 14px; }
+tr:nth-child(even) td { background: var(--gray-50); }
+td:first-child { font-weight: 600; }
+
+code {
+  background: #eef2ff; color: var(--primary); padding: 2px 7px;
+  border-radius: 4px; font-family: var(--mono); font-size: 0.85em;
+}
+
+blockquote {
+  border-left: 5px solid var(--accent); padding: 12px 20px;
+  background: var(--card-bg); border-radius: 0 8px 8px 0;
+  margin: 14px 0; font-size: 20px; color: var(--primary); font-weight: 500;
+}
+
+section.lead {
+  display: flex; flex-direction: column; justify-content: center;
+  background: linear-gradient(135deg, #ffffff 0%, #eff6ff 60%, #dbeafe 100%);
+}
+section.lead h1 { margin-bottom: 20px; font-size: 56px; }
+section.lead p { font-size: 22px; color: var(--gray-700); font-weight: 400; }
+
+section.section-break {
+  display: flex; flex-direction: column; justify-content: center;
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%);
+  color: var(--white); border-top: 8px solid #93c5fd;
+}
+section.section-break h1 { color: var(--white); font-size: 46px; }
+section.section-break p { color: #bfdbfe; font-size: 20px; }
+
+footer {
+  font-size: 13px; color: var(--gray-400); position: absolute;
+  left: 56px; right: 56px; bottom: 16px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+
+.badge {
+  display: inline-block; padding: 3px 11px; border-radius: 20px;
+  font-size: 13px; font-weight: 600; margin: 2px;
+}
+.badge-blue { background: #dbeafe; color: #1e40af; }
+.badge-green { background: #dcfce7; color: #16a34a; }
+.badge-yellow { background: #fef3c7; color: #92400e; }
+.badge-red { background: #fee2e2; color: #dc2626; }
+
+.callout {
+  padding: 14px 20px; border-left: 5px solid var(--accent);
+  border-radius: 0 8px 8px 0; margin: 12px 0; font-size: 17px;
+  background: var(--card-bg);
+}
+.callout-green { background: var(--green-bg); border-left-color: var(--green); }
+.callout-yellow { background: var(--yellow-bg); border-left-color: var(--yellow); }
+.callout-red { background: var(--red-bg); border-left-color: var(--red); }
+
+.two-col { display: flex; gap: 26px; margin-top: 6px; }
+.two-col > div { flex: 1; }
+
+.arch-node {
+  padding: 10px 16px; border: 2px solid var(--accent); border-radius: 8px;
+  text-align: center; font-weight: 700; font-size: 16px; color: var(--primary);
+  background: var(--card-bg);
+}
+.arch-node-warn { background: var(--yellow-bg); border-color: var(--yellow); color: #92400e; }
+.arch-node-danger { background: var(--red-bg); border-color: var(--red); color: #7f1d1d; }
+.arch-node-gray { background: var(--gray-100); border-color: var(--gray-500); color: var(--gray-700); }
+
+.l2-link { font-size: 14px; color: var(--primary-light); margin-top: 10px; }
+.l3-link { font-size: 14px; color: var(--green); }
+</style>
+
+<!-- _class: lead -->
+<!-- _paginate: false -->
+
+# Агентная инженерия с opencode
+
+Лекция • 40 минут (уровень 1)
+
+<span class="badge badge-blue">Уровень 1: Лекция</span>
+<span class="badge badge-green">Уровень 2: Практика</span>
+<span class="badge badge-yellow">Уровень 3: Робот TIAGo</span>
+
+---
+
+<!-- _class: section-break -->
+
+# Часть 1
+
+Агент, vibe-coding, agent engineering, permission
+
+---
+
+## Что такое AI-агент для кода
+
+<div class="two-col">
+<div>
+
+- Программа, которая по текстовому запросу **читает, пишет и запускает** код
+- **Vibe-coding** — описываешь результат словами, агент делает «как»
+- Ты формулируешь «что», агент — «как»
+
+</div>
+<div>
+
+<div class="arch-node" style="font-size:14px;">Студент<br/><span style="font-weight:400;font-size:11px;">текстовый запрос</span></div>
+<div style="text-align:center; color:var(--accent); font-weight:700;">↓</div>
+<div class="arch-node arch-node-warn" style="font-size:14px;">opencode<br/><span style="font-weight:400;font-size:11px;">читает / пишет / запускает</span></div>
+<div style="text-align:center; color:var(--accent); font-weight:700;">↓</div>
+<div class="arch-node arch-node-gray" style="font-size:14px;">Результат в проекте</div>
+
+<div class="callout callout-yellow" style="font-size:14px; margin-top:8px;">
+  <strong>Аналогия:</strong> стажёр с отличной памятью в вашей папке.
+</div>
+
+</div>
+</div>
+
+<div class="l2-link">Ур.2: <code>2_knowledge/opencode_agent.md</code></div>
+<div class="l3-link">Ур.3: opencode помогает читать чужой код TIAgo</div>
+
+<!-- «Агент — стажёр с отличной памятью. Он ускоряет рутину, но отвечаете на зачёте вы. Vibe-coding — формулируешь результат словами, агент предлагает и применяет изменения.» -->
+
+---
+
+## Agent engineering: управление агентом
+
+<div class="two-col">
+<div>
+
+- `AGENTS.md` — письменные правила
+- `permission` — права (что можно без спроса)
+- Субагенты — специалисты для подзадач
+
+</div>
+<div>
+
+```bash
+opencode                       # TUI — диалог
+opencode run "объясни пакет"   # один запрос
+opencode agent list            # список агентов
+opencode --version             # версия
+```
+
+<div class="callout" style="font-size:14px; margin-top:8px;">
+  <strong>Без правил</strong> агент действует хаотично и «уезжает» не туда.
+</div>
+
+</div>
+</div>
+
+<div class="l2-link">Ур.2: <code>2_knowledge/opencode_agent.md</code></div>
+<div class="l3-link">Ур.3: <code>3_Robot/TIAgo_humble/AGENTS.md</code> — правила агента в проекте робота</div>
+
+<!-- «Agent engineering — управление агентом: инструкции в `AGENTS.md`, ограничение прав через `permission`, специализированные субагенты. Это не магия, а настройка инструмента.» -->
+
+---
+
+## Primary-агенты: Build и Plan
+
+| | **Build** | **Plan** |
+|---|---|---|
+| Назначение | Разработка | Анализ и планирование |
+| Инструменты | Все включены | Чтение свободно |
+| Правки / команды | Применяет | Требуют подтверждения |
+| Когда брать | Писать код | Разбирать чужой код |
+
+```bash
+opencode run --agent plan "разбери этот код"   # read-only анализ
+```
+
+<div class="callout callout-green" style="font-size:15px; margin-top:8px;">
+  Переключение между агентами — клавиша <strong>Tab</strong>.
+</div>
+
+<div class="l2-link">Ур.2: <code>2_knowledge/opencode_agent.md</code></div>
+<div class="l3-link">Ур.3: для чтения TIAgo — <code>Plan</code>, а не <code>Build</code></div>
+
+<!-- «Plan — для безопасного чтения и разбора кода: правки и команды требуют подтверждения. Build — для обычной разработки, у него включены все инструменты.» -->
+
+---
+
+## Субагенты: General и Explore
+
+<div class="two-col">
+<div>
+
+- **General** — сложные многошаговые задачи (может менять файлы)
+- **Explore** — быстрый поиск, **только чтение**
+- Вызываются через `@` или автоматически
+
+</div>
+<div>
+
+```text
+@explore найди все файлы AGENTS.md в проекте
+```
+
+<div class="callout callout-green" style="font-size:14px; margin-top:8px;">
+  <strong>Для чтения кода безопаснее <code>@explore</code></strong>, а не Build.
+</div>
+
+<div style="display:flex; gap:6px; margin-top:8px;">
+  <span class="badge badge-blue">build · plan</span>
+  <span class="badge badge-green">general · explore</span>
+  <span class="badge badge-yellow">title · summary · compaction</span>
+</div>
+
+</div>
+</div>
+
+<div class="l2-link">Ур.2: <code>2_knowledge/opencode_agent.md</code> · <code>2_practice/03_opencode.md</code></div>
+<div class="l3-link">Ур.3: проектные агенты <code>lecture-author</code>, <code>practice-coder</code>, <code>reviewer</code></div>
+
+<!-- «Subagent — вспомогательный агент, которого primary-агент зовёт для подзадачи. Explore — только чтение: ищет файлы и отвечает, не меняя код.» -->
+
+---
+
+## Права: allow / ask / deny
+
+```jsonc
+"permission": {
+  "edit": "allow",
+  "bash": { "*": "ask", "ls": "allow" },
+  "webfetch": "ask",
+  "read": "allow",
+  "grep": "allow",
+  "glob": "allow"
+}
+```
+
+<div class="two-col" style="margin-top:8px;">
+<div>
+
+<div class="callout callout-green" style="font-size:15px;">
+  <strong>allow</strong> — выполнять без спроса
+</div>
+
+</div>
+<div>
+
+<div class="callout callout-yellow" style="font-size:15px;">
+  <strong>ask</strong> — спросить: <code>once</code> / <code>always</code> / <code>reject</code>
+</div>
+
+<div class="callout callout-red" style="font-size:15px;">
+  <strong>deny</strong> — запретить
+</div>
+
+</div>
+</div>
+
+<div class="l2-link">Ур.2: <code>2_knowledge/opencode_agent.md</code> · <code>opencode.jsonc</code></div>
+<div class="l3-link">Ур.3: <code>"bash": { "*": "ask" }</code> — любую команду терминала агент согласует</div>
+
+<!-- «`permission` — это права стажёра: что без спроса, что с вопросом, что нельзя. Здесь агент читает и правит свободно, но команды терминала (кроме `ls`) согласует.» -->
+
+---
+
+## AGENTS.md: правила для агента
+
+<div class="two-col">
+<div>
+
+- Файл с инструкциями, который opencode читает при старте
+- Корневой `AGENTS.md` — правила проекта
+- `~/.config/opencode/AGENTS.md` — личные правила
+- `/init` — создать/улучшить по репозиторию
+
+</div>
+<div>
+
+```
+AGENTS.md
+├── цель проекта
+├── правила стиля и кода
+├── структура папок
+└── главный критерий успеха
+```
+
+<div class="callout callout-red" style="font-size:14px; margin-top:8px;">
+  <strong>Без <code>AGENTS.md</code></strong> агент действует по общим правилам и ошибается.
+</div>
+
+</div>
+</div>
+
+<div class="l2-link">Ур.2: <code>2_knowledge/opencode_agent.md</code> · <code>AGENTS.md</code> проекта</div>
+<div class="l3-link">Ур.3: <code>3_Robot/TIAgo_humble/AGENTS.md</code> — ROS2-способ, совместимость с PAL Robotics</div>
+
+<!-- «`AGENTS.md` — письменные правила для агента. Без него он не знает цели проекта и стиля, поэтому действует хаотично. Это как инструкция стажёру.» -->
+
+---
+
+## Границы: агент ускоряет, не заменяет
+
+<div class="two-col">
+<div>
+
+- Агент **может ошибаться** в фактах и командах
+- Код нужно собирать и запускать, а не копировать вслепую
+- На зачёте отвечает студент, а не агент
+- Не отправлять агенту секреты
+
+</div>
+<div>
+
+<div class="callout callout-green" style="font-size:16px;">
+  <strong>Правило:</strong><br/>сначала понимание, потом ускорение.
+</div>
+
+<div class="callout callout-yellow" style="font-size:15px; margin-top:8px;">
+  Агент — инструмент, как <code>colcon</code> или <code>git</code>.
+</div>
+
+</div>
+</div>
+
+<div class="l2-link">Ур.2: <code>2_knowledge/opencode_agent.md</code> — «Границы ответственности»</div>
+<div class="l3-link">Ур.3: ответ агента про TIAgo всегда сверяем с <code>ls</code> и документацией</div>
+
+<!-- «Агент может дать правдоподобный, но неверный ответ. Поэтому каждый ответ проверяем: сверяем с `ls`, `cat` и документацией. На зачёте отвечает студент, а не агент.» -->
+
+---
+
+## Кейс: opencode читает код TIAgo
+
+```bash
+opencode run --agent plan "Перечисли пакеты в 3_Robot/TIAgo_humble/ros2_ws/src и за что отвечает tiago_description"
+```
+
+Затем сверка с фактом:
+
+```bash
+ls 3_Robot/TIAgo_humble/ros2_ws/src
+ls 3_Robot/TIAgo_humble/ros2_ws/src/tiago_robot/tiago_description
+```
+
+<div class="callout callout-red" style="font-size:15px; margin-top:8px;">
+  <strong>Тест «не выдумывает ли агент»:</strong> если агент назвал несуществующий пакет — это найдено сверкой.
+</div>
+
+<div class="l2-link">Ур.2: <code>2_practice/03_opencode.md</code></div>
+<div class="l3-link">Ур.3: <code>3_Robot/TIAgo_humble/ros2_ws/src/</code> — tiago_robot, omni_base_robot, pmb2_navigation…</div>
+
+<!-- «Агент помогает читать архитектуру робота. Но ответ принимаем только после сверки: совпало со списком пакетов — доверяем, нет — нашли галлюцинацию.» -->
+
+---
+
+<!-- _class: lead -->
+
+# Вопросы?
+
+<span class="badge badge-blue">`2_knowledge/opencode_agent.md`</span>
+<span class="badge badge-green">`2_practice/03_opencode.md`</span>
+<span class="badge badge-yellow">`3_Robot/TIAgo_humble/AGENTS.md`</span>
+
+**Домашнее задание:** `2_homework/hw_03_opencode.md`
+

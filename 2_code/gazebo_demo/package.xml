@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>gazebo_demo</name>
+  <version>0.0.1</version>
+  <description>Teaching demo: a simple differential-drive robot in Gazebo (gz-sim) with RViz2</description>
+  <maintainer email="student@example.com">Student</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>ament_python</buildtool_depend>
+  <depend>launch</depend>
+  <depend>launch_ros</depend>
+  <depend>robot_state_publisher</depend>
+  <depend>joint_state_publisher</depend>
+  <depend>xacro</depend>
+  <depend>ros_gz_sim</depend>
+  <depend>ros_gz_bridge</depend>
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
