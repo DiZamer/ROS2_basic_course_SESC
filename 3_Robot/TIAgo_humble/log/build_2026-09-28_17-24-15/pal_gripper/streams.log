@@ -1,0 +1,41 @@
+[0.037s] Invoking command in '/workspaces/TIAgo_humble/build/pal_gripper': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_gripper_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_gripper_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_gripper_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_gripper_controller_configuration:/opt/ros/humble /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/pal_gripper/pal_gripper -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/pal_gripper
+[0.178s] -- The C compiler identification is GNU 11.4.0
+[0.281s] -- The CXX compiler identification is GNU 11.4.0
+[0.326s] -- Detecting C compiler ABI info
+[0.470s] -- Detecting C compiler ABI info - done
+[0.494s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.494s] -- Detecting C compile features
+[0.495s] -- Detecting C compile features - done
+[0.502s] -- Detecting CXX compiler ABI info
+[0.656s] -- Detecting CXX compiler ABI info - done
+[0.710s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.710s] -- Detecting CXX compile features
+[0.711s] -- Detecting CXX compile features - done
+[0.713s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.171s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.343s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.620s] -- Configuring done
+[1.621s] -- Generating done
+[1.626s] -- Build files have been written to: /workspaces/TIAgo_humble/build/pal_gripper
+[1.640s] Invoked command in '/workspaces/TIAgo_humble/build/pal_gripper' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_gripper_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_gripper_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_gripper_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_gripper_controller_configuration:/opt/ros/humble /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/pal_gripper/pal_gripper -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/pal_gripper
+[1.644s] Invoking command in '/workspaces/TIAgo_humble/build/pal_gripper': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_gripper_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_gripper_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_gripper_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_gripper_controller_configuration:/opt/ros/humble /usr/bin/cmake --build /workspaces/TIAgo_humble/build/pal_gripper -- -j24 -l24
+[1.703s] Invoked command in '/workspaces/TIAgo_humble/build/pal_gripper' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_gripper_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_gripper_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_gripper_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_gripper_controller_configuration:/opt/ros/humble /usr/bin/cmake --build /workspaces/TIAgo_humble/build/pal_gripper -- -j24 -l24
+[1.703s] Invoking command in '/workspaces/TIAgo_humble/build/pal_gripper': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_gripper_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_gripper_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_gripper_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_gripper_controller_configuration:/opt/ros/humble /usr/bin/cmake --install /workspaces/TIAgo_humble/build/pal_gripper
+[1.728s] -- Install configuration: "Release"
+[1.732s] -- Execute custom install script
+[1.736s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper/share/ament_index/resource_index/package_run_dependencies/pal_gripper
+[1.762s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper/share/ament_index/resource_index/parent_prefix_path/pal_gripper
+[1.810s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper/share/pal_gripper/environment/ament_prefix_path.sh
+[1.841s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper/share/pal_gripper/environment/ament_prefix_path.dsv
+[1.862s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper/share/pal_gripper/environment/path.sh
+[1.907s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper/share/pal_gripper/environment/path.dsv
+[1.951s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper/share/pal_gripper/local_setup.bash
+[1.993s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper/share/pal_gripper/local_setup.sh
+[2.031s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper/share/pal_gripper/local_setup.zsh
+[2.064s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper/share/pal_gripper/local_setup.dsv
+[2.088s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper/share/pal_gripper/package.dsv
+[2.100s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper/share/ament_index/resource_index/packages/pal_gripper
+[2.193s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper/share/pal_gripper/cmake/pal_gripperConfig.cmake
+[2.227s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper/share/pal_gripper/cmake/pal_gripperConfig-version.cmake
+[2.285s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper/share/pal_gripper/package.xml
+[2.355s] Invoked command in '/workspaces/TIAgo_humble/build/pal_gripper' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_gripper_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_gripper_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_gripper_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_gripper_controller_configuration:/opt/ros/humble /usr/bin/cmake --install /workspaces/TIAgo_humble/build/pal_gripper

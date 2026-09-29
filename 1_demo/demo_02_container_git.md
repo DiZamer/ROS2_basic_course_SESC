@@ -141,6 +141,6 @@ exit
 
 ## Связь с роботом
 
-- Уровень 3 живёт в отдельном тяжёлом контейнере `3_Robot/TIAgo_humble/`: образ на базе `osrf/ros:humble-desktop`, `postCreateCommand` клонирует пакеты TIAGo через `vcs import` и собирает workspace через `colcon build`.
+- Уровень 3 живёт в отдельном тяжёлом контейнере `3_Robot/TIAgo_humble/`: образ на базе `osrf/ros:humble-desktop`, `postCreateCommand`/`postStartCommand` вызывают скрипты `.devcontainer/post_create.sh` и `post_start.sh`, которые клонируют пакеты TIAGo через `vcs import` и собирают workspace через `colcon build`.
 - `.gitignore` проекта исключает `build/`, `install/`, `log/` и ключи — история коммитов пакетов TIAGo в `ros2_ws/src/` остаётся чистой.
 - Смелый тест занятия: `pkill -f robot_state_publisher` — узел исчезает из `ros2 node list`, остальные продолжают работать (только в симуляции).

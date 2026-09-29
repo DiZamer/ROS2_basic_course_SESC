@@ -1,0 +1,17 @@
+/workspaces/TIAgo_humble/install/tiago_rgbd_sensors/share/tiago_rgbd_sensors/launch/rgbd.launch.py
+/workspaces/TIAgo_humble/install/tiago_rgbd_sensors/share/tiago_rgbd_sensors/launch/rgbd_sim.launch.py
+/workspaces/TIAgo_humble/install/tiago_rgbd_sensors/share/ament_index/resource_index/package_run_dependencies/tiago_rgbd_sensors
+/workspaces/TIAgo_humble/install/tiago_rgbd_sensors/share/ament_index/resource_index/parent_prefix_path/tiago_rgbd_sensors
+/workspaces/TIAgo_humble/install/tiago_rgbd_sensors/share/tiago_rgbd_sensors/environment/ament_prefix_path.sh
+/workspaces/TIAgo_humble/install/tiago_rgbd_sensors/share/tiago_rgbd_sensors/environment/ament_prefix_path.dsv
+/workspaces/TIAgo_humble/install/tiago_rgbd_sensors/share/tiago_rgbd_sensors/environment/path.sh
+/workspaces/TIAgo_humble/install/tiago_rgbd_sensors/share/tiago_rgbd_sensors/environment/path.dsv
+/workspaces/TIAgo_humble/install/tiago_rgbd_sensors/share/tiago_rgbd_sensors/local_setup.bash
+/workspaces/TIAgo_humble/install/tiago_rgbd_sensors/share/tiago_rgbd_sensors/local_setup.sh
+/workspaces/TIAgo_humble/install/tiago_rgbd_sensors/share/tiago_rgbd_sensors/local_setup.zsh
+/workspaces/TIAgo_humble/install/tiago_rgbd_sensors/share/tiago_rgbd_sensors/local_setup.dsv
+/workspaces/TIAgo_humble/install/tiago_rgbd_sensors/share/tiago_rgbd_sensors/package.dsv
+/workspaces/TIAgo_humble/install/tiago_rgbd_sensors/share/ament_index/resource_index/packages/tiago_rgbd_sensors
+/workspaces/TIAgo_humble/install/tiago_rgbd_sensors/share/tiago_rgbd_sensors/cmake/tiago_rgbd_sensorsConfig.cmake
+/workspaces/TIAgo_humble/install/tiago_rgbd_sensors/share/tiago_rgbd_sensors/cmake/tiago_rgbd_sensorsConfig-version.cmake
+/workspaces/TIAgo_humble/install/tiago_rgbd_sensors/share/tiago_rgbd_sensors/package.xml

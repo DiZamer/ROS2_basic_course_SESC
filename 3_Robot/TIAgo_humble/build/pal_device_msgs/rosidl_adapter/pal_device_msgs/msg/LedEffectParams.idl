@@ -1,0 +1,54 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from pal_device_msgs/msg/LedEffectParams.msg
+// generated code does not contain a copyright notice
+
+#include "pal_device_msgs/msg/LedBlinkParams.idl"
+#include "pal_device_msgs/msg/LedDataArrayParams.idl"
+#include "pal_device_msgs/msg/LedEffectViaTopicParams.idl"
+#include "pal_device_msgs/msg/LedFadeParams.idl"
+#include "pal_device_msgs/msg/LedFixedColorParams.idl"
+#include "pal_device_msgs/msg/LedFlowParams.idl"
+#include "pal_device_msgs/msg/LedPreProgrammedParams.idl"
+#include "pal_device_msgs/msg/LedProgressParams.idl"
+#include "pal_device_msgs/msg/LedRainbowParams.idl"
+
+module pal_device_msgs {
+  module msg {
+    module LedEffectParams_Constants {
+      const uint8 FIXED_COLOR = 0;
+      const uint8 RAINBOW = 1;
+      const uint8 FADE = 2;
+      const uint8 BLINK = 3;
+      const uint8 PROGRESS = 4;
+      const uint8 FLOW = 5;
+      const uint8 PREPROGRAMMED_EFFECT = 6;
+      const uint8 EFFECT_VIA_TOPIC = 7;
+      const uint8 DATA_ARRAY = 8;
+    };
+    struct LedEffectParams {
+      uint8 effect_type;
+
+      @verbatim (language="comment", text=
+        "RGBA of color, alpha will be used as intensity if supported by the led")
+      pal_device_msgs::msg::LedFixedColorParams fixed_color;
+
+      pal_device_msgs::msg::LedRainbowParams rainbow;
+
+      pal_device_msgs::msg::LedFadeParams fade;
+
+      pal_device_msgs::msg::LedBlinkParams blink;
+
+      pal_device_msgs::msg::LedProgressParams progress;
+
+      pal_device_msgs::msg::LedFlowParams flow;
+
+      @verbatim (language="comment", text=
+        "Below are device specific, avoid them if you can")
+      pal_device_msgs::msg::LedPreProgrammedParams preprogrammed;
+
+      pal_device_msgs::msg::LedEffectViaTopicParams effect_via_topic;
+
+      pal_device_msgs::msg::LedDataArrayParams data_array;
+    };
+  };
+};

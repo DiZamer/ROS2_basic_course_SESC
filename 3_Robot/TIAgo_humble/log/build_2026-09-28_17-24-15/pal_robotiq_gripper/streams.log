@@ -1,0 +1,60 @@
+[0.013s] Invoking command in '/workspaces/TIAgo_humble/build/pal_robotiq_gripper': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_robotiq_description:/workspaces/TIAgo_humble/install/pal_robotiq_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_robotiq_description:/workspaces/TIAgo_humble/install/pal_robotiq_controller_configuration:/opt/ros/humble /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/pal_robotiq_gripper/pal_robotiq_gripper -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/pal_robotiq_gripper
+[0.102s] -- The C compiler identification is GNU 11.4.0
+[0.172s] -- The CXX compiler identification is GNU 11.4.0
+[0.179s] -- Detecting C compiler ABI info
+[0.251s] -- Detecting C compiler ABI info - done
+[0.258s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.258s] -- Detecting C compile features
+[0.259s] -- Detecting C compile features - done
+[0.262s] -- Detecting CXX compiler ABI info
+[0.345s] -- Detecting CXX compiler ABI info - done
+[0.352s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.352s] -- Detecting CXX compile features
+[0.353s] -- Detecting CXX compile features - done
+[0.356s] -- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.555s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.622s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.818s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.826s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.838s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.854s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.876s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.992s] -- Found rmw_implementation_cmake: 6.1.3 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.001s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.218s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.292s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.408s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.438s] -- Looking for pthread.h
+[1.569s] -- Looking for pthread.h - found
+[1.569s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.755s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.786s] -- Found Threads: TRUE  
+[1.981s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.081s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.082s] -- Added test 'lint_cmake' to check CMake code style
+[2.086s] -- Added test 'xmllint' to check XML markup files
+[2.088s] -- Configuring done
+[2.098s] -- Generating done
+[2.102s] -- Build files have been written to: /workspaces/TIAgo_humble/build/pal_robotiq_gripper
+[2.134s] Invoked command in '/workspaces/TIAgo_humble/build/pal_robotiq_gripper' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_robotiq_description:/workspaces/TIAgo_humble/install/pal_robotiq_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_robotiq_description:/workspaces/TIAgo_humble/install/pal_robotiq_controller_configuration:/opt/ros/humble /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/pal_robotiq_gripper/pal_robotiq_gripper -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/pal_robotiq_gripper
+[2.134s] Invoking command in '/workspaces/TIAgo_humble/build/pal_robotiq_gripper': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_robotiq_description:/workspaces/TIAgo_humble/install/pal_robotiq_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_robotiq_description:/workspaces/TIAgo_humble/install/pal_robotiq_controller_configuration:/opt/ros/humble /usr/bin/cmake --build /workspaces/TIAgo_humble/build/pal_robotiq_gripper -- -j24 -l24
+[2.299s] Invoked command in '/workspaces/TIAgo_humble/build/pal_robotiq_gripper' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_robotiq_description:/workspaces/TIAgo_humble/install/pal_robotiq_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_robotiq_description:/workspaces/TIAgo_humble/install/pal_robotiq_controller_configuration:/opt/ros/humble /usr/bin/cmake --build /workspaces/TIAgo_humble/build/pal_robotiq_gripper -- -j24 -l24
+[2.302s] Invoking command in '/workspaces/TIAgo_humble/build/pal_robotiq_gripper': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_robotiq_description:/workspaces/TIAgo_humble/install/pal_robotiq_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_robotiq_description:/workspaces/TIAgo_humble/install/pal_robotiq_controller_configuration:/opt/ros/humble /usr/bin/cmake --install /workspaces/TIAgo_humble/build/pal_robotiq_gripper
+[2.313s] -- Install configuration: "Release"
+[2.313s] -- Execute custom install script
+[2.314s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_robotiq_gripper/share/ament_index/resource_index/package_run_dependencies/pal_robotiq_gripper
+[2.329s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_robotiq_gripper/share/ament_index/resource_index/parent_prefix_path/pal_robotiq_gripper
+[2.349s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_robotiq_gripper/share/pal_robotiq_gripper/environment/ament_prefix_path.sh
+[2.366s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_robotiq_gripper/share/pal_robotiq_gripper/environment/ament_prefix_path.dsv
+[2.386s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_robotiq_gripper/share/pal_robotiq_gripper/environment/path.sh
+[2.404s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_robotiq_gripper/share/pal_robotiq_gripper/environment/path.dsv
+[2.434s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_robotiq_gripper/share/pal_robotiq_gripper/local_setup.bash
+[2.462s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_robotiq_gripper/share/pal_robotiq_gripper/local_setup.sh
+[2.502s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_robotiq_gripper/share/pal_robotiq_gripper/local_setup.zsh
+[2.523s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_robotiq_gripper/share/pal_robotiq_gripper/local_setup.dsv
+[2.537s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_robotiq_gripper/share/pal_robotiq_gripper/package.dsv
+[2.558s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_robotiq_gripper/share/ament_index/resource_index/packages/pal_robotiq_gripper
+[2.575s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_robotiq_gripper/share/pal_robotiq_gripper/cmake/pal_robotiq_gripperConfig.cmake
+[2.593s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_robotiq_gripper/share/pal_robotiq_gripper/cmake/pal_robotiq_gripperConfig-version.cmake
+[2.612s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_robotiq_gripper/share/pal_robotiq_gripper/package.xml
+[2.641s] Invoked command in '/workspaces/TIAgo_humble/build/pal_robotiq_gripper' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_robotiq_description:/workspaces/TIAgo_humble/install/pal_robotiq_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_robotiq_description:/workspaces/TIAgo_humble/install/pal_robotiq_controller_configuration:/opt/ros/humble /usr/bin/cmake --install /workspaces/TIAgo_humble/build/pal_robotiq_gripper

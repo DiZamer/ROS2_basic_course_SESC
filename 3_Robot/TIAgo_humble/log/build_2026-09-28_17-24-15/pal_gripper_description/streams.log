@@ -1,0 +1,60 @@
+[0.017s] Invoking command in '/workspaces/TIAgo_humble/build/pal_gripper_description': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/opt/ros/humble /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/pal_gripper/pal_gripper_description -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/pal_gripper_description
+[0.078s] -- The C compiler identification is GNU 11.4.0
+[0.149s] -- The CXX compiler identification is GNU 11.4.0
+[0.157s] -- Detecting C compiler ABI info
+[0.234s] -- Detecting C compiler ABI info - done
+[0.242s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.243s] -- Detecting C compile features
+[0.243s] -- Detecting C compile features - done
+[0.247s] -- Detecting CXX compiler ABI info
+[0.349s] -- Detecting CXX compiler ABI info - done
+[0.356s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.356s] -- Detecting CXX compile features
+[0.357s] -- Detecting CXX compile features - done
+[0.361s] -- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.600s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.731s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.890s] -- Found xacro: 2.1.1 (/opt/ros/humble/share/xacro/cmake)
+[1.011s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.117s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.121s] -- Added test 'lint_cmake' to check CMake code style
+[1.124s] -- Added test 'xmllint' to check XML markup files
+[1.129s] -- Configuring done
+[1.145s] -- Generating done
+[1.151s] -- Build files have been written to: /workspaces/TIAgo_humble/build/pal_gripper_description
+[1.157s] Invoked command in '/workspaces/TIAgo_humble/build/pal_gripper_description' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/opt/ros/humble /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/pal_gripper/pal_gripper_description -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/pal_gripper_description
+[1.161s] Invoking command in '/workspaces/TIAgo_humble/build/pal_gripper_description': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/opt/ros/humble /usr/bin/cmake --build /workspaces/TIAgo_humble/build/pal_gripper_description -- -j24 -l24
+[1.210s] Invoked command in '/workspaces/TIAgo_humble/build/pal_gripper_description' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/opt/ros/humble /usr/bin/cmake --build /workspaces/TIAgo_humble/build/pal_gripper_description -- -j24 -l24
+[1.212s] Invoking command in '/workspaces/TIAgo_humble/build/pal_gripper_description': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/opt/ros/humble /usr/bin/cmake --install /workspaces/TIAgo_humble/build/pal_gripper_description
+[1.230s] -- Install configuration: "Release"
+[1.230s] -- Execute custom install script
+[1.231s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper_description/share/pal_gripper_description/gazebo/gazebo.urdf.xacro
+[1.241s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper_description/share/pal_gripper_description/meshes/gripper_finger_link.stl
+[1.258s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper_description/share/pal_gripper_description/meshes/gripper_finger_link_collision.stl
+[1.281s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper_description/share/pal_gripper_description/meshes/gripper_link.stl
+[1.328s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper_description/share/pal_gripper_description/meshes/gripper_link_collision.stl
+[1.340s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper_description/share/pal_gripper_description/robots/gripper_test.urdf.xacro
+[1.349s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper_description/share/pal_gripper_description/robots/upload.launch
+[1.369s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper_description/share/pal_gripper_description/robots/upload_gripper.launch
+[1.387s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper_description/share/pal_gripper_description/urdf/gripper.gazebo.xacro
+[1.424s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper_description/share/pal_gripper_description/urdf/gripper.ros2_control.xacro
+[1.436s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper_description/share/pal_gripper_description/urdf/gripper.transmission.xacro
+[1.452s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper_description/share/pal_gripper_description/urdf/gripper.urdf.xacro
+[1.463s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper_description/share/pal_gripper_description/ros2_control/ros2_control.urdf.xacro
+[1.478s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper_description/share/ament_index/resource_index/package_run_dependencies/pal_gripper_description
+[1.496s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper_description/share/ament_index/resource_index/parent_prefix_path/pal_gripper_description
+[1.517s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper_description/share/pal_gripper_description/environment/ament_prefix_path.sh
+[1.536s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper_description/share/pal_gripper_description/environment/ament_prefix_path.dsv
+[1.546s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper_description/share/pal_gripper_description/environment/path.sh
+[1.556s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper_description/share/pal_gripper_description/environment/path.dsv
+[1.566s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper_description/share/pal_gripper_description/local_setup.bash
+[1.582s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper_description/share/pal_gripper_description/local_setup.sh
+[1.594s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper_description/share/pal_gripper_description/local_setup.zsh
+[1.606s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper_description/share/pal_gripper_description/local_setup.dsv
+[1.614s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper_description/share/pal_gripper_description/package.dsv
+[1.622s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper_description/share/ament_index/resource_index/packages/pal_gripper_description
+[1.634s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper_description/share/pal_gripper_description/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.642s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper_description/share/pal_gripper_description/cmake/pal_gripper_descriptionConfig.cmake
+[1.675s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper_description/share/pal_gripper_description/cmake/pal_gripper_descriptionConfig-version.cmake
+[1.681s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_gripper_description/share/pal_gripper_description/package.xml
+[1.702s] Invoked command in '/workspaces/TIAgo_humble/build/pal_gripper_description' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/opt/ros/humble /usr/bin/cmake --install /workspaces/TIAgo_humble/build/pal_gripper_description

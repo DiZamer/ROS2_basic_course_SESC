@@ -1,0 +1,73 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target"
+		],
+		"files" : 
+		[
+			"/workspaces/TIAgo_humble/build/play_motion2_msgs/play_motion2_msgs__rs/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 35,
+				"parent" : 0
+			}
+		]
+	},
+	"id" : "play_motion2_msgs__rs::@fdeb02010bc64a6db752",
+	"name" : "play_motion2_msgs__rs",
+	"paths" : 
+	{
+		"build" : "play_motion2_msgs__rs",
+		"source" : "/workspaces/TIAgo_humble/build/play_motion2_msgs/play_motion2_msgs__rs"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/workspaces/TIAgo_humble/build/play_motion2_msgs/play_motion2_msgs__rs/CMakeFiles/play_motion2_msgs__rs",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/workspaces/TIAgo_humble/build/play_motion2_msgs/play_motion2_msgs__rs/CMakeFiles/play_motion2_msgs__rs.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/workspaces/TIAgo_humble/build/play_motion2_msgs/rosidl_generator_rs/play_motion2_msgs/rust/src/lib.rs.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

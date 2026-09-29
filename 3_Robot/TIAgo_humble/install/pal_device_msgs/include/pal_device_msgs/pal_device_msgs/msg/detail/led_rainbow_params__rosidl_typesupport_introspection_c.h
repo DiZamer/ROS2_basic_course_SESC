@@ -1,0 +1,1 @@
+/workspaces/TIAgo_humble/build/pal_device_msgs/rosidl_typesupport_introspection_c/pal_device_msgs/msg/detail/led_rainbow_params__rosidl_typesupport_introspection_c.h

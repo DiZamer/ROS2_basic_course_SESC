@@ -226,7 +226,7 @@ ROS_DOMAIN_ID=0 ros2 run demo_nodes_cpp listener  # работает
 export ROBOT_ID=3
 export ROS_DOMAIN_ID=$((ROBOT_ID + 100))  # domain 103
 export ROS_NAMESPACE="/robot${ROBOT_ID}"
-ros2 launch tiago_bringup tiago_main.launch.py
+ros2 launch tiago_gazebo tiago_gazebo.launch.py is_public_sim:=True navigation:=True
 ```
 
 ### Пример в реальном роботе

@@ -5,7 +5,9 @@
 # 3. Adds an idempotent "source <dir>/install/setup.bash" line to ~/.bashrc
 #    so the overlay is available in every new terminal.
 #
-# Idempotent and non-destructive: nothing is removed, lines are not duplicated.
+# Idempotent: bashrc lines are not duplicated. Source files are never touched;
+# only regenerable colcon dirs (build/install/log) are cleaned if they contain
+# broken symlinks (e.g. after the project folder was renamed).
 # NOTE: no `set -u` — ROS setup.bash references unset variables internally.
 
 WS_BASENAME="${1:-$(basename "$(pwd)")}"
@@ -21,8 +23,15 @@ fi
 
 for d in "$WS/2_code" "$WS/2_homework"; do
     if ls "$d"/*/package.xml >/dev/null 2>&1; then
+        # A renamed workspace leaves absolute symlinks in install/ pointing to the
+        # old mount path. Detect broken symlinks and clean the regenerable dirs.
+        if [ -d "$d/install" ] && find -L "$d/install" -type l 2>/dev/null | grep -q .; then
+            echo "=== Stale artifacts in $d (broken symlinks) — clean rebuild ==="
+            rm -rf "$d/build" "$d/install" "$d/log"
+        fi
+
         echo "=== Building packages in $d ==="
-        ( cd "$d" && colcon build --symlink-install ) || true
+        ( cd "$d" && colcon build ) || true
 
         if [ -f "$d/install/setup.bash" ]; then
             grep -qxF "source $d/install/setup.bash" ~/.bashrc || \

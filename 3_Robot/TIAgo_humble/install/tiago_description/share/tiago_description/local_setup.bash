@@ -1,0 +1,1 @@
+/workspaces/TIAgo_humble/build/tiago_description/ament_cmake_environment_hooks/local_setup.bash

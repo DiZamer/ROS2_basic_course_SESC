@@ -1,0 +1,10 @@
+/workspaces/TIAgo_humble/build/play_motion2_msgs/rosidl_adapter/play_motion2_msgs:msg/Motion.idl
+/workspaces/TIAgo_humble/build/play_motion2_msgs/rosidl_adapter/play_motion2_msgs:srv/AddMotion.idl
+/workspaces/TIAgo_humble/build/play_motion2_msgs/rosidl_adapter/play_motion2_msgs:srv/GetMotionInfo.idl
+/workspaces/TIAgo_humble/build/play_motion2_msgs/rosidl_adapter/play_motion2_msgs:srv/IsMotionReady.idl
+/workspaces/TIAgo_humble/build/play_motion2_msgs/rosidl_adapter/play_motion2_msgs:srv/IsJointListReady.idl
+/workspaces/TIAgo_humble/build/play_motion2_msgs/rosidl_adapter/play_motion2_msgs:srv/ListMotions.idl
+/workspaces/TIAgo_humble/build/play_motion2_msgs/rosidl_adapter/play_motion2_msgs:srv/RemoveMotion.idl
+/workspaces/TIAgo_humble/build/play_motion2_msgs/rosidl_adapter/play_motion2_msgs:srv/SaveMotion.idl
+/workspaces/TIAgo_humble/build/play_motion2_msgs/rosidl_adapter/play_motion2_msgs:action/PlayMotion2.idl
+/workspaces/TIAgo_humble/build/play_motion2_msgs/rosidl_adapter/play_motion2_msgs:action/PlayMotion2Raw.idl

@@ -1,0 +1,48 @@
+[0.210s] Invoking command in '/workspaces/TIAgo_humble/build/tiago_rgbd_sensors': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/tiago_navigation/tiago_rgbd_sensors -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/tiago_rgbd_sensors
+[0.313s] -- The C compiler identification is GNU 11.4.0
+[0.411s] -- The CXX compiler identification is GNU 11.4.0
+[0.423s] -- Detecting C compiler ABI info
+[0.533s] -- Detecting C compiler ABI info - done
+[0.551s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.551s] -- Detecting C compile features
+[0.552s] -- Detecting C compile features - done
+[0.558s] -- Detecting CXX compiler ABI info
+[0.704s] -- Detecting CXX compiler ABI info - done
+[0.717s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.717s] -- Detecting CXX compile features
+[0.718s] -- Detecting CXX compile features - done
+[0.724s] -- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.980s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.059s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.229s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.231s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.232s] -- Added test 'lint_cmake' to check CMake code style
+[1.232s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.234s] -- Added test 'xmllint' to check XML markup files
+[1.239s] -- Configuring done
+[1.241s] -- Generating done
+[1.244s] -- Build files have been written to: /workspaces/TIAgo_humble/build/tiago_rgbd_sensors
+[1.252s] Invoked command in '/workspaces/TIAgo_humble/build/tiago_rgbd_sensors' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/tiago_navigation/tiago_rgbd_sensors -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/tiago_rgbd_sensors
+[1.254s] Invoking command in '/workspaces/TIAgo_humble/build/tiago_rgbd_sensors': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/TIAgo_humble/build/tiago_rgbd_sensors -- -j24 -l24
+[1.302s] Invoked command in '/workspaces/TIAgo_humble/build/tiago_rgbd_sensors' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/TIAgo_humble/build/tiago_rgbd_sensors -- -j24 -l24
+[1.305s] Invoking command in '/workspaces/TIAgo_humble/build/tiago_rgbd_sensors': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/TIAgo_humble/build/tiago_rgbd_sensors
+[1.315s] -- Install configuration: "Release"
+[1.316s] -- Execute custom install script
+[1.317s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_rgbd_sensors/share/tiago_rgbd_sensors/launch/rgbd.launch.py
+[1.329s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_rgbd_sensors/share/tiago_rgbd_sensors/launch/rgbd_sim.launch.py
+[1.341s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_rgbd_sensors/share/ament_index/resource_index/package_run_dependencies/tiago_rgbd_sensors
+[1.351s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_rgbd_sensors/share/ament_index/resource_index/parent_prefix_path/tiago_rgbd_sensors
+[1.363s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_rgbd_sensors/share/tiago_rgbd_sensors/environment/ament_prefix_path.sh
+[1.371s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_rgbd_sensors/share/tiago_rgbd_sensors/environment/ament_prefix_path.dsv
+[1.384s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_rgbd_sensors/share/tiago_rgbd_sensors/environment/path.sh
+[1.396s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_rgbd_sensors/share/tiago_rgbd_sensors/environment/path.dsv
+[1.408s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_rgbd_sensors/share/tiago_rgbd_sensors/local_setup.bash
+[1.420s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_rgbd_sensors/share/tiago_rgbd_sensors/local_setup.sh
+[1.432s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_rgbd_sensors/share/tiago_rgbd_sensors/local_setup.zsh
+[1.444s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_rgbd_sensors/share/tiago_rgbd_sensors/local_setup.dsv
+[1.452s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_rgbd_sensors/share/tiago_rgbd_sensors/package.dsv
+[1.464s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_rgbd_sensors/share/ament_index/resource_index/packages/tiago_rgbd_sensors
+[1.475s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_rgbd_sensors/share/tiago_rgbd_sensors/cmake/tiago_rgbd_sensorsConfig.cmake
+[1.486s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_rgbd_sensors/share/tiago_rgbd_sensors/cmake/tiago_rgbd_sensorsConfig-version.cmake
+[1.495s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_rgbd_sensors/share/tiago_rgbd_sensors/package.xml
+[1.585s] Invoked command in '/workspaces/TIAgo_humble/build/tiago_rgbd_sensors' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/TIAgo_humble/build/tiago_rgbd_sensors

@@ -1,0 +1,258 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-2da791b2838527f6179d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "pal_device_msgs__py",
+					"jsonFile" : "directory-pal_device_msgs__py-Release-e85293378c535ba626ca.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/workspaces/TIAgo_humble/build/pal_device_msgs/pal_device_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "pal_device_msgs__rs",
+					"jsonFile" : "directory-pal_device_msgs__rs-Release-e6d04857792dcae2efa7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/workspaces/TIAgo_humble/build/pal_device_msgs/pal_device_msgs__rs",
+					"targetIndexes" : 
+					[
+						16
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "pal_device_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_pal_device_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_pal_device_msgs_egg-Release-93c19229ec1c2d46e784.json",
+					"name" : "ament_cmake_python_build_pal_device_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_pal_device_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_pal_device_msgs-Release-1a35f5a6186ee39c4ee3.json",
+					"name" : "ament_cmake_python_symlink_pal_device_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pal_device_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pal_device_msgs-Release-843f511677c5b757fe43.json",
+					"name" : "pal_device_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pal_device_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pal_device_msgs__cpp-Release-a52c6646ec58f640ded9.json",
+					"name" : "pal_device_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "pal_device_msgs__py::@d24725dd91535cf065d0",
+					"jsonFile" : "target-pal_device_msgs__py-Release-b65a9251ae60c603159a.json",
+					"name" : "pal_device_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pal_device_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pal_device_msgs__rosidl_generator_c-Release-875555765922669632b5.json",
+					"name" : "pal_device_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pal_device_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pal_device_msgs__rosidl_generator_py-Release-78d0e4b5953a95668ea1.json",
+					"name" : "pal_device_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pal_device_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pal_device_msgs__rosidl_typesupport_c-Release-cd306214514a6c3ca156.json",
+					"name" : "pal_device_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pal_device_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pal_device_msgs__rosidl_typesupport_c__pyext-Release-9b58f0522b746118cdd5.json",
+					"name" : "pal_device_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pal_device_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pal_device_msgs__rosidl_typesupport_cpp-Release-ed73886c743225613261.json",
+					"name" : "pal_device_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pal_device_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pal_device_msgs__rosidl_typesupport_fastrtps_c-Release-42e5354b03be38a94507.json",
+					"name" : "pal_device_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pal_device_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pal_device_msgs__rosidl_typesupport_fastrtps_c__pyext-Release-1d9a615701a8351d9671.json",
+					"name" : "pal_device_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pal_device_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pal_device_msgs__rosidl_typesupport_fastrtps_cpp-Release-ea650ecee0ddfdb06fe0.json",
+					"name" : "pal_device_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pal_device_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pal_device_msgs__rosidl_typesupport_introspection_c-Release-b6ee4180064b5ef52512.json",
+					"name" : "pal_device_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pal_device_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pal_device_msgs__rosidl_typesupport_introspection_c__pyext-Release-7bb69aebe691f5b967cd.json",
+					"name" : "pal_device_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pal_device_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pal_device_msgs__rosidl_typesupport_introspection_cpp-Release-8027e3440c1c0efbbc2a.json",
+					"name" : "pal_device_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "pal_device_msgs__rs::@7305ef57a119cfd04f7c",
+					"jsonFile" : "target-pal_device_msgs__rs-Release-70736764270f1c2367ce.json",
+					"name" : "pal_device_msgs__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pal_device_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pal_device_msgs_uninstall-Release-336276ccec08997253bb.json",
+					"name" : "pal_device_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-a947bc74cd4a9f523be3.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/workspaces/TIAgo_humble/build/pal_device_msgs",
+		"source" : "/workspaces/TIAgo_humble/ros2_ws/src/pal_msgs/pal_device_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

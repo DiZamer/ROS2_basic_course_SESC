@@ -1,0 +1,11 @@
+[play_motion2_cli.verb]
+info = play_motion2_cli.verb.info:InfoVerb
+list = play_motion2_cli.verb.list:ListVerb
+run = play_motion2_cli.verb.run:RunVerb
+
+[ros2cli.command]
+play_motion = play_motion2_cli.command.play_motion:PlayMotionCommand
+
+[ros2cli.extension_point]
+play_motion2_cli.verb = play_motion2_cli.verb:VerbExtension
+

@@ -1,0 +1,49 @@
+[0.200s] Invoking command in '/workspaces/TIAgo_humble/build/pal_hey5_controller_configuration': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/pal_hey5/pal_hey5_controller_configuration -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/pal_hey5_controller_configuration
+[0.321s] -- The C compiler identification is GNU 11.4.0
+[0.426s] -- The CXX compiler identification is GNU 11.4.0
+[0.438s] -- Detecting C compiler ABI info
+[0.536s] -- Detecting C compiler ABI info - done
+[0.552s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.552s] -- Detecting C compile features
+[0.553s] -- Detecting C compile features - done
+[0.559s] -- Detecting CXX compiler ABI info
+[0.679s] -- Detecting CXX compiler ABI info - done
+[0.693s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.694s] -- Detecting CXX compile features
+[0.695s] -- Detecting CXX compile features - done
+[0.700s] -- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.914s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.984s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.054s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.168s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.170s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.170s] -- Added test 'lint_cmake' to check CMake code style
+[1.171s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.172s] -- Added test 'xmllint' to check XML markup files
+[1.173s] -- Configuring done
+[1.176s] -- Generating done
+[1.177s] -- Build files have been written to: /workspaces/TIAgo_humble/build/pal_hey5_controller_configuration
+[1.182s] Invoked command in '/workspaces/TIAgo_humble/build/pal_hey5_controller_configuration' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/pal_hey5/pal_hey5_controller_configuration -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/pal_hey5_controller_configuration
+[1.184s] Invoking command in '/workspaces/TIAgo_humble/build/pal_hey5_controller_configuration': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/TIAgo_humble/build/pal_hey5_controller_configuration -- -j24 -l24
+[1.229s] Invoked command in '/workspaces/TIAgo_humble/build/pal_hey5_controller_configuration' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/TIAgo_humble/build/pal_hey5_controller_configuration -- -j24 -l24
+[1.231s] Invoking command in '/workspaces/TIAgo_humble/build/pal_hey5_controller_configuration': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/TIAgo_humble/build/pal_hey5_controller_configuration
+[1.239s] -- Install configuration: "Release"
+[1.240s] -- Execute custom install script
+[1.241s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_controller_configuration/share/pal_hey5_controller_configuration/config/pal_hey5_controller.yaml
+[1.255s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_controller_configuration/share/pal_hey5_controller_configuration/launch/pal_hey5_controller.launch.py
+[1.267s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_controller_configuration/share/ament_index/resource_index/package_run_dependencies/pal_hey5_controller_configuration
+[1.276s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_controller_configuration/share/ament_index/resource_index/parent_prefix_path/pal_hey5_controller_configuration
+[1.284s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_controller_configuration/share/pal_hey5_controller_configuration/environment/ament_prefix_path.sh
+[1.299s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_controller_configuration/share/pal_hey5_controller_configuration/environment/ament_prefix_path.dsv
+[1.307s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_controller_configuration/share/pal_hey5_controller_configuration/environment/path.sh
+[1.317s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_controller_configuration/share/pal_hey5_controller_configuration/environment/path.dsv
+[1.324s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_controller_configuration/share/pal_hey5_controller_configuration/local_setup.bash
+[1.337s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_controller_configuration/share/pal_hey5_controller_configuration/local_setup.sh
+[1.349s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_controller_configuration/share/pal_hey5_controller_configuration/local_setup.zsh
+[1.357s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_controller_configuration/share/pal_hey5_controller_configuration/local_setup.dsv
+[1.368s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_controller_configuration/share/pal_hey5_controller_configuration/package.dsv
+[1.380s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_controller_configuration/share/ament_index/resource_index/packages/pal_hey5_controller_configuration
+[1.389s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_controller_configuration/share/pal_hey5_controller_configuration/cmake/pal_hey5_controller_configurationConfig.cmake
+[1.397s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_controller_configuration/share/pal_hey5_controller_configuration/cmake/pal_hey5_controller_configurationConfig-version.cmake
+[1.410s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_controller_configuration/share/pal_hey5_controller_configuration/package.xml
+[1.424s] Invoked command in '/workspaces/TIAgo_humble/build/pal_hey5_controller_configuration' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/TIAgo_humble/build/pal_hey5_controller_configuration

@@ -1,0 +1,102 @@
+[0.020s] Invoking command in '/workspaces/TIAgo_humble/build/omni_base_description': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/omni_base_robot/omni_base_description -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/omni_base_description
+[0.088s] -- The C compiler identification is GNU 11.4.0
+[0.162s] -- The CXX compiler identification is GNU 11.4.0
+[0.170s] -- Detecting C compiler ABI info
+[0.255s] -- Detecting C compiler ABI info - done
+[0.264s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.264s] -- Detecting C compile features
+[0.265s] -- Detecting C compile features - done
+[0.269s] -- Detecting CXX compiler ABI info
+[0.368s] -- Detecting CXX compiler ABI info - done
+[0.376s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.376s] -- Detecting CXX compile features
+[0.377s] -- Detecting CXX compile features - done
+[0.380s] -- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.619s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.754s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.095s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.202s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.241s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.265s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.265s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.266s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.266s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.309s] -- Found PythonExtra: .so  
+[2.549s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.566s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.573s] -- Added test 'lint_cmake' to check CMake code style
+[2.573s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.593s] -- Added test 'xmllint' to check XML markup files
+[2.594s] -- Configuring done
+[2.611s] -- Generating done
+[2.626s] -- Build files have been written to: /workspaces/TIAgo_humble/build/omni_base_description
+[2.655s] Invoked command in '/workspaces/TIAgo_humble/build/omni_base_description' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/omni_base_robot/omni_base_description -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/omni_base_description
+[2.655s] Invoking command in '/workspaces/TIAgo_humble/build/omni_base_description': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/TIAgo_humble/build/omni_base_description -- -j24 -l24
+[2.853s] Built target ament_cmake_python_symlink_omni_base_description
+[3.196s] running egg_info
+[3.197s] creating omni_base_description.egg-info
+[3.197s] writing omni_base_description.egg-info/PKG-INFO
+[3.198s] writing dependency_links to omni_base_description.egg-info/dependency_links.txt
+[3.198s] writing top-level names to omni_base_description.egg-info/top_level.txt
+[3.199s] writing manifest file 'omni_base_description.egg-info/SOURCES.txt'
+[3.216s] reading manifest file 'omni_base_description.egg-info/SOURCES.txt'
+[3.218s] writing manifest file 'omni_base_description.egg-info/SOURCES.txt'
+[3.281s] Built target ament_cmake_python_build_omni_base_description_egg
+[3.350s] Invoked command in '/workspaces/TIAgo_humble/build/omni_base_description' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/TIAgo_humble/build/omni_base_description -- -j24 -l24
+[3.350s] Invoking command in '/workspaces/TIAgo_humble/build/omni_base_description': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/TIAgo_humble/build/omni_base_description
+[3.362s] -- Install configuration: "Release"
+[3.365s] -- Execute custom install script
+[3.367s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/environment/pythonpath.sh
+[3.386s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/environment/pythonpath.dsv
+[3.408s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/local/lib/python3.10/dist-packages/omni_base_description-2.17.0-py3.10.egg-info/PKG-INFO
+[3.431s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/local/lib/python3.10/dist-packages/omni_base_description-2.17.0-py3.10.egg-info/SOURCES.txt
+[3.450s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/local/lib/python3.10/dist-packages/omni_base_description-2.17.0-py3.10.egg-info/dependency_links.txt
+[3.469s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/local/lib/python3.10/dist-packages/omni_base_description-2.17.0-py3.10.egg-info/top_level.txt
+[3.504s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/local/lib/python3.10/dist-packages/omni_base_description/__init__.py
+[3.525s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/local/lib/python3.10/dist-packages/omni_base_description/launch_arguments.py
+[3.548s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/rviz/omni_base.rviz
+[3.587s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/launch/robot_state_publisher.launch.py
+[3.614s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/launch/show.launch.py
+[3.664s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/meshes/base/base_antenna_link.stl
+[3.724s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/meshes/base/base_antenna_link_mirror.stl
+[3.752s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/meshes/base/base_dock_link.stl
+[3.784s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/meshes/base/base_link.stl
+[3.803s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/meshes/cameras_add_on/camera_horizon.stl
+[3.850s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/meshes/cameras_add_on/cameras_add_on.stl
+[3.885s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/meshes/wheels/suspension_front_link.stl
+[3.908s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/meshes/wheels/suspension_rear_link.stl
+[3.935s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/meshes/wheels/wheel_link.stl
+[3.963s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/meshes/wheels/wheel_link_reverted.stl
+[3.995s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/config/omni_base_configuration.yaml
+[4.021s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/robots/omni_base.urdf.xacro
+[4.047s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/ros2_control/gazebo_controller_manager_cfg.yaml
+[4.076s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/ros2_control/ros2_control.urdf.xacro
+[4.122s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/urdf/base/base.gazebo.xacro
+[4.132s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/urdf/base/base.urdf.xacro
+[4.164s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/urdf/base/base_sensors.urdf.xacro
+[4.191s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/urdf/cameras_add_on/camera_horizon_add_on.urdf.xacro
+[4.214s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/urdf/cameras_add_on/cameras.urdf.xacro
+[4.249s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/urdf/cameras_add_on/cameras_add_on.urdf.xacro
+[4.279s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/urdf/objects/antenna.urdf.xacro
+[4.306s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/urdf/wheels/wheel.gazebo.xacro
+[4.411s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/urdf/wheels/wheel.ros2_control.xacro
+[4.435s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/urdf/wheels/wheel.urdf.xacro
+[4.464s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/ament_index/resource_index/package_run_dependencies/omni_base_description
+[4.506s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/ament_index/resource_index/parent_prefix_path/omni_base_description
+[4.520s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/environment/ament_prefix_path.sh
+[4.557s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/environment/ament_prefix_path.dsv
+[4.585s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/environment/path.sh
+[4.617s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/environment/path.dsv
+[4.696s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/local_setup.bash
+[4.716s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/local_setup.sh
+[4.736s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/local_setup.zsh
+[4.761s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/local_setup.dsv
+[4.847s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/package.dsv
+[4.849s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/ament_index/resource_index/packages/omni_base_description
+[4.876s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/cmake/omni_base_descriptionConfig.cmake
+[5.019s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/cmake/omni_base_descriptionConfig-version.cmake
+[5.019s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/package.xml
+[5.192s] Listing '/workspaces/TIAgo_humble/install/omni_base_description/local/lib/python3.10/dist-packages/omni_base_description'...
+[5.192s] Compiling '/workspaces/TIAgo_humble/install/omni_base_description/local/lib/python3.10/dist-packages/omni_base_description/__init__.py'...
+[5.199s] Compiling '/workspaces/TIAgo_humble/install/omni_base_description/local/lib/python3.10/dist-packages/omni_base_description/launch_arguments.py'...
+[5.215s] Invoked command in '/workspaces/TIAgo_humble/build/omni_base_description' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/TIAgo_humble/build/omni_base_description

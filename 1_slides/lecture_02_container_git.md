@@ -428,8 +428,8 @@ git merge feature/sensor
 <div>
 
 - Уровень 3 — отдельный тяжёлый контейнер
-- `postCreateCommand` клонирует пакеты через `vcs import` и собирает `colcon build`
-- Внутри — свои изолированные процессы ROS2
+- `postCreateCommand`/`postStartCommand` вызывают скрипты `.devcontainer/post_create.sh` и `post_start.sh`: клонируют пакеты через `vcs import` и собирают `colcon build`
+- Внутри — свои изо�ри — свои изолированные процессы ROS2
 
 </div>
 <div>

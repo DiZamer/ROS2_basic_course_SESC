@@ -64,20 +64,20 @@
   //   — меньше RAM, выше FPS, без браузера
   // ───────────────────────────────────────────────────────────────
 
-  "runArgs": [
-    "--privileged",
-    "--shm-size=1g",
-    "-p", "5900-5903:5900-5903",
-    "-p", "6080-6083:6080-6083"
-  ],
-  "containerEnv": {
-    "QT_X11_NO_MITSHM": "1",
-    "LIBGL_ALWAYS_SOFTWARE": "1",
-    "DISPLAY": ":99",
-    "ROS_LOCALHOST_ONLY": "1",
-    "GZ_RENDER_ENGINE": "ogre"
-  },
-  "forwardPorts": [6080, 6081, 6082, 6083, 5900, 5901, 5902, 5903]
+  // "runArgs": [
+  //   "--privileged",
+  //   "--shm-size=1g",
+  //   "-p", "5900-5903:5900-5903",
+  //   "-p", "6080-6083:6080-6083"
+  // ],
+  // "containerEnv": {
+  //   "QT_X11_NO_MITSHM": "1",
+  //   "LIBGL_ALWAYS_SOFTWARE": "1",
+  //   "DISPLAY": ":99",
+  //   "ROS_LOCALHOST_ONLY": "1",
+  //   "GZ_RENDER_ENGINE": "ogre"
+  // },
+  // "forwardPorts": [6080, 6081, 6082, 6083, 5900, 5901, 5902, 5903]
 
   // ───────────────────────────────────────────────────────────────
   // ВАРИАНТ 2: Прямой X11 — Ubuntu (X11 или Wayland/XWayland)
@@ -170,20 +170,20 @@
   //
   // GUI-приложения используют аппаратный рендеринг GPU.
   //
-  // "mounts": [
-  //   "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind"
-  // ],
-  // "runArgs": [
-  //   "--privileged",
-  //   "--network=host",
-  //   "--shm-size=1g",
-  //   "--gpus", "all"
-  // ],
-  // "containerEnv": {
-  //   "QT_X11_NO_MITSHM": "1",
-  //   "DISPLAY": ":1",
-  //   "MESA_LOADER_DRIVER_OVERRIDE": "zink",
-  //   "GZ_RENDER_ENGINE": "ogre2"
-  // },
-  // "forwardPorts": []
+  "mounts": [
+    "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind"
+  ],
+  "runArgs": [
+    "--privileged",
+    "--network=host",
+    "--shm-size=1g",
+    "--gpus", "all"
+  ],
+  "containerEnv": {
+    "QT_X11_NO_MITSHM": "1",
+    "DISPLAY": ":1",
+    "MESA_LOADER_DRIVER_OVERRIDE": "zink",
+    "GZ_RENDER_ENGINE": "ogre2"
+  },
+  "forwardPorts": []
 }

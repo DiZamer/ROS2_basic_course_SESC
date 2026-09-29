@@ -1,0 +1,1 @@
+builtin_interfaces/Duration shutdown_duration

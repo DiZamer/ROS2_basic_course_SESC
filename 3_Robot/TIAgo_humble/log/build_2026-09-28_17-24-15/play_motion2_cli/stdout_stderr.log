@@ -1,0 +1,21 @@
+running develop
+running egg_info
+creating play_motion2_cli.egg-info
+writing play_motion2_cli.egg-info/PKG-INFO
+writing dependency_links to play_motion2_cli.egg-info/dependency_links.txt
+writing entry points to play_motion2_cli.egg-info/entry_points.txt
+writing requirements to play_motion2_cli.egg-info/requires.txt
+writing top-level names to play_motion2_cli.egg-info/top_level.txt
+writing manifest file 'play_motion2_cli.egg-info/SOURCES.txt'
+reading manifest file 'play_motion2_cli.egg-info/SOURCES.txt'
+writing manifest file 'play_motion2_cli.egg-info/SOURCES.txt'
+running build_ext
+Creating /workspaces/TIAgo_humble/install/play_motion2_cli/lib/python3.10/site-packages/play-motion2-cli.egg-link (link to .)
+
+Installed /workspaces/TIAgo_humble/build/play_motion2_cli
+running symlink_data
+symbolically linking /workspaces/TIAgo_humble/build/play_motion2_cli/package.xml -> /workspaces/TIAgo_humble/install/play_motion2_cli/share/play_motion2_cli
+creating /workspaces/TIAgo_humble/install/play_motion2_cli/share/ament_index
+creating /workspaces/TIAgo_humble/install/play_motion2_cli/share/ament_index/resource_index
+creating /workspaces/TIAgo_humble/install/play_motion2_cli/share/ament_index/resource_index/packages
+symbolically linking /workspaces/TIAgo_humble/build/play_motion2_cli/resource/play_motion2_cli -> /workspaces/TIAgo_humble/install/play_motion2_cli/share/ament_index/resource_index/packages

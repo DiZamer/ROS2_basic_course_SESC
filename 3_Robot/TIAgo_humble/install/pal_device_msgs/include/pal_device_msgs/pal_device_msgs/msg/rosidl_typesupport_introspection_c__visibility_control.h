@@ -1,0 +1,1 @@
+/workspaces/TIAgo_humble/build/pal_device_msgs/rosidl_typesupport_introspection_c/pal_device_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h

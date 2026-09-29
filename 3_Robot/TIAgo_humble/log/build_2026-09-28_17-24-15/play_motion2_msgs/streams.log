@@ -1,0 +1,473 @@
+[0.212s] Invoking command in '/workspaces/TIAgo_humble/build/play_motion2_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/play_motion2/play_motion2_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/play_motion2_msgs
+[0.316s] -- The C compiler identification is GNU 11.4.0
+[0.416s] -- The CXX compiler identification is GNU 11.4.0
+[0.429s] -- Detecting C compiler ABI info
+[0.529s] -- Detecting C compiler ABI info - done
+[0.537s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.539s] -- Detecting C compile features
+[0.539s] -- Detecting C compile features - done
+[0.541s] -- Detecting CXX compiler ABI info
+[0.640s] -- Detecting CXX compiler ABI info - done
+[0.648s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.648s] -- Detecting CXX compile features
+[0.650s] -- Detecting CXX compile features - done
+[0.654s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.895s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.012s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.070s] -- Found builtin_interfaces: 1.2.3 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[1.120s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.128s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.143s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.158s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.183s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.208s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.732s] -- Found ament_cmake_cppcheck: 0.12.15 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)
+[1.735s] -- Found ament_cmake_cpplint: 0.12.15 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)
+[1.740s] -- Found ament_cmake_uncrustify: 0.12.15 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)
+[1.745s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.165s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.328s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.359s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.363s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.395s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[2.395s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.395s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.395s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.418s] -- Found PythonExtra: .so  
+[2.479s] -- Found ament_cmake_flake8: 0.12.15 (/opt/ros/humble/share/ament_cmake_flake8/cmake)
+[2.484s] -- Found ament_cmake_pep257: 0.12.15 (/opt/ros/humble/share/ament_cmake_pep257/cmake)
+[2.595s] -- Configuring done
+[2.665s] -- Generating done
+[2.685s] -- Build files have been written to: /workspaces/TIAgo_humble/build/play_motion2_msgs
+[2.713s] Invoked command in '/workspaces/TIAgo_humble/build/play_motion2_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/play_motion2/play_motion2_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/play_motion2_msgs
+[2.716s] Invoking command in '/workspaces/TIAgo_humble/build/play_motion2_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/TIAgo_humble/build/play_motion2_msgs -- -j24 -l24
+[2.770s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.774s] [  2%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[2.785s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.792s] [  2%] Built target ament_cmake_python_symlink_play_motion2_msgs
+[3.146s] running egg_info
+[3.146s] creating play_motion2_msgs.egg-info
+[3.146s] writing play_motion2_msgs.egg-info/PKG-INFO
+[3.146s] writing dependency_links to play_motion2_msgs.egg-info/dependency_links.txt
+[3.146s] writing top-level names to play_motion2_msgs.egg-info/top_level.txt
+[3.148s] writing manifest file 'play_motion2_msgs.egg-info/SOURCES.txt'
+[3.150s] reading manifest file 'play_motion2_msgs.egg-info/SOURCES.txt'
+[3.151s] writing manifest file 'play_motion2_msgs.egg-info/SOURCES.txt'
+[3.181s] [  2%] Built target ament_cmake_python_build_play_motion2_msgs_egg
+[3.426s] [  2%] Built target play_motion2_msgs__rs
+[4.509s] [  3%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_c.dir/rosidl_generator_c/play_motion2_msgs/srv/detail/get_motion_info__functions.c.o[0m
+[4.518s] [  4%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_c.dir/rosidl_generator_c/play_motion2_msgs/srv/detail/add_motion__functions.c.o[0m
+[4.529s] [  5%] Built target play_motion2_msgs__cpp
+[4.529s] [  6%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_c.dir/rosidl_generator_c/play_motion2_msgs/srv/detail/is_joint_list_ready__functions.c.o[0m
+[4.529s] [  6%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_c.dir/rosidl_generator_c/play_motion2_msgs/srv/detail/list_motions__functions.c.o[0m
+[4.530s] [  7%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_c.dir/rosidl_generator_c/play_motion2_msgs/msg/detail/motion__functions.c.o[0m
+[4.531s] [  8%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_c.dir/rosidl_generator_c/play_motion2_msgs/srv/detail/is_motion_ready__functions.c.o[0m
+[4.545s] [  9%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[4.557s] [ 10%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[4.557s] [ 11%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[4.570s] [ 12%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_c.dir/rosidl_generator_c/play_motion2_msgs/srv/detail/remove_motion__functions.c.o[0m
+[4.594s] [ 13%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_c.dir/rosidl_generator_c/play_motion2_msgs/srv/detail/save_motion__functions.c.o[0m
+[4.617s] [ 14%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_c.dir/rosidl_generator_c/play_motion2_msgs/action/detail/play_motion2_raw__functions.c.o[0m
+[4.623s] [ 15%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_c.dir/rosidl_generator_c/play_motion2_msgs/action/detail/play_motion2__functions.c.o[0m
+[5.970s] [ 16%] [32m[1mLinking C shared library libplay_motion2_msgs__rosidl_generator_c.so[0m
+[6.119s] [ 16%] Built target play_motion2_msgs__rosidl_generator_c
+[6.143s] [ 17%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[6.164s] [ 18%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[6.185s] [ 19%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/play_motion2_msgs/srv/save_motion__type_support.cpp.o[0m
+[6.186s] [ 20%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/play_motion2_msgs/srv/is_joint_list_ready__type_support.cpp.o[0m
+[6.189s] [ 21%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/play_motion2_msgs/srv/get_motion_info__type_support.cpp.o[0m
+[6.189s] [ 22%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/play_motion2_msgs/action/play_motion2__type_support.cpp.o[0m
+[6.190s] [ 23%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/play_motion2_msgs/srv/is_motion_ready__type_support.cpp.o[0m
+[6.192s] [ 25%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/play_motion2_msgs/srv/list_motions__type_support.cpp.o[0m
+[6.195s] [ 26%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/play_motion2_msgs/msg/motion__type_support.cpp.o[0m
+[6.196s] [ 26%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[6.205s] [ 27%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/play_motion2_msgs/srv/add_motion__type_support.cpp.o[0m
+[6.210s] [ 28%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/play_motion2_msgs/action/play_motion2_raw__type_support.cpp.o[0m
+[6.223s] [ 29%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/play_motion2_msgs/srv/remove_motion__type_support.cpp.o[0m
+[6.868s] [ 30%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/play_motion2_msgs/msg/detail/dds_fastrtps/motion__type_support.cpp.o[0m
+[6.870s] [ 31%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/play_motion2_msgs/srv/detail/dds_fastrtps/add_motion__type_support.cpp.o[0m
+[7.056s] [ 32%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/play_motion2_msgs/srv/detail/dds_fastrtps/is_joint_list_ready__type_support.cpp.o[0m
+[7.056s] [ 33%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/play_motion2_msgs/srv/detail/dds_fastrtps/list_motions__type_support.cpp.o[0m
+[7.056s] [ 34%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/play_motion2_msgs/srv/detail/dds_fastrtps/get_motion_info__type_support.cpp.o[0m
+[7.056s] [ 35%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/play_motion2_msgs/srv/detail/dds_fastrtps/is_motion_ready__type_support.cpp.o[0m
+[7.058s] [ 36%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/play_motion2_msgs/srv/detail/is_motion_ready__type_support.cpp.o[0m
+[7.061s] [ 37%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/play_motion2_msgs/srv/detail/get_motion_info__type_support.cpp.o[0m
+[7.062s] [ 38%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/play_motion2_msgs/srv/detail/remove_motion__type_support.cpp.o[0m
+[7.062s] [ 39%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/play_motion2_msgs/srv/detail/add_motion__type_support.cpp.o[0m
+[7.062s] [ 40%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/play_motion2_msgs/msg/detail/motion__type_support.cpp.o[0m
+[7.062s] [ 41%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/play_motion2_msgs/action/detail/play_motion2_raw__type_support.cpp.o[0m
+[7.062s] [ 42%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/play_motion2_msgs/srv/detail/save_motion__type_support.cpp.o[0m
+[7.062s] [ 43%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/play_motion2_msgs/srv/detail/dds_fastrtps/remove_motion__type_support.cpp.o[0m
+[7.070s] [ 44%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/play_motion2_msgs/action/detail/play_motion2__type_support.cpp.o[0m
+[7.123s] [ 45%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/play_motion2_msgs/srv/detail/list_motions__type_support.cpp.o[0m
+[7.226s] [ 46%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/play_motion2_msgs/srv/detail/is_joint_list_ready__type_support.cpp.o[0m
+[7.517s] [ 47%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/play_motion2_msgs/srv/detail/dds_fastrtps/save_motion__type_support.cpp.o[0m
+[7.786s] [ 48%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/play_motion2_msgs/action/detail/dds_fastrtps/play_motion2__type_support.cpp.o[0m
+[7.849s] [ 49%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/play_motion2_msgs/action/detail/dds_fastrtps/play_motion2_raw__type_support.cpp.o[0m
+[8.055s] [ 50%] [32m[1mLinking CXX shared library libplay_motion2_msgs__rosidl_typesupport_cpp.so[0m
+[8.269s] [ 50%] Built target play_motion2_msgs__rosidl_typesupport_cpp
+[8.457s] [ 50%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/play_motion2_msgs/msg/motion__type_support.cpp.o[0m
+[8.473s] [ 51%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/play_motion2_msgs/srv/list_motions__type_support.cpp.o[0m
+[8.473s] [ 52%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/play_motion2_msgs/srv/is_motion_ready__type_support.cpp.o[0m
+[8.477s] [ 53%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/play_motion2_msgs/srv/add_motion__type_support.cpp.o[0m
+[8.488s] [ 54%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/play_motion2_msgs/srv/is_joint_list_ready__type_support.cpp.o[0m
+[8.507s] [ 55%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/play_motion2_msgs/srv/get_motion_info__type_support.cpp.o[0m
+[8.573s] [ 56%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/play_motion2_msgs/srv/remove_motion__type_support.cpp.o[0m
+[8.581s] [ 57%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/play_motion2_msgs/srv/save_motion__type_support.cpp.o[0m
+[8.626s] [ 58%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/play_motion2_msgs/action/play_motion2__type_support.cpp.o[0m
+[8.667s] [ 59%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/play_motion2_msgs/action/play_motion2_raw__type_support.cpp.o[0m
+[9.125s] [ 60%] [32m[1mLinking CXX shared library libplay_motion2_msgs__rosidl_typesupport_c.so[0m
+[9.306s] [ 60%] Built target play_motion2_msgs__rosidl_typesupport_c
+[10.344s] [ 60%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/play_motion2_msgs/msg/detail/motion__type_support_c.cpp.o[0m
+[10.355s] [ 61%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/play_motion2_msgs/srv/detail/add_motion__type_support_c.cpp.o[0m
+[10.370s] [ 62%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/play_motion2_msgs/action/detail/play_motion2__type_support_c.cpp.o[0m
+[10.370s] [ 63%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/play_motion2_msgs/srv/detail/list_motions__type_support_c.cpp.o[0m
+[10.371s] [ 64%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/play_motion2_msgs/action/detail/play_motion2_raw__type_support_c.cpp.o[0m
+[10.386s] [ 65%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/play_motion2_msgs/srv/detail/remove_motion__type_support_c.cpp.o[0m
+[10.392s] [ 68%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/play_motion2_msgs/srv/detail/save_motion__type_support_c.cpp.o[0m
+[10.403s] [ 69%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/play_motion2_msgs/srv/detail/is_motion_ready__type_support_c.cpp.o[0m
+[10.404s] [ 69%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/play_motion2_msgs/srv/detail/is_joint_list_ready__type_support_c.cpp.o[0m
+[10.409s] [ 69%] [32mBuilding CXX object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/play_motion2_msgs/srv/detail/get_motion_info__type_support_c.cpp.o[0m
+[10.708s] [ 69%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/play_motion2_msgs/msg/detail/motion__type_support.c.o[0m
+[10.709s] [ 70%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/play_motion2_msgs/srv/detail/get_motion_info__type_support.c.o[0m
+[10.709s] [ 71%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/play_motion2_msgs/srv/detail/is_motion_ready__type_support.c.o[0m
+[10.726s] [ 72%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/play_motion2_msgs/action/detail/play_motion2__type_support.c.o[0m
+[10.726s] [ 74%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/play_motion2_msgs/srv/detail/list_motions__type_support.c.o[0m
+[10.733s] [ 75%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/play_motion2_msgs/srv/detail/is_joint_list_ready__type_support.c.o[0m
+[10.733s] [ 75%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/play_motion2_msgs/srv/detail/add_motion__type_support.c.o[0m
+[10.733s] [ 76%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/play_motion2_msgs/srv/detail/save_motion__type_support.c.o[0m
+[10.735s] [ 77%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/play_motion2_msgs/action/detail/play_motion2_raw__type_support.c.o[0m
+[10.740s] [ 78%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/play_motion2_msgs/srv/detail/remove_motion__type_support.c.o[0m
+[11.179s] [ 79%] [32m[1mLinking C shared library libplay_motion2_msgs__rosidl_typesupport_introspection_c.so[0m
+[11.200s] [ 80%] [32m[1mLinking CXX shared library libplay_motion2_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[11.284s] [ 80%] Built target play_motion2_msgs__rosidl_typesupport_introspection_c
+[11.415s] [ 80%] Built target play_motion2_msgs__rosidl_typesupport_introspection_cpp
+[12.174s] [ 81%] [32m[1mLinking CXX shared library libplay_motion2_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[12.509s] [ 81%] Built target play_motion2_msgs__rosidl_typesupport_fastrtps_cpp
+[13.249s] [ 82%] [32m[1mLinking CXX shared library libplay_motion2_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[13.391s] [ 82%] Built target play_motion2_msgs__rosidl_typesupport_fastrtps_c
+[13.425s] [ 82%] Built target play_motion2_msgs
+[13.499s] [ 83%] [34m[1mGenerating Python code for ROS interfaces[0m
+[16.668s] [ 83%] Built target play_motion2_msgs__py
+[16.702s] [ 85%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_py.dir/rosidl_generator_py/play_motion2_msgs/msg/_motion_s.c.o[0m
+[16.704s] [ 87%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_py.dir/rosidl_generator_py/play_motion2_msgs/srv/_add_motion_s.c.o[0m
+[16.704s] [ 87%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_py.dir/rosidl_generator_py/play_motion2_msgs/srv/_get_motion_info_s.c.o[0m
+[16.705s] [ 87%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_py.dir/rosidl_generator_py/play_motion2_msgs/srv/_is_motion_ready_s.c.o[0m
+[16.705s] [ 88%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_py.dir/rosidl_generator_py/play_motion2_msgs/srv/_is_joint_list_ready_s.c.o[0m
+[16.735s] [ 89%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_py.dir/rosidl_generator_py/play_motion2_msgs/srv/_save_motion_s.c.o[0m
+[16.736s] [ 91%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_py.dir/rosidl_generator_py/play_motion2_msgs/srv/_list_motions_s.c.o[0m
+[16.736s] [ 92%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_py.dir/rosidl_generator_py/play_motion2_msgs/action/_play_motion2_s.c.o[0m
+[16.736s] [ 93%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_py.dir/rosidl_generator_py/play_motion2_msgs/action/_play_motion2_raw_s.c.o[0m
+[16.736s] [ 93%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_generator_py.dir/rosidl_generator_py/play_motion2_msgs/srv/_remove_motion_s.c.o[0m
+[17.176s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/play_motion2_msgs/libplay_motion2_msgs__rosidl_generator_py.so[0m
+[17.230s] [ 94%] Built target play_motion2_msgs__rosidl_generator_py
+[17.257s] [ 95%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/play_motion2_msgs/_play_motion2_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[17.258s] [ 96%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/play_motion2_msgs/_play_motion2_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[17.260s] [ 97%] [32mBuilding C object CMakeFiles/play_motion2_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/play_motion2_msgs/_play_motion2_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[17.790s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/play_motion2_msgs/play_motion2_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[17.795s] [ 99%] [32m[1mLinking C shared library rosidl_generator_py/play_motion2_msgs/play_motion2_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[17.801s] [100%] [32m[1mLinking C shared library rosidl_generator_py/play_motion2_msgs/play_motion2_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[17.835s] [100%] Built target play_motion2_msgs__rosidl_typesupport_fastrtps_c__pyext
+[17.838s] [100%] Built target play_motion2_msgs__rosidl_typesupport_c__pyext
+[17.846s] [100%] Built target play_motion2_msgs__rosidl_typesupport_introspection_c__pyext
+[17.858s] Invoked command in '/workspaces/TIAgo_humble/build/play_motion2_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/TIAgo_humble/build/play_motion2_msgs -- -j24 -l24
+[17.860s] Invoking command in '/workspaces/TIAgo_humble/build/play_motion2_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/TIAgo_humble/build/play_motion2_msgs
+[17.867s] -- Install configuration: "Release"
+[17.867s] -- Execute custom install script
+[17.868s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/ament_index/resource_index/rosidl_interfaces/play_motion2_msgs
+[17.880s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__functions.h
+[17.889s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__struct.h
+[17.897s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__type_support.h
+[17.905s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2_raw__functions.h
+[17.913s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2_raw__struct.h
+[17.922s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2_raw__type_support.h
+[17.932s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/play_motion2.h
+[17.941s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/play_motion2_raw.h
+[17.952s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__functions.h
+[17.964s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__struct.h
+[17.974s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__type_support.h
+[17.984s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/motion.h
+[17.994s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/rosidl_generator_c__visibility_control.h
+[18.004s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/add_motion.h
+[18.014s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__functions.h
+[18.024s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__struct.h
+[18.032s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__type_support.h
+[18.040s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__functions.h
+[18.048s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__struct.h
+[18.056s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__type_support.h
+[18.065s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_joint_list_ready__functions.h
+[18.073s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_joint_list_ready__struct.h
+[18.081s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_joint_list_ready__type_support.h
+[18.090s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__functions.h
+[18.098s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__struct.h
+[18.107s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__type_support.h
+[18.115s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__functions.h
+[18.123s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__struct.h
+[18.137s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__type_support.h
+[18.151s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__functions.h
+[18.161s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__struct.h
+[18.168s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__type_support.h
+[18.176s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/save_motion__functions.h
+[18.187s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/save_motion__struct.h
+[18.199s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/save_motion__type_support.h
+[18.223s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/get_motion_info.h
+[18.249s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/is_joint_list_ready.h
+[18.267s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/is_motion_ready.h
+[18.285s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/list_motions.h
+[18.304s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/remove_motion.h
+[18.322s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/save_motion.h
+[18.337s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/environment/library_path.sh
+[18.364s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/environment/library_path.dsv
+[18.381s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__rosidl_typesupport_fastrtps_c.h
+[18.391s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2_raw__rosidl_typesupport_fastrtps_c.h
+[18.406s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__rosidl_typesupport_fastrtps_c.h
+[18.415s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[18.428s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__rosidl_typesupport_fastrtps_c.h
+[18.441s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__rosidl_typesupport_fastrtps_c.h
+[18.452s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_joint_list_ready__rosidl_typesupport_fastrtps_c.h
+[18.460s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__rosidl_typesupport_fastrtps_c.h
+[18.468s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__rosidl_typesupport_fastrtps_c.h
+[18.475s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__rosidl_typesupport_fastrtps_c.h
+[18.482s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/save_motion__rosidl_typesupport_fastrtps_c.h
+[18.490s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__builder.hpp
+[18.496s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__struct.hpp
+[18.503s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__traits.hpp
+[18.510s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__type_support.hpp
+[18.517s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2_raw__builder.hpp
+[18.527s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2_raw__struct.hpp
+[18.535s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2_raw__traits.hpp
+[18.544s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2_raw__type_support.hpp
+[18.552s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/play_motion2.hpp
+[18.561s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/play_motion2_raw.hpp
+[18.569s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__builder.hpp
+[18.579s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__struct.hpp
+[18.588s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__traits.hpp
+[18.596s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__type_support.hpp
+[18.604s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/motion.hpp
+[18.613s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[18.622s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/add_motion.hpp
+[18.630s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__builder.hpp
+[18.640s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__struct.hpp
+[18.649s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__traits.hpp
+[18.657s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__type_support.hpp
+[18.666s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__builder.hpp
+[18.675s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__struct.hpp
+[18.684s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__traits.hpp
+[18.693s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__type_support.hpp
+[18.702s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_joint_list_ready__builder.hpp
+[18.712s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_joint_list_ready__struct.hpp
+[18.721s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_joint_list_ready__traits.hpp
+[18.731s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_joint_list_ready__type_support.hpp
+[18.741s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__builder.hpp
+[18.751s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__struct.hpp
+[18.760s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__traits.hpp
+[18.769s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__type_support.hpp
+[18.779s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__builder.hpp
+[18.787s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__struct.hpp
+[18.796s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__traits.hpp
+[18.807s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__type_support.hpp
+[18.820s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__builder.hpp
+[18.832s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__struct.hpp
+[18.842s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__traits.hpp
+[18.851s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__type_support.hpp
+[18.859s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/save_motion__builder.hpp
+[18.869s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/save_motion__struct.hpp
+[18.878s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/save_motion__traits.hpp
+[18.888s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/save_motion__type_support.hpp
+[18.898s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/get_motion_info.hpp
+[18.909s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/is_joint_list_ready.hpp
+[18.919s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/is_motion_ready.hpp
+[18.928s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/list_motions.hpp
+[18.936s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/remove_motion.hpp
+[18.945s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/save_motion.hpp
+[18.954s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__rosidl_typesupport_fastrtps_cpp.hpp
+[18.964s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2_raw__rosidl_typesupport_fastrtps_cpp.hpp
+[18.972s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__rosidl_typesupport_fastrtps_cpp.hpp
+[18.981s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[18.989s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__rosidl_typesupport_fastrtps_cpp.hpp
+[18.997s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__rosidl_typesupport_fastrtps_cpp.hpp
+[19.004s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_joint_list_ready__rosidl_typesupport_fastrtps_cpp.hpp
+[19.013s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__rosidl_typesupport_fastrtps_cpp.hpp
+[19.022s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__rosidl_typesupport_fastrtps_cpp.hpp
+[19.031s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__rosidl_typesupport_fastrtps_cpp.hpp
+[19.041s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/save_motion__rosidl_typesupport_fastrtps_cpp.hpp
+[19.052s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__rosidl_typesupport_introspection_c.h
+[19.063s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2_raw__rosidl_typesupport_introspection_c.h
+[19.072s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__rosidl_typesupport_introspection_c.h
+[19.080s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[19.087s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__rosidl_typesupport_introspection_c.h
+[19.094s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__rosidl_typesupport_introspection_c.h
+[19.101s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_joint_list_ready__rosidl_typesupport_introspection_c.h
+[19.110s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__rosidl_typesupport_introspection_c.h
+[19.119s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__rosidl_typesupport_introspection_c.h
+[19.126s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__rosidl_typesupport_introspection_c.h
+[19.134s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/save_motion__rosidl_typesupport_introspection_c.h
+[19.142s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2__rosidl_typesupport_introspection_cpp.hpp
+[19.149s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/action/detail/play_motion2_raw__rosidl_typesupport_introspection_cpp.hpp
+[19.158s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/msg/detail/motion__rosidl_typesupport_introspection_cpp.hpp
+[19.165s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/add_motion__rosidl_typesupport_introspection_cpp.hpp
+[19.171s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/get_motion_info__rosidl_typesupport_introspection_cpp.hpp
+[19.177s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_joint_list_ready__rosidl_typesupport_introspection_cpp.hpp
+[19.183s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/is_motion_ready__rosidl_typesupport_introspection_cpp.hpp
+[19.190s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/list_motions__rosidl_typesupport_introspection_cpp.hpp
+[19.196s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/remove_motion__rosidl_typesupport_introspection_cpp.hpp
+[19.201s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/include/play_motion2_msgs/play_motion2_msgs/srv/detail/save_motion__rosidl_typesupport_introspection_cpp.hpp
+[19.209s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/environment/pythonpath.sh
+[19.216s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/environment/pythonpath.dsv
+[19.224s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs-1.8.5-py3.10.egg-info/PKG-INFO
+[19.231s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs-1.8.5-py3.10.egg-info/SOURCES.txt
+[19.238s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs-1.8.5-py3.10.egg-info/dependency_links.txt
+[19.246s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs-1.8.5-py3.10.egg-info/top_level.txt
+[19.254s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/__init__.py
+[19.262s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/_play_motion2_msgs_s.ep.rosidl_typesupport_c.c
+[19.269s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/_play_motion2_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[19.276s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/_play_motion2_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[19.283s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/action/__init__.py
+[19.289s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/action/_play_motion2.py
+[19.295s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/action/_play_motion2_raw.py
+[19.302s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/action/_play_motion2_raw_s.c
+[19.310s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/action/_play_motion2_s.c
+[19.318s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/libplay_motion2_msgs__rosidl_generator_py.so
+[19.326s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/msg/__init__.py
+[19.334s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/msg/_motion.py
+[19.340s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/msg/_motion_s.c
+[19.347s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/play_motion2_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[19.355s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/play_motion2_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[19.361s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/play_motion2_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[19.368s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/srv/__init__.py
+[19.375s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/srv/_add_motion.py
+[19.383s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/srv/_add_motion_s.c
+[19.391s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/srv/_get_motion_info.py
+[19.398s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/srv/_get_motion_info_s.c
+[19.405s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/srv/_is_joint_list_ready.py
+[19.412s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/srv/_is_joint_list_ready_s.c
+[19.419s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/srv/_is_motion_ready.py
+[19.427s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/srv/_is_motion_ready_s.c
+[19.434s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/srv/_list_motions.py
+[19.441s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/srv/_list_motions_s.c
+[19.448s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/srv/_remove_motion.py
+[19.455s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/srv/_remove_motion_s.c
+[19.462s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/srv/_save_motion.py
+[19.469s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/srv/_save_motion_s.c
+[19.475s] -- Up-to-date symlink: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/play_motion2_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[19.475s] -- Up-to-date symlink: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/play_motion2_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[19.475s] -- Up-to-date symlink: /workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/play_motion2_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[19.476s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/ament_index/resource_index/rust_packages/play_motion2_msgs
+[19.482s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/rust/Cargo.toml
+[19.488s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/rust/build.rs
+[19.494s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/rust/src/action.rs
+[19.501s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/rust/src/action/rmw.rs
+[19.506s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/rust/src/lib.rs
+[19.514s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/rust/src/msg.rs
+[19.521s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/rust/src/msg/rmw.rs
+[19.528s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/rust/src/srv.rs
+[19.535s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/rust/src/srv/rmw.rs
+[19.542s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/msg/Motion.idl
+[19.548s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/srv/AddMotion.idl
+[19.555s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/srv/GetMotionInfo.idl
+[19.563s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/srv/IsMotionReady.idl
+[19.569s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/srv/IsJointListReady.idl
+[19.576s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/srv/ListMotions.idl
+[19.583s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/srv/RemoveMotion.idl
+[19.591s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/srv/SaveMotion.idl
+[19.598s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/action/PlayMotion2.idl
+[19.605s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/action/PlayMotion2Raw.idl
+[19.612s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/msg/Motion.msg
+[19.618s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/srv/AddMotion.srv
+[19.625s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/srv/AddMotion_Request.msg
+[19.633s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/srv/AddMotion_Response.msg
+[19.640s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/srv/GetMotionInfo.srv
+[19.646s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/srv/GetMotionInfo_Request.msg
+[19.653s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/srv/GetMotionInfo_Response.msg
+[19.661s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/srv/IsMotionReady.srv
+[19.667s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/srv/IsMotionReady_Request.msg
+[19.674s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/srv/IsMotionReady_Response.msg
+[19.680s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/srv/IsJointListReady.srv
+[19.687s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/srv/IsJointListReady_Request.msg
+[19.694s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/srv/IsJointListReady_Response.msg
+[19.701s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/srv/ListMotions.srv
+[19.709s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/srv/ListMotions_Request.msg
+[19.717s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/srv/ListMotions_Response.msg
+[19.725s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/srv/RemoveMotion.srv
+[19.733s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/srv/RemoveMotion_Request.msg
+[19.740s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/srv/RemoveMotion_Response.msg
+[19.748s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/srv/SaveMotion.srv
+[19.756s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/srv/SaveMotion_Request.msg
+[19.764s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/srv/SaveMotion_Response.msg
+[19.772s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/action/PlayMotion2.action
+[19.781s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/action/PlayMotion2Raw.action
+[19.789s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/ament_index/resource_index/package_run_dependencies/play_motion2_msgs
+[19.798s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/ament_index/resource_index/parent_prefix_path/play_motion2_msgs
+[19.808s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/environment/ament_prefix_path.sh
+[19.817s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/environment/ament_prefix_path.dsv
+[19.829s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/environment/path.sh
+[19.836s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/environment/path.dsv
+[19.844s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/local_setup.bash
+[19.852s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/local_setup.sh
+[19.859s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/local_setup.zsh
+[19.866s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/local_setup.dsv
+[19.873s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/package.dsv
+[19.879s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/ament_index/resource_index/packages/play_motion2_msgs
+[19.886s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/cmake/rosidl_cmake-extras.cmake
+[19.893s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[19.900s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[19.906s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[19.914s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[19.923s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[19.933s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[19.943s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[19.951s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/cmake/play_motion2_msgsConfig.cmake
+[19.959s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/cmake/play_motion2_msgsConfig-version.cmake
+[19.969s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/package.xml
+[19.978s] -- Installing: /workspaces/TIAgo_humble/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_generator_c.so
+[19.979s] -- Set runtime path of "/workspaces/TIAgo_humble/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_generator_c.so" to ""
+[19.979s] -- Installing: /workspaces/TIAgo_humble/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_typesupport_fastrtps_c.so
+[19.979s] -- Set runtime path of "/workspaces/TIAgo_humble/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[19.979s] -- Installing: /workspaces/TIAgo_humble/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_typesupport_fastrtps_cpp.so
+[19.979s] -- Set runtime path of "/workspaces/TIAgo_humble/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[19.979s] -- Installing: /workspaces/TIAgo_humble/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_typesupport_introspection_c.so
+[19.980s] -- Set runtime path of "/workspaces/TIAgo_humble/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_typesupport_introspection_c.so" to ""
+[19.980s] -- Installing: /workspaces/TIAgo_humble/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_typesupport_c.so
+[19.980s] -- Set runtime path of "/workspaces/TIAgo_humble/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_typesupport_c.so" to ""
+[19.980s] -- Installing: /workspaces/TIAgo_humble/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_typesupport_introspection_cpp.so
+[19.981s] -- Set runtime path of "/workspaces/TIAgo_humble/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[19.981s] -- Installing: /workspaces/TIAgo_humble/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_typesupport_cpp.so
+[19.981s] -- Set runtime path of "/workspaces/TIAgo_humble/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_typesupport_cpp.so" to ""
+[20.036s] Listing '/workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs'...
+[20.036s] Compiling '/workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/__init__.py'...
+[20.036s] Listing '/workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/action'...
+[20.036s] Compiling '/workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/action/__init__.py'...
+[20.036s] Compiling '/workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/action/_play_motion2.py'...
+[20.036s] Compiling '/workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/action/_play_motion2_raw.py'...
+[20.036s] Listing '/workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/msg'...
+[20.036s] Compiling '/workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/msg/__init__.py'...
+[20.036s] Compiling '/workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/msg/_motion.py'...
+[20.036s] Listing '/workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/srv'...
+[20.036s] Compiling '/workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/srv/__init__.py'...
+[20.036s] Compiling '/workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/srv/_add_motion.py'...
+[20.036s] Compiling '/workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/srv/_get_motion_info.py'...
+[20.036s] Compiling '/workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/srv/_is_joint_list_ready.py'...
+[20.037s] Compiling '/workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/srv/_is_motion_ready.py'...
+[20.037s] Compiling '/workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/srv/_list_motions.py'...
+[20.037s] Compiling '/workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/srv/_remove_motion.py'...
+[20.037s] Compiling '/workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages/play_motion2_msgs/srv/_save_motion.py'...
+[20.040s] -- Installing: /workspaces/TIAgo_humble/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_generator_py.so
+[20.041s] -- Set runtime path of "/workspaces/TIAgo_humble/install/play_motion2_msgs/lib/libplay_motion2_msgs__rosidl_generator_py.so" to ""
+[20.041s] -- Installing: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/cmake/export_play_motion2_msgs__rosidl_generator_cExport.cmake
+[20.041s] -- Installing: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/cmake/export_play_motion2_msgs__rosidl_generator_cExport-release.cmake
+[20.041s] -- Installing: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/cmake/export_play_motion2_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[20.041s] -- Installing: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/cmake/export_play_motion2_msgs__rosidl_typesupport_fastrtps_cExport-release.cmake
+[20.041s] -- Installing: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/cmake/export_play_motion2_msgs__rosidl_generator_cppExport.cmake
+[20.041s] -- Installing: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/cmake/export_play_motion2_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[20.041s] -- Installing: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/cmake/export_play_motion2_msgs__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[20.041s] -- Installing: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/cmake/play_motion2_msgs__rosidl_typesupport_introspection_cExport.cmake
+[20.041s] -- Installing: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/cmake/play_motion2_msgs__rosidl_typesupport_introspection_cExport-release.cmake
+[20.041s] -- Installing: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/cmake/play_motion2_msgs__rosidl_typesupport_cExport.cmake
+[20.041s] -- Installing: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/cmake/play_motion2_msgs__rosidl_typesupport_cExport-release.cmake
+[20.042s] -- Installing: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/cmake/play_motion2_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[20.042s] -- Installing: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/cmake/play_motion2_msgs__rosidl_typesupport_introspection_cppExport-release.cmake
+[20.042s] -- Installing: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/cmake/play_motion2_msgs__rosidl_typesupport_cppExport.cmake
+[20.042s] -- Installing: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/cmake/play_motion2_msgs__rosidl_typesupport_cppExport-release.cmake
+[20.042s] -- Installing: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/cmake/export_play_motion2_msgs__rosidl_generator_pyExport.cmake
+[20.042s] -- Installing: /workspaces/TIAgo_humble/install/play_motion2_msgs/share/play_motion2_msgs/cmake/export_play_motion2_msgs__rosidl_generator_pyExport-release.cmake
+[20.044s] Invoked command in '/workspaces/TIAgo_humble/build/play_motion2_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/TIAgo_humble/build/play_motion2_msgs

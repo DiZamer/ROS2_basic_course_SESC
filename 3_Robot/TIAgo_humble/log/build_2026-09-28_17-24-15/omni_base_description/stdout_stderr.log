@@ -1,0 +1,96 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+-- Found PythonExtra: .so  
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /workspaces/TIAgo_humble/build/omni_base_description
+Built target ament_cmake_python_symlink_omni_base_description
+running egg_info
+creating omni_base_description.egg-info
+writing omni_base_description.egg-info/PKG-INFO
+writing dependency_links to omni_base_description.egg-info/dependency_links.txt
+writing top-level names to omni_base_description.egg-info/top_level.txt
+writing manifest file 'omni_base_description.egg-info/SOURCES.txt'
+reading manifest file 'omni_base_description.egg-info/SOURCES.txt'
+writing manifest file 'omni_base_description.egg-info/SOURCES.txt'
+Built target ament_cmake_python_build_omni_base_description_egg
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/environment/pythonpath.sh
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/environment/pythonpath.dsv
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/local/lib/python3.10/dist-packages/omni_base_description-2.17.0-py3.10.egg-info/PKG-INFO
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/local/lib/python3.10/dist-packages/omni_base_description-2.17.0-py3.10.egg-info/SOURCES.txt
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/local/lib/python3.10/dist-packages/omni_base_description-2.17.0-py3.10.egg-info/dependency_links.txt
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/local/lib/python3.10/dist-packages/omni_base_description-2.17.0-py3.10.egg-info/top_level.txt
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/local/lib/python3.10/dist-packages/omni_base_description/__init__.py
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/local/lib/python3.10/dist-packages/omni_base_description/launch_arguments.py
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/rviz/omni_base.rviz
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/launch/robot_state_publisher.launch.py
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/launch/show.launch.py
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/meshes/base/base_antenna_link.stl
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/meshes/base/base_antenna_link_mirror.stl
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/meshes/base/base_dock_link.stl
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/meshes/base/base_link.stl
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/meshes/cameras_add_on/camera_horizon.stl
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/meshes/cameras_add_on/cameras_add_on.stl
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/meshes/wheels/suspension_front_link.stl
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/meshes/wheels/suspension_rear_link.stl
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/meshes/wheels/wheel_link.stl
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/meshes/wheels/wheel_link_reverted.stl
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/config/omni_base_configuration.yaml
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/robots/omni_base.urdf.xacro
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/ros2_control/gazebo_controller_manager_cfg.yaml
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/ros2_control/ros2_control.urdf.xacro
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/urdf/base/base.gazebo.xacro
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/urdf/base/base.urdf.xacro
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/urdf/base/base_sensors.urdf.xacro
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/urdf/cameras_add_on/camera_horizon_add_on.urdf.xacro
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/urdf/cameras_add_on/cameras.urdf.xacro
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/urdf/cameras_add_on/cameras_add_on.urdf.xacro
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/urdf/objects/antenna.urdf.xacro
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/urdf/wheels/wheel.gazebo.xacro
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/urdf/wheels/wheel.ros2_control.xacro
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/urdf/wheels/wheel.urdf.xacro
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/ament_index/resource_index/package_run_dependencies/omni_base_description
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/ament_index/resource_index/parent_prefix_path/omni_base_description
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/environment/ament_prefix_path.sh
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/environment/ament_prefix_path.dsv
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/environment/path.sh
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/environment/path.dsv
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/local_setup.bash
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/local_setup.sh
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/local_setup.zsh
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/local_setup.dsv
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/package.dsv
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/ament_index/resource_index/packages/omni_base_description
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/cmake/omni_base_descriptionConfig.cmake
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/cmake/omni_base_descriptionConfig-version.cmake
+-- Symlinking: /workspaces/TIAgo_humble/install/omni_base_description/share/omni_base_description/package.xml
+Listing '/workspaces/TIAgo_humble/install/omni_base_description/local/lib/python3.10/dist-packages/omni_base_description'...
+Compiling '/workspaces/TIAgo_humble/install/omni_base_description/local/lib/python3.10/dist-packages/omni_base_description/__init__.py'...
+Compiling '/workspaces/TIAgo_humble/install/omni_base_description/local/lib/python3.10/dist-packages/omni_base_description/launch_arguments.py'...

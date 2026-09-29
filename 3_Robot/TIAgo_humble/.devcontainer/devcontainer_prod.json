@@ -13,9 +13,8 @@
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/${localWorkspaceFolderBasename},type=bind",
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
   "remoteUser": "ubuntu",
-  "postCreateCommand": [
-    "bash -lc 'source /opt/ros/humble/setup.bash; WS=/workspaces/${localWorkspaceFolderBasename}/ros2_ws; mkdir -p $WS/src; if [ ! -d \"$WS/src/tiago_simulation\" ]; then echo \"=== Cloning TIAGo repositories... ===\" && vcs import $WS/src < $WS/tiago.repos && echo \"=== Fetching external packages not available via apt... ===\" && bash $WS/fetch_external.sh $WS/src && echo \"=== Installing dependencies... ===\" && sudo apt-get update && rosdep update && rosdep install --from-paths $WS/src --ignore-src -r -y && echo \"=== Building TIAGo workspace... ===\" && cd $WS && colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release; fi; grep -qxF \"source $WS/install/setup.bash\" ~/.bashrc || echo \"source $WS/install/setup.bash\" >> ~/.bashrc'"
-  ],
+  "postCreateCommand": "bash /workspaces/${localWorkspaceFolderBasename}/.devcontainer/post_create.sh ${localWorkspaceFolderBasename}",
+  "postStartCommand": "bash /workspaces/${localWorkspaceFolderBasename}/.devcontainer/post_start.sh ${localWorkspaceFolderBasename}",
   "customizations": {
     "vscode": {
       "settings": {
@@ -42,14 +41,18 @@
   //
   // По умолчанию активен Вариант 1 (VNC/браузер — работает на всех ОС).
   //
-  // Чтобы переключиться:
+  // Чтобы переключиться (например, на Вариант 5 — NVIDIA GPU):
   //   1. Закомментируйте runArgs, containerEnv, forwardPorts Варианта 1
   //   2. Раскомментируйте блок своей ОС (runArgs, containerEnv,
   //      forwardPorts и, при наличии, mounts)
   //   3. Выполните Rebuild Container
   //
+  // Сборка окружения выполняется скриптами .devcontainer/post_create.sh
+  // (одноразовая подготовка) и .devcontainer/post_start.sh (клонирование,
+  // зависимости, colcon build при каждом старте).
+  //
   // ───────────────────────────────────────────────────────────────
-  // ВАРИАНТ 1 (ПО УМОЛЧАНИЮ): Виртуальный дисплей (VNC/браузер)
+  // ВАРИАНТ 1 (ПО УМОЛЧАНИЮ, АКТИВЕН): Виртуальный дисплей (VNC/браузер)
   // ───────────────────────────────────────────────────────────────
   // Работает на всех ОС без установки X11-сервера на хосте.
   //
@@ -57,12 +60,17 @@
   //   терминал 1: start_gui.sh
   //   браузер:    http://localhost:6080
   //
-  // Два приложения рядом (Gazebo + RViz2):
+  // Два приложения рядом (Gazebo + RViz2 по вкладкам):
   //   старт:      start_gui.sh --displays 2
-  //   Gazebo:     DISPLAY=:99  ros2 launch tiago_gazebo ...
-  //   RViz2:      DISPLAY=:100 rviz2
-  //   вкладка 1:  http://localhost:6080
-  //   вкладка 2:  http://localhost:6081
+  //   Gazebo:     DISPLAY=:99  ros2 launch tiago_gazebo tiago_gazebo.launch.py \
+  //                              is_public_sim:=True rviz:=False
+  //   RViz2:      DISPLAY=:100 rviz2 -d \
+  //                 /workspaces/TIAgo_humble/ros2_ws/install/tiago_gazebo/share/\
+  //                 tiago_gazebo/config/tiago_sim.rviz
+  //   вкладка 1:  http://localhost:6080  (Gazebo)
+  //   вкладка 2:  http://localhost:6081  (RViz2)
+  //   (rviz:=False отключает встроенный RViz на :99, иначе он появится
+  //    на первом экране, а второй останется пустым)
   //
   // Альтернатива — VNC Viewer (TigerVNC / RealVNC Viewer):
   //   подключиться к localhost:5900 (или 5901)
@@ -81,7 +89,7 @@
     "DISPLAY": ":99",
     "ROS_LOCALHOST_ONLY": "1"
   },
-  "forwardPorts": [6080, 6081, 6082, 6083, 5900, 5901, 5902, 5903],
+  "forwardPorts": [6080, 6081, 6082, 6083, 5900, 5901, 5902, 5903]
 
   // ───────────────────────────────────────────────────────────────
   // ВАРИАНТ 2: Прямой X11 — Ubuntu (X11 или Wayland/XWayland)
@@ -156,8 +164,11 @@
   // "forwardPorts": [],
 
   // ───────────────────────────────────────────────────────────────
-  // ВАРИАНТ 5: Прямой X11 — Ubuntu + NVIDIA GPU
+  // ВАРИАНТ 5: Прямой X11 — Ubuntu + NVIDIA GPU (ВЫКЛЮЧЕН)
   // ───────────────────────────────────────────────────────────────
+  // Включение: закомментируйте блок Варианта 1 выше и раскомментируйте
+  // блоки mounts / runArgs / containerEnv ниже, затем Rebuild Container.
+  //
   // Проверено: Ubuntu 24.04 + native Docker Engine (docker-ce).
   //
   // Требования на хосте (однократно):

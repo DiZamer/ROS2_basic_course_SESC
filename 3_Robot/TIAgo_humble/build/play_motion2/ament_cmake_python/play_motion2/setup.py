@@ -1,0 +1,9 @@
+from setuptools import find_packages
+from setuptools import setup
+
+setup(
+    name='play_motion2',
+    version='1.8.5',
+    packages=find_packages(
+        include=('play_motion2', 'play_motion2.*')),
+)

@@ -1,0 +1,1 @@
+/workspaces/TIAgo_humble/build/pal_device_msgs/rosidl_generator_py/pal_device_msgs/__init__.py

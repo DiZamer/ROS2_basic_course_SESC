@@ -7,7 +7,7 @@
 ## Предварительные требования
 
 - opencode установлен и настроен (провайдер модели сконфигурирован через `opencode auth login`).
-- Открыта папка проекта `ROS2_course_sesc`.
+- Открыта папка проекта `ROS2_basic_course_SESC`.
 - ROS2 не устанавливается на хост; opencode — отдельный инструмент, и в курсе он запускается на хосте (не в контейнере курса).
 
 ## Что получится
@@ -46,7 +46,7 @@ opencode agent list
 Для анализа без изменений используйте агента Plan. Один из вариантов:
 
 ```bash
-opencode run --agent plan "Объясни структуру репозитория ROS2_course_sesc: за что отвечают папки 1_lecture, 2_knowledge, 2_practice, 2_homework, 3_Robot"
+opencode run --agent plan "Объясни структуру репозитория ROS2_basic_course_SESC: за что отвечают папки 1_lecture, 2_knowledge, 2_practice, 2_homework, 3_Robot"
 ```
 
 Ожидаемый результат: агент перечисляет папки и их назначение, не изменяя файлы.

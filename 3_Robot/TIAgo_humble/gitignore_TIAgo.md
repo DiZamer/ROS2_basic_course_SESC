@@ -7,7 +7,7 @@
 Репозиторий содержит только **инфраструктурные файлы**:
 
 - конфигурация DevContainer (Dockerfile, devcontainer.json)
-- скрипты сборки (fetch_external.sh, start_gui.sh, patch_twist_mux.py)
+- скрипты сборки (post_create.sh, post_start.sh, fetch_external.sh, start_gui.sh, patch_twist_mux.py)
 - файл tiago.repos (список репозиториев для vcs import)
 - noVNC-клиент (novnc_index.html)
 - документация (README.md, AGENTS.md, TIAgo_configuration.md, TIAgo_conf_improv_plan.md)
@@ -73,6 +73,8 @@ TIAgo_humble/
 │   ├── devcontainer.json
 │   ├── devcontainer_prod.json
 │   ├── novnc_index.html
+│   ├── post_create.sh
+│   ├── post_start.sh
 │   └── start_gui.sh
 ├── .vscode/
 │   ├── c_cpp_properties.json
@@ -97,7 +99,8 @@ TIAgo_humble/
 2. Открыть в VS Code → "Reopen in Container"
 3. DevContainer автоматически:
    - собирает Docker-образ
-   - запускает `vcs import` (клонирует src/)
+   - `post_create.sh` подготавливает `ros2_ws/src/` и overlay
+   - `post_start.sh` запускает `vcs import` (клонирует src/)
    - запускает `fetch_external.sh`
    - запускает `rosdep install`
    - запускает `colcon build`

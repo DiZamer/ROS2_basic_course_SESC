@@ -1,0 +1,62 @@
+[0.013s] Invoking command in '/workspaces/TIAgo_humble/build/pal_hey5_description': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/opt/ros/humble /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/pal_hey5/pal_hey5_description -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/pal_hey5_description
+[0.082s] -- The C compiler identification is GNU 11.4.0
+[0.153s] -- The CXX compiler identification is GNU 11.4.0
+[0.162s] -- Detecting C compiler ABI info
+[0.243s] -- Detecting C compiler ABI info - done
+[0.251s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.251s] -- Detecting C compile features
+[0.251s] -- Detecting C compile features - done
+[0.255s] -- Detecting CXX compiler ABI info
+[0.355s] -- Detecting CXX compiler ABI info - done
+[0.366s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.366s] -- Detecting CXX compile features
+[0.367s] -- Detecting CXX compile features - done
+[0.371s] -- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.592s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.665s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.847s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.050s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.059s] -- Added test 'lint_cmake' to check CMake code style
+[1.060s] -- Added test 'xmllint' to check XML markup files
+[1.063s] -- Configuring done
+[1.070s] -- Generating done
+[1.075s] -- Build files have been written to: /workspaces/TIAgo_humble/build/pal_hey5_description
+[1.083s] Invoked command in '/workspaces/TIAgo_humble/build/pal_hey5_description' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/opt/ros/humble /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/pal_hey5/pal_hey5_description -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/pal_hey5_description
+[1.085s] Invoking command in '/workspaces/TIAgo_humble/build/pal_hey5_description': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/opt/ros/humble /usr/bin/cmake --build /workspaces/TIAgo_humble/build/pal_hey5_description -- -j24 -l24
+[1.168s] Invoked command in '/workspaces/TIAgo_humble/build/pal_hey5_description' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/opt/ros/humble /usr/bin/cmake --build /workspaces/TIAgo_humble/build/pal_hey5_description -- -j24 -l24
+[1.168s] Invoking command in '/workspaces/TIAgo_humble/build/pal_hey5_description': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/opt/ros/humble /usr/bin/cmake --install /workspaces/TIAgo_humble/build/pal_hey5_description
+[1.193s] -- Install configuration: "Release"
+[1.198s] -- Execute custom install script
+[1.198s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_description/share/pal_hey5_description/config/two_hands.rviz
+[1.212s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_description/share/pal_hey5_description/gazebo/gazebo.urdf.xacro
+[1.231s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_description/share/pal_hey5_description/launch/pal_hey5_kinematics_test.launch
+[1.245s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_description/share/pal_hey5_description/meshes/finger_abd_collision.stl
+[1.263s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_description/share/pal_hey5_description/meshes/finger_flex_collision.stl
+[1.281s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_description/share/pal_hey5_description/meshes/finger_flex_tip_collision.stl
+[1.308s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_description/share/pal_hey5_description/meshes/palm.stl
+[1.330s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_description/share/pal_hey5_description/meshes/palm_collision.stl
+[1.378s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_description/share/pal_hey5_description/meshes/thumb_abd_collision.stl
+[1.397s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_description/share/pal_hey5_description/robots/pal_hey5_test.urdf.xacro
+[1.415s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_description/share/pal_hey5_description/urdf/actuators.urdf.xacro
+[1.443s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_description/share/pal_hey5_description/urdf/fingers.urdf.xacro
+[1.462s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_description/share/pal_hey5_description/urdf/pal_hey5.ros2_control.xacro
+[1.471s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_description/share/pal_hey5_description/urdf/pal_hey5.transmission.xacro
+[1.505s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_description/share/pal_hey5_description/urdf/pal_hey5_hand.urdf.xacro
+[1.519s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_description/share/pal_hey5_description/urdf/palm.urdf.xacro
+[1.536s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_description/share/pal_hey5_description/urdf/transmissions.urdf.xacro
+[1.555s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_description/share/ament_index/resource_index/package_run_dependencies/pal_hey5_description
+[1.574s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_description/share/ament_index/resource_index/parent_prefix_path/pal_hey5_description
+[1.597s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_description/share/pal_hey5_description/environment/ament_prefix_path.sh
+[1.628s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_description/share/pal_hey5_description/environment/ament_prefix_path.dsv
+[1.665s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_description/share/pal_hey5_description/environment/path.sh
+[1.668s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_description/share/pal_hey5_description/environment/path.dsv
+[1.685s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_description/share/pal_hey5_description/local_setup.bash
+[1.700s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_description/share/pal_hey5_description/local_setup.sh
+[1.710s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_description/share/pal_hey5_description/local_setup.zsh
+[1.726s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_description/share/pal_hey5_description/local_setup.dsv
+[1.745s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_description/share/pal_hey5_description/package.dsv
+[1.769s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_description/share/ament_index/resource_index/packages/pal_hey5_description
+[1.779s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_description/share/pal_hey5_description/cmake/pal_hey5_descriptionConfig.cmake
+[1.804s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_description/share/pal_hey5_description/cmake/pal_hey5_descriptionConfig-version.cmake
+[1.827s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5_description/share/pal_hey5_description/package.xml
+[1.841s] Invoked command in '/workspaces/TIAgo_humble/build/pal_hey5_description' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/opt/ros/humble /usr/bin/cmake --install /workspaces/TIAgo_humble/build/pal_hey5_description

@@ -787,8 +787,8 @@ ros2 launch tiago_moveit_config move_group.launch.py
 # Визуализация MoveIt2 в RViz
 ros2 launch tiago_moveit_config moveit_rviz.launch.py
 
-# Отдельная навигация (если tiago_gazebo уже запущена)
-ros2 launch tiago_gazebo navigation_public_sim.launch.py world_name:=pal_office
+# Навигация вместе с симуляцией (единый launch, рекомендуется)
+ros2 launch tiago_gazebo tiago_gazebo.launch.py navigation:=True is_public_sim:=True world_name:=pal_office
 
 # Сохранение карты (после SLAM)
 ros2 run nav2_map_server map_saver_cli -f my_map
@@ -966,7 +966,7 @@ ros2 launch tiago_gazebo tiago_gazebo.launch.py is_public_sim:=True
 |---|------------|----------------------|----------------------|
 | 1 | Что такое ROS2 | `TIAgo_configuration.md`, `AGENTS.md` | Схема подсистем робота (раздел 3), вступительный текст о middleware как среде для связи программ |
 | 2 | ROS Graph и middleware | `tiago_robot/`, `tiago_gazebo/` | `rqt_graph` в Режиме 1 — граф из 10+ узлов (robot_state_publisher, контроллеры, twist_mux, gazebo_ros). Показать, как сообщение проходит от pub к sub через DDS |
-| 3 | Установка и окружение | `.devcontainer/`, `ros2_ws/` | DevContainer как пример готовой ROS2-среды: Dockerfile, devcontainer.json, postCreateCommand |
+| 3 | Установка и окружение | `.devcontainer/`, `ros2_ws/` | DevContainer как пример готовой ROS2-среды: Dockerfile, devcontainer.json, `postCreateCommand` → `post_create.sh`, `postStartCommand` → `post_start.sh` |
 | 4 | Workspace, package, colcon | `ros2_ws/` | Структура workspace (раздел 9): `src/`, `build/`, `install/`, `log/`; `colcon build --symlink-install`; `vcs import` из `tiago.repos` |
 | 5 | Node, Executor, callbacks | `tiago_bringup/` (twist_mux, play_motion2, robot_state_publisher), `tiago_controller_configuration/` | Узлы запускаются и обмениваются сообщениями через `spin()`. `rqt_graph` + `ros2 node info` показывают связи |
 | 6 | Topic, publisher, subscriber | `tiago_controller_configuration/`, `tiago_gazebo/`, `tiago_description/` | Topics: `/cmd_vel` → `DiffDriveController`, `/odom` ← одометрия колёс, `/scan` ← лазер, `/joint_states` ← состояние суставов. Демо: `ros2 topic echo /scan`, `ros2 topic pub /cmd_vel` |

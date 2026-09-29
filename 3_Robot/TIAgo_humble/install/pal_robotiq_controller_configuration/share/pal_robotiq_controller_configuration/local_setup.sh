@@ -1,0 +1,1 @@
+/workspaces/TIAgo_humble/build/pal_robotiq_controller_configuration/ament_cmake_environment_hooks/local_setup.sh

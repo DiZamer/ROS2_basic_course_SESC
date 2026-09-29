@@ -1,0 +1,15 @@
+/workspaces/TIAgo_humble/install/tiago_robot/share/ament_index/resource_index/package_run_dependencies/tiago_robot
+/workspaces/TIAgo_humble/install/tiago_robot/share/ament_index/resource_index/parent_prefix_path/tiago_robot
+/workspaces/TIAgo_humble/install/tiago_robot/share/tiago_robot/environment/ament_prefix_path.sh
+/workspaces/TIAgo_humble/install/tiago_robot/share/tiago_robot/environment/ament_prefix_path.dsv
+/workspaces/TIAgo_humble/install/tiago_robot/share/tiago_robot/environment/path.sh
+/workspaces/TIAgo_humble/install/tiago_robot/share/tiago_robot/environment/path.dsv
+/workspaces/TIAgo_humble/install/tiago_robot/share/tiago_robot/local_setup.bash
+/workspaces/TIAgo_humble/install/tiago_robot/share/tiago_robot/local_setup.sh
+/workspaces/TIAgo_humble/install/tiago_robot/share/tiago_robot/local_setup.zsh
+/workspaces/TIAgo_humble/install/tiago_robot/share/tiago_robot/local_setup.dsv
+/workspaces/TIAgo_humble/install/tiago_robot/share/tiago_robot/package.dsv
+/workspaces/TIAgo_humble/install/tiago_robot/share/ament_index/resource_index/packages/tiago_robot
+/workspaces/TIAgo_humble/install/tiago_robot/share/tiago_robot/cmake/tiago_robotConfig.cmake
+/workspaces/TIAgo_humble/install/tiago_robot/share/tiago_robot/cmake/tiago_robotConfig-version.cmake
+/workspaces/TIAgo_humble/install/tiago_robot/share/tiago_robot/package.xml

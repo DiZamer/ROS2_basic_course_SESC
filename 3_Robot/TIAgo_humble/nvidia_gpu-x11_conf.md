@@ -4,7 +4,7 @@
 
 ## Рабочая конфигурация (devcontainer.json, Вариант 5)
 
-Вариант 5 — это блок, закомментированный в `.devcontainer/devcontainer.json`. Чтобы включить его, закомментируйте блок Варианта 1 и раскомментируйте приведённый ниже блок вместе с `mounts`, затем выполните **Rebuild Container**:
+По умолчанию активен **Вариант 1 (VNC/браузер)**. Вариант 5 — это блок, закомментированный в `.devcontainer/devcontainer.json`. Чтобы включить его, **закомментируйте блок Варианта 1** и **раскомментируйте** приведённый ниже блок вместе с `mounts`, затем выполните **Rebuild Container**:
 
 ```jsonc
 "mounts": [
@@ -223,11 +223,45 @@ ls -la /tmp/.X11-unix/
 echo $DISPLAY
 ```
 
+## Навигация и манипуляция на GPU (Вариант 5)
+
+На Варианте 5 окна идут на хост напрямую (`DISPLAY=:1`), виртуальные дисплеи не нужны.
+Режимы включаются аргументами единого `tiago_gazebo.launch.py`:
+
+```bash
+# Навигация (Nav2)
+ros2 launch tiago_gazebo tiago_gazebo.launch.py \
+  is_public_sim:=True navigation:=True
+
+# Навигация + SLAM
+ros2 launch tiago_gazebo tiago_gazebo.launch.py \
+  is_public_sim:=True navigation:=True slam:=True
+
+# Манипуляция (MoveIt2) + RViz с плагином MoveIt2
+ros2 launch tiago_gazebo tiago_gazebo.launch.py \
+  is_public_sim:=True moveit:=True
+ros2 launch tiago_moveit_config moveit_rviz.launch.py
+
+# Полный стек
+ros2 launch tiago_gazebo tiago_gazebo.launch.py \
+  is_public_sim:=True navigation:=True moveit:=True
+```
+
+> **Пакеты.** `tiago_navigation`, `tiago_2dnav` — мета-пакеты без launch-файлов; пакета `tiago_moveit` не существует (используйте `tiago_moveit_config`).
+> Флаг `rviz` — общий пользовательский (`CommonArgs.rviz`): `rviz:=False` отключает и встроенный, и навигационный RViz.
+
+### Два экрана на Варианте 5
+
+Вариант 5 выводит окна прямо на X-сервер хоста, поэтому отдельные вкладки noVNC недоступны.
+Если нужны именно **отдельные окна** Gazebo и RViz2 — останьтесь на Варианте 1 (VNC):
+запустите `start_gui.sh --displays 2` и разведите окна по `:99`/`:100` (см. `README.md`, раздел «Две вкладки»).
+На Варианте 5 Gazebo и RViz2 работают как обычные окна хоста и удобно располагаются средствами оконного менеджера.
+
 ## Ключевые файлы
 
 | Файл | Роль |
 |------|------|
-| `.devcontainer/devcontainer.json` | Активная конфигурация: Вариант 1 (VNC/браузер); Вариант 5 — в комментариях |
+| `.devcontainer/devcontainer.json` | Активная конфигурация: Вариант 1 (VNC/браузер) по умолчанию; Вариант 5 — в комментариях |
 | `.devcontainer/devcontainer_prod.json` | Копия активного (эталон) |
 | `.devcontainer/Dockerfile` | Сборка образа из `osrf/ros:humble-desktop` |
 | `/etc/docker/daemon.json` (хост) | NVIDIA runtime + DNS |
@@ -242,7 +276,7 @@ echo $DISPLAY
 | `QT_X11_NO_MITSHM` | `1` | Обход MIT-SHM (нужен для X11-forwarding) |
 | `MESA_LOADER_DRIVER_OVERRIDE` | `zink` | OpenGL → Vulkan через Zink (не iris) |
 
-> **Примечание (контейнер уровня 2).** В корневом `.devcontainer/` Вариант 5 дополнительно задаёт `GZ_RENDER_ENGINE=ogre2` — движок рендера gz-sim, который использует GPU. В Варианте 1 (VNC/CPU) та же переменная равна `ogre` (GLX), потому что `ogre2` падает на EGL без рабочего GPU-ICD. Команда запуска Gazebo при этом не меняется.
+> **Примечание (контейнер уровня 2).** В корневом `.devcontainer/` Вариант 5 дополнительно задаёт `GZ_RENDER_ENGINE=ogre2` — движок рендера gz-sim, который использует GPU. В Варианте 1 (VNC/CPU) та же переменная равна `ogre` (GLX), потому что `ogre2` падает на EGL без рабочего GPU-ICD. Команда запуска Gazebo при этом не меняется. Для контейнера TIAGo (уровень 3, Gazebo Classic 11) `GZ_RENDER_ENGINE` не задаётся — используется рендер Gazebo Classic.
 
 ## Принцип сборки образа
 

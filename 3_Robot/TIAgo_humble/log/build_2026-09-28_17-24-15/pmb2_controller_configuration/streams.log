@@ -1,0 +1,52 @@
+[0.081s] Invoking command in '/workspaces/TIAgo_humble/build/pmb2_controller_configuration': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/pmb2_robot/pmb2_controller_configuration -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/pmb2_controller_configuration
+[0.157s] -- The C compiler identification is GNU 11.4.0
+[0.229s] -- The CXX compiler identification is GNU 11.4.0
+[0.237s] -- Detecting C compiler ABI info
+[0.316s] -- Detecting C compiler ABI info - done
+[0.328s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.328s] -- Detecting C compile features
+[0.328s] -- Detecting C compile features - done
+[0.333s] -- Detecting CXX compiler ABI info
+[0.452s] -- Detecting CXX compiler ABI info - done
+[0.461s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.461s] -- Detecting CXX compile features
+[0.461s] -- Detecting CXX compile features - done
+[0.466s] -- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.643s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.718s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.852s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.891s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.893s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.893s] -- Added test 'lint_cmake' to check CMake code style
+[0.894s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.895s] -- Added test 'xmllint' to check XML markup files
+[0.897s] -- Configuring done
+[0.901s] -- Generating done
+[0.903s] -- Build files have been written to: /workspaces/TIAgo_humble/build/pmb2_controller_configuration
+[0.911s] Invoked command in '/workspaces/TIAgo_humble/build/pmb2_controller_configuration' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/pmb2_robot/pmb2_controller_configuration -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/pmb2_controller_configuration
+[0.912s] Invoking command in '/workspaces/TIAgo_humble/build/pmb2_controller_configuration': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/TIAgo_humble/build/pmb2_controller_configuration -- -j24 -l24
+[0.955s] Invoked command in '/workspaces/TIAgo_humble/build/pmb2_controller_configuration' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/TIAgo_humble/build/pmb2_controller_configuration -- -j24 -l24
+[0.957s] Invoking command in '/workspaces/TIAgo_humble/build/pmb2_controller_configuration': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/TIAgo_humble/build/pmb2_controller_configuration
+[0.967s] -- Install configuration: "Release"
+[0.968s] -- Execute custom install script
+[0.969s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_controller_configuration/share/pmb2_controller_configuration/config/joint_state_broadcaster.yaml
+[0.978s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_controller_configuration/share/pmb2_controller_configuration/config/mobile_base_controller.yaml
+[0.989s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_controller_configuration/share/pmb2_controller_configuration/config/mobile_base_controller_public_sim.yaml
+[0.998s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_controller_configuration/share/pmb2_controller_configuration/launch/default_controllers.launch.py
+[1.007s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_controller_configuration/share/pmb2_controller_configuration/launch/mobile_base_controller.launch.py
+[1.015s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_controller_configuration/share/ament_index/resource_index/package_run_dependencies/pmb2_controller_configuration
+[1.026s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_controller_configuration/share/ament_index/resource_index/parent_prefix_path/pmb2_controller_configuration
+[1.035s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_controller_configuration/share/pmb2_controller_configuration/environment/ament_prefix_path.sh
+[1.043s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_controller_configuration/share/pmb2_controller_configuration/environment/ament_prefix_path.dsv
+[1.054s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_controller_configuration/share/pmb2_controller_configuration/environment/path.sh
+[1.066s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_controller_configuration/share/pmb2_controller_configuration/environment/path.dsv
+[1.079s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_controller_configuration/share/pmb2_controller_configuration/local_setup.bash
+[1.088s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_controller_configuration/share/pmb2_controller_configuration/local_setup.sh
+[1.099s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_controller_configuration/share/pmb2_controller_configuration/local_setup.zsh
+[1.108s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_controller_configuration/share/pmb2_controller_configuration/local_setup.dsv
+[1.117s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_controller_configuration/share/pmb2_controller_configuration/package.dsv
+[1.126s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_controller_configuration/share/ament_index/resource_index/packages/pmb2_controller_configuration
+[1.135s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_controller_configuration/share/pmb2_controller_configuration/cmake/pmb2_controller_configurationConfig.cmake
+[1.144s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_controller_configuration/share/pmb2_controller_configuration/cmake/pmb2_controller_configurationConfig-version.cmake
+[1.156s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_controller_configuration/share/pmb2_controller_configuration/package.xml
+[1.193s] Invoked command in '/workspaces/TIAgo_humble/build/pmb2_controller_configuration' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/TIAgo_humble/build/pmb2_controller_configuration

@@ -23,6 +23,11 @@ def generate_launch_description():
 
     use_rviz = LaunchConfiguration('rviz')
 
+    # RViz2 display: by default inherits the container DISPLAY (:99).
+    # Use rviz_display:=:100 to put RViz2 on a separate virtual display
+    # (second browser tab), while Gazebo stays on the inherited display.
+    rviz_display = LaunchConfiguration('rviz_display')
+
     # Render engine is chosen without changing the launch command:
     #   - default: ogre (GLX) — safe for VNC/CPU (devcontainer Variant 1)
     #   - GPU/X11: set GZ_RENDER_ENGINE=ogre2 in the devcontainer Variant 5
@@ -89,12 +94,17 @@ def generate_launch_description():
         output='screen',
         arguments=['-d', rviz_config],
         parameters=[{'use_sim_time': True}],
+        additional_env={'DISPLAY': rviz_display},
         condition=IfCondition(use_rviz),
     )
 
     return LaunchDescription([
         DeclareLaunchArgument('rviz', default_value='true',
                               description='Run RViz2 as well'),
+        DeclareLaunchArgument(
+            'rviz_display',
+            default_value=os.environ.get('DISPLAY', ':99'),
+            description='X display for RViz2 (e.g. :100 for a separate virtual display)'),
         DeclareLaunchArgument(
             'render_engine',
             default_value=os.environ.get('GZ_RENDER_ENGINE', 'ogre'),

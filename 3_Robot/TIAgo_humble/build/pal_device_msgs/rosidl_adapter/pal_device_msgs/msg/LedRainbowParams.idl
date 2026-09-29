@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from pal_device_msgs/msg/LedRainbowParams.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Duration.idl"
+
+module pal_device_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "Time to perform rainbow")
+    struct LedRainbowParams {
+      builtin_interfaces::msg::Duration transition_duration;
+    };
+  };
+};

@@ -1,0 +1,1 @@
+/workspaces/TIAgo_humble/build/pal_device_msgs/rosidl_typesupport_introspection_cpp/pal_device_msgs/srv/detail/timed_fade_effect__rosidl_typesupport_introspection_cpp.hpp

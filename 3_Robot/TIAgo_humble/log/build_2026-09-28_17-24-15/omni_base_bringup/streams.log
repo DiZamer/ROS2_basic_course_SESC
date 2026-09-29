@@ -1,0 +1,55 @@
+[0.047s] Invoking command in '/workspaces/TIAgo_humble/build/omni_base_bringup': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/omni_base_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/omni_base_controller_configuration:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/omni_base_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/omni_base_controller_configuration:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/install/omni_base_description/local/lib/python3.10/dist-packages:/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/omni_base_robot/omni_base_bringup -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/omni_base_bringup
+[0.191s] -- The C compiler identification is GNU 11.4.0
+[0.504s] -- The CXX compiler identification is GNU 11.4.0
+[0.539s] -- Detecting C compiler ABI info
+[0.963s] -- Detecting C compiler ABI info - done
+[1.032s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.032s] -- Detecting C compile features
+[1.033s] -- Detecting C compile features - done
+[1.048s] -- Detecting CXX compiler ABI info
+[1.428s] -- Detecting CXX compiler ABI info - done
+[1.449s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.449s] -- Detecting CXX compile features
+[1.449s] -- Detecting CXX compile features - done
+[1.454s] -- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.979s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.149s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.938s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.060s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.072s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.073s] -- Added test 'lint_cmake' to check CMake code style
+[3.075s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.080s] -- Added test 'xmllint' to check XML markup files
+[3.090s] -- Configuring done
+[3.131s] -- Generating done
+[3.147s] -- Build files have been written to: /workspaces/TIAgo_humble/build/omni_base_bringup
+[3.156s] Invoked command in '/workspaces/TIAgo_humble/build/omni_base_bringup' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/omni_base_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/omni_base_controller_configuration:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/omni_base_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/omni_base_controller_configuration:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/install/omni_base_description/local/lib/python3.10/dist-packages:/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/omni_base_robot/omni_base_bringup -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/omni_base_bringup
+[3.157s] Invoking command in '/workspaces/TIAgo_humble/build/omni_base_bringup': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/omni_base_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/omni_base_controller_configuration:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/omni_base_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/omni_base_controller_configuration:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/install/omni_base_description/local/lib/python3.10/dist-packages:/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/TIAgo_humble/build/omni_base_bringup -- -j24 -l24
+[3.337s] Invoked command in '/workspaces/TIAgo_humble/build/omni_base_bringup' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/omni_base_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/omni_base_controller_configuration:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/omni_base_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/omni_base_controller_configuration:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/install/omni_base_description/local/lib/python3.10/dist-packages:/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/TIAgo_humble/build/omni_base_bringup -- -j24 -l24
+[3.338s] Invoking command in '/workspaces/TIAgo_humble/build/omni_base_bringup': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/omni_base_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/omni_base_controller_configuration:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/omni_base_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/omni_base_controller_configuration:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/install/omni_base_description/local/lib/python3.10/dist-packages:/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/TIAgo_humble/build/omni_base_bringup
+[3.383s] -- Install configuration: "Release"
+[3.395s] -- Execute custom install script
+[3.395s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_bringup/share/omni_base_bringup/config/joy_teleop/joystick_analyzers.yaml
+[3.418s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_bringup/share/omni_base_bringup/config/twist_mux/joystick.yaml
+[3.479s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_bringup/share/omni_base_bringup/config/twist_mux/twist_mux_analyzers.yaml
+[3.502s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_bringup/share/omni_base_bringup/config/twist_mux/twist_mux_locks.yaml
+[3.526s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_bringup/share/omni_base_bringup/config/twist_mux/twist_mux_topics.yaml
+[3.583s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_bringup/share/omni_base_bringup/launch/joystick_teleop.launch.py
+[3.639s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_bringup/share/omni_base_bringup/launch/omni_base_bringup.launch.py
+[3.648s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_bringup/share/omni_base_bringup/launch/twist_mux.launch.py
+[3.686s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_bringup/share/ament_index/resource_index/package_run_dependencies/omni_base_bringup
+[3.724s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_bringup/share/ament_index/resource_index/parent_prefix_path/omni_base_bringup
+[3.757s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_bringup/share/omni_base_bringup/environment/ament_prefix_path.sh
+[3.790s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_bringup/share/omni_base_bringup/environment/ament_prefix_path.dsv
+[3.912s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_bringup/share/omni_base_bringup/environment/path.sh
+[3.913s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_bringup/share/omni_base_bringup/environment/path.dsv
+[3.914s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_bringup/share/omni_base_bringup/local_setup.bash
+[3.925s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_bringup/share/omni_base_bringup/local_setup.sh
+[3.954s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_bringup/share/omni_base_bringup/local_setup.zsh
+[3.982s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_bringup/share/omni_base_bringup/local_setup.dsv
+[4.038s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_bringup/share/omni_base_bringup/package.dsv
+[4.040s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_bringup/share/ament_index/resource_index/packages/omni_base_bringup
+[4.085s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_bringup/share/omni_base_bringup/cmake/omni_base_bringupConfig.cmake
+[4.085s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_bringup/share/omni_base_bringup/cmake/omni_base_bringupConfig-version.cmake
+[4.101s] -- Symlinking: /workspaces/TIAgo_humble/install/omni_base_bringup/share/omni_base_bringup/package.xml
+[4.144s] Invoked command in '/workspaces/TIAgo_humble/build/omni_base_bringup' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/omni_base_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/omni_base_controller_configuration:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/omni_base_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/omni_base_controller_configuration:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/install/omni_base_description/local/lib/python3.10/dist-packages:/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/TIAgo_humble/build/omni_base_bringup

@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from pal_device_msgs/msg/LedFadeParams.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Duration.idl"
+#include "std_msgs/msg/ColorRGBA.idl"
+
+module pal_device_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "RGBA of color, alpha will be used as intensity if supported by the led")
+    struct LedFadeParams {
+      std_msgs::msg::ColorRGBA first_color;
+
+      std_msgs::msg::ColorRGBA second_color;
+
+      @verbatim (language="comment", text=
+        "Duration of the transition from one color to the other")
+      builtin_interfaces::msg::Duration transition_duration;
+
+      @verbatim (language="comment", text=
+        "Perform a fade when going from secondColor to firstColor")
+      boolean reverse_fade;
+    };
+  };
+};

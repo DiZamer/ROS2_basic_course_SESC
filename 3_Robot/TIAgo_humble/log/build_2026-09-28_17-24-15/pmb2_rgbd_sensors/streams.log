@@ -1,0 +1,49 @@
+[0.092s] Invoking command in '/workspaces/TIAgo_humble/build/pmb2_rgbd_sensors': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/pmb2_navigation/pmb2_rgbd_sensors -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/pmb2_rgbd_sensors
+[0.157s] -- The C compiler identification is GNU 11.4.0
+[0.226s] -- The CXX compiler identification is GNU 11.4.0
+[0.234s] -- Detecting C compiler ABI info
+[0.319s] -- Detecting C compiler ABI info - done
+[0.329s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.329s] -- Detecting C compile features
+[0.330s] -- Detecting C compile features - done
+[0.334s] -- Detecting CXX compiler ABI info
+[0.457s] -- Detecting CXX compiler ABI info - done
+[0.466s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.466s] -- Detecting CXX compile features
+[0.467s] -- Detecting CXX compile features - done
+[0.470s] -- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.648s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.725s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.894s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.897s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.898s] -- Added test 'lint_cmake' to check CMake code style
+[0.899s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.900s] -- Added test 'xmllint' to check XML markup files
+[0.901s] -- Configuring done
+[0.905s] -- Generating done
+[0.907s] -- Build files have been written to: /workspaces/TIAgo_humble/build/pmb2_rgbd_sensors
+[0.913s] Invoked command in '/workspaces/TIAgo_humble/build/pmb2_rgbd_sensors' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/pmb2_navigation/pmb2_rgbd_sensors -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/pmb2_rgbd_sensors
+[0.915s] Invoking command in '/workspaces/TIAgo_humble/build/pmb2_rgbd_sensors': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/TIAgo_humble/build/pmb2_rgbd_sensors -- -j24 -l24
+[0.959s] Invoked command in '/workspaces/TIAgo_humble/build/pmb2_rgbd_sensors' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/TIAgo_humble/build/pmb2_rgbd_sensors -- -j24 -l24
+[0.962s] Invoking command in '/workspaces/TIAgo_humble/build/pmb2_rgbd_sensors': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/TIAgo_humble/build/pmb2_rgbd_sensors
+[0.969s] -- Install configuration: "Release"
+[0.969s] -- Execute custom install script
+[0.970s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_rgbd_sensors/share/pmb2_rgbd_sensors/config/rgbd_analyzers.yaml
+[0.979s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_rgbd_sensors/share/pmb2_rgbd_sensors/launch/rgbd.launch.py
+[0.991s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_rgbd_sensors/share/pmb2_rgbd_sensors/launch/rgbd_sim.launch.py
+[1.002s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_rgbd_sensors/share/ament_index/resource_index/package_run_dependencies/pmb2_rgbd_sensors
+[1.013s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_rgbd_sensors/share/ament_index/resource_index/parent_prefix_path/pmb2_rgbd_sensors
+[1.022s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_rgbd_sensors/share/pmb2_rgbd_sensors/environment/ament_prefix_path.sh
+[1.032s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_rgbd_sensors/share/pmb2_rgbd_sensors/environment/ament_prefix_path.dsv
+[1.044s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_rgbd_sensors/share/pmb2_rgbd_sensors/environment/path.sh
+[1.055s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_rgbd_sensors/share/pmb2_rgbd_sensors/environment/path.dsv
+[1.068s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_rgbd_sensors/share/pmb2_rgbd_sensors/local_setup.bash
+[1.077s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_rgbd_sensors/share/pmb2_rgbd_sensors/local_setup.sh
+[1.089s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_rgbd_sensors/share/pmb2_rgbd_sensors/local_setup.zsh
+[1.098s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_rgbd_sensors/share/pmb2_rgbd_sensors/local_setup.dsv
+[1.108s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_rgbd_sensors/share/pmb2_rgbd_sensors/package.dsv
+[1.117s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_rgbd_sensors/share/ament_index/resource_index/packages/pmb2_rgbd_sensors
+[1.126s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_rgbd_sensors/share/pmb2_rgbd_sensors/cmake/pmb2_rgbd_sensorsConfig.cmake
+[1.135s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_rgbd_sensors/share/pmb2_rgbd_sensors/cmake/pmb2_rgbd_sensorsConfig-version.cmake
+[1.143s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_rgbd_sensors/share/pmb2_rgbd_sensors/package.xml
+[1.159s] Invoked command in '/workspaces/TIAgo_humble/build/pmb2_rgbd_sensors' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/TIAgo_humble/build/pmb2_rgbd_sensors

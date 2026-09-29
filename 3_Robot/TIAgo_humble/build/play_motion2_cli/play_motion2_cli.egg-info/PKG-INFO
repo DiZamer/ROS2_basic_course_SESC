@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: play-motion2-cli
+Version: 1.8.5
+Summary: The play_motion command for ROS 2 command line tools.
+Home-page: UNKNOWN
+Author: Isaac Acevedo
+Author-email: isaac.acevedo@pal-robotics.com
+Maintainer: Isaac Acevedo
+Maintainer-email: isaac.acevedo@pal-robotics.com
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Provides-Extra: test
+
+UNKNOWN
+

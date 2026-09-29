@@ -1,0 +1,40 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from pal_device_msgs/srv/TimedBlinkEffect.srv
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Duration.idl"
+#include "pal_device_msgs/msg/LedGroup.idl"
+#include "std_msgs/msg/ColorRGBA.idl"
+
+module pal_device_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "Sets led blink effect. Displays firstColor during firstColorDuration time, and then secondColor during secondColorDuration time")
+    struct TimedBlinkEffect_Request {
+      pal_device_msgs::msg::LedGroup leds;
+
+      @verbatim (language="comment", text=
+        "RGBA of color, transparency is not available in leds, so alpha will be ignored")
+      std_msgs::msg::ColorRGBA first_color;
+
+      std_msgs::msg::ColorRGBA second_color;
+
+      builtin_interfaces::msg::Duration first_color_duration;
+
+      builtin_interfaces::msg::Duration second_color_duration;
+
+      @verbatim (language="comment", text=
+        "Duration of the effect, when the time is over the previous effect will be restored. 0 will make it display forever")
+      builtin_interfaces::msg::Duration effect_duration;
+
+      @verbatim (language="comment", text=
+        "priority of the effect, 0 is no priority, 255 is max priority")
+      uint8 priority;
+    };
+    @verbatim (language="comment", text=
+      "Id of the effect, used to cancel an effect")
+    struct TimedBlinkEffect_Response {
+      uint32 effect_id;
+    };
+  };
+};

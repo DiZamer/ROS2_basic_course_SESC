@@ -89,7 +89,7 @@ RUN echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
 
 - `.devcontainer/Dockerfile` (уровень 2) — на базе `osrf/ros:jazzy-desktop`, ставит `git`, `sudo`, `colcon`, `rosdep` и создаёт пользователя `ubuntu`.
 - `.devcontainer/devcontainer.json` (уровень 2) — монтирует папку проекта в `/workspaces/`, задаёт `remoteUser: ubuntu`, выводит GUI через виртуальный дисплей VNC/браузер (Вариант 1, `start_gui.sh`) и ставит расширения VS Code.
-- `3_Robot/TIAgo_humble/.devcontainer/` (уровень 3) — отдельный, более тяжёлый контейнер: образ собирается из `Dockerfile` (с `--network=host`), `postCreateCommand` клонирует пакеты TIAGo через `vcs import`, ставит зависимости и собирает workspace через `colcon build`. GUI выводится через виртуальный дисплей (Вариант 1, `start_gui.sh`).
+- `3_Robot/TIAgo_humble/.devcontainer/` (уровень 3) — отдельный, более тяжёлый контейнер: образ собирается из `Dockerfile` (с `--network=host`). Логика вынесена в скрипты: `postCreateCommand` вызывает `post_create.sh` (создаёт `src/`, подключает overlay), `postStartCommand` — `post_start.sh` (`vcs import`, `rosdep install`, `colcon build`). GUI выводится через виртуальный дисплей (Вариант 1, `start_gui.sh`).
 
 ## Ожидаемый результат
 
@@ -105,7 +105,7 @@ RUN echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
 | Изменили Dockerfile, а в контейнере всё по-старому | Контейнер не пересобран | «Dev Containers: Rebuild Container» |
 | Файлы, созданные внутри контейнера, пропали | Созданы вне смонтированной папки | Работайте в workspace (`/workspaces/...`) |
 | `docker: command not found` в WSL | Docker Desktop не настроен на WSL2 | Включить WSL2-интеграцию в Docker Desktop |
-| Нет GUI (rviz2/Gazebo) | Не запущен `start_gui.sh` или не настроен вывод GUI | См. `3_Robot/TIAgo_humble/README.md`, раздел «Работа с GUI» |
+| Нет GUI (rviz2/Gazebo) | Не запущен `start_gui.sh` или не настроен вывод GUI | См.ен `start_gui.sh` или не настроен вывод GUI | См. `3_Robot/TIAgo_humble/README.md`, раздел «Работа с GUI» |
 | `docker ps` пуст внутри контейнера | Docker-демон на хосте, а не внутри | Запускать `docker ps` на хосте, а не в контейнере |
 
 ## Связанные темы

@@ -1,0 +1,162 @@
+[0.010s] Invoking command in '/workspaces/TIAgo_humble/build/play_motion2': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/play_motion2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/play_motion2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/TIAgo_humble/install/play_motion2_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/play_motion2/play_motion2 -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/play_motion2
+[0.064s] -- The C compiler identification is GNU 11.4.0
+[0.124s] -- The CXX compiler identification is GNU 11.4.0
+[0.131s] -- Detecting C compiler ABI info
+[0.195s] -- Detecting C compiler ABI info - done
+[0.200s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.200s] -- Detecting C compile features
+[0.201s] -- Detecting C compile features - done
+[0.203s] -- Detecting CXX compiler ABI info
+[0.264s] -- Detecting CXX compiler ABI info - done
+[0.270s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.270s] -- Detecting CXX compile features
+[0.271s] -- Detecting CXX compile features - done
+[0.274s] -- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.415s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.472s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.592s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.597s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.605s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.615s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.629s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.940s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[1.034s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[1.071s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[1.104s] -- Found rmw_implementation_cmake: 6.1.3 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.106s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.172s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.193s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.232s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.242s] -- Found Threads: TRUE  
+[1.277s] -- Found tcb_span: 1.3.2 (/opt/ros/humble/share/tcb_span/cmake)
+[1.281s] -- Found rclcpp_lifecycle: 16.0.19 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[1.290s] -- Found parameter_traits: 0.7.6 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.369s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[1.397s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.397s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.516s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[1.544s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[1.565s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[1.724s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.740s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.743s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.743s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.743s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.743s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.761s] -- Found PythonExtra: .so  
+[1.788s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.028s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.030s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.031s] -- Configured cppcheck include dirs: /workspaces/TIAgo_humble/ros2_ws/src/play_motion2/play_motion2/include
+[2.031s] -- Configured cppcheck exclude dirs and/or files: 
+[2.033s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.033s] -- Configured cpplint exclude dirs and/or files: 
+[2.033s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.034s] -- Added test 'lint_cmake' to check CMake code style
+[2.034s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.036s] -- Added test 'uncrustify' to check C / C++ code style
+[2.036s] -- Configured uncrustify additional arguments: 
+[2.037s] -- Added test 'xmllint' to check XML markup files
+[2.040s] -- Configuring done
+[2.143s] -- Generating done
+[2.169s] -- Build files have been written to: /workspaces/TIAgo_humble/build/play_motion2
+[2.185s] Invoked command in '/workspaces/TIAgo_humble/build/play_motion2' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/play_motion2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/play_motion2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/TIAgo_humble/install/play_motion2_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/play_motion2/play_motion2 -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/play_motion2
+[2.186s] Invoking command in '/workspaces/TIAgo_humble/build/play_motion2': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/play_motion2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/play_motion2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/TIAgo_humble/install/play_motion2_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/TIAgo_humble/build/play_motion2 -- -j24 -l24
+[2.231s] [ 25%] [32mBuilding CXX object CMakeFiles/client.dir/src/play_motion2/client.cpp.o[0m
+[2.231s] [ 25%] [32mBuilding CXX object CMakeFiles/play_motion2_node.dir/src/play_motion2_main.cpp.o[0m
+[2.231s] [ 25%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[2.231s] [ 25%] [34m[1mRunning `/opt/ros/humble/bin/generate_parameter_library_cpp /workspaces/TIAgo_humble/build/play_motion2/include/play_motion2/passthrough_controller_parameters.hpp /workspaces/TIAgo_humble/ros2_ws/src/play_motion2/play_motion2/test/controllers/src/passthrough_controller_parameters.yaml `[0m
+[2.231s] [ 25%] [32mBuilding CXX object CMakeFiles/play_motion2_node.dir/src/play_motion2/play_motion2_executor.cpp.o[0m
+[2.231s] [ 25%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[2.231s] [ 25%] [32mBuilding CXX object CMakeFiles/play_motion2_node.dir/src/play_motion2/play_motion2_mgr.cpp.o[0m
+[2.231s] [ 29%] [32mBuilding CXX object CMakeFiles/play_motion2_node.dir/src/utils/motion_planner.cpp.o[0m
+[2.231s] [ 33%] [32mBuilding CXX object CMakeFiles/play_motion2_node.dir/src/utils/motion_loader.cpp.o[0m
+[2.237s] [ 33%] Built target ament_cmake_python_symlink_play_motion2
+[2.422s] [ 37%] [34m[1mCreating deprecated header file /workspaces/TIAgo_humble/build/play_motion2/include/passthrough_controller_parameters.hpp[0m
+[2.445s] [ 37%] Built target passthrough_controller_parameters
+[2.474s] [ 40%] [32mBuilding CXX object CMakeFiles/passthrough_controller.dir/test/controllers/src/passthrough_controller.cpp.o[0m
+[2.476s] running egg_info
+[2.477s] creating play_motion2.egg-info
+[2.477s] writing play_motion2.egg-info/PKG-INFO
+[2.477s] writing dependency_links to play_motion2.egg-info/dependency_links.txt
+[2.478s] writing top-level names to play_motion2.egg-info/top_level.txt
+[2.479s] writing manifest file 'play_motion2.egg-info/SOURCES.txt'
+[2.481s] reading manifest file 'play_motion2.egg-info/SOURCES.txt'
+[2.481s] writing manifest file 'play_motion2.egg-info/SOURCES.txt'
+[2.510s] [ 40%] Built target ament_cmake_python_build_play_motion2_egg
+[3.039s] [ 44%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[3.079s] [ 44%] Built target gtest_main
+[10.091s] [ 48%] [32m[1mLinking CXX static library libgtest.a[0m
+[10.287s] [ 48%] Built target gtest
+[10.312s] [ 51%] [32mBuilding CXX object CMakeFiles/play_motion2_node_test.dir/test/play_motion2_node_test.cpp.o[0m
+[12.172s] [ 55%] [32m[1mLinking CXX shared library libclient.so[0m
+[13.714s] [ 59%] [32m[1mLinking CXX shared library libpassthrough_controller.so[0m
+[14.034s] [ 59%] Built target passthrough_controller
+[14.981s] [ 59%] Built target client
+[15.001s] [ 66%] [32mBuilding CXX object CMakeFiles/rrbot_system.dir/test/rrbot/rrbot_system.cpp.o[0m
+[15.001s] [ 66%] [32mBuilding CXX object CMakeFiles/run_motion.dir/src/run_motion.cpp.o[0m
+[17.222s] [ 70%] [32m[1mLinking CXX executable run_motion[0m
+[17.494s] [ 70%] Built target run_motion
+[17.501s] [ 74%] [32m[1mLinking CXX shared library librrbot_system.so[0m
+[18.320s] [ 74%] Built target rrbot_system
+[18.345s] [ 77%] [32mBuilding CXX object CMakeFiles/client_test.dir/test/client_test.cpp.o[0m
+[18.346s] [ 81%] [32mBuilding CXX object CMakeFiles/motion_loader_test.dir/src/utils/motion_loader.cpp.o[0m
+[18.346s] [ 85%] [32mBuilding CXX object CMakeFiles/motion_loader_test.dir/test/motion_loader_test.cpp.o[0m
+[22.628s] [ 88%] [32m[1mLinking CXX executable motion_loader_test[0m
+[23.008s] [ 88%] Built target motion_loader_test
+[24.394s] [ 92%] [32m[1mLinking CXX executable play_motion2_node[0m
+[24.743s] [ 92%] Built target play_motion2_node
+[26.768s] [ 96%] [32m[1mLinking CXX executable play_motion2_node_test[0m
+[26.929s] [ 96%] Built target play_motion2_node_test
+[27.385s] [100%] [32m[1mLinking CXX executable client_test[0m
+[27.607s] [100%] Built target client_test
+[27.614s] Invoked command in '/workspaces/TIAgo_humble/build/play_motion2' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/play_motion2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/play_motion2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/TIAgo_humble/install/play_motion2_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/TIAgo_humble/build/play_motion2 -- -j24 -l24
+[27.615s] Invoking command in '/workspaces/TIAgo_humble/build/play_motion2': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/play_motion2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/play_motion2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/TIAgo_humble/install/play_motion2_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/TIAgo_humble/build/play_motion2
+[27.619s] -- Install configuration: "Release"
+[27.619s] -- Execute custom install script
+[27.620s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/share/play_motion2/environment/pythonpath.sh
+[27.625s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/share/play_motion2/environment/pythonpath.dsv
+[27.630s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/local/lib/python3.10/dist-packages/play_motion2-1.8.5-py3.10.egg-info/PKG-INFO
+[27.634s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/local/lib/python3.10/dist-packages/play_motion2-1.8.5-py3.10.egg-info/SOURCES.txt
+[27.638s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/local/lib/python3.10/dist-packages/play_motion2-1.8.5-py3.10.egg-info/dependency_links.txt
+[27.643s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/local/lib/python3.10/dist-packages/play_motion2-1.8.5-py3.10.egg-info/top_level.txt
+[27.648s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/local/lib/python3.10/dist-packages/play_motion2/__init__.py
+[27.653s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/share/play_motion2/test/rrbot/rrbot_system.xml
+[27.658s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/include/play_motion2/passthrough_controller_parameters.hpp
+[27.663s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/share/play_motion2/test/controllers/passthrough_controller.xml
+[27.668s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/lib/libpassthrough_controller.so
+[27.673s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/lib/play_motion2/play_motion2_node_test
+[27.678s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/include/play_motion2/play_motion2/client.hpp
+[27.682s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/include/play_motion2/play_motion2/motion_loader.hpp
+[27.687s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/include/play_motion2/play_motion2/types.hpp
+[27.692s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/share/play_motion2/environment/library_path.sh
+[27.696s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/share/play_motion2/environment/library_path.dsv
+[27.701s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/lib/libclient.so
+[27.706s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/lib/librrbot_system.so
+[27.711s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/lib/play_motion2/play_motion2_node
+[27.717s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/lib/play_motion2/run_motion
+[27.723s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/share/play_motion2/config/motion_planner_config.yaml
+[27.729s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/share/play_motion2/launch/play_motion2.launch.py
+[27.735s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/share/ament_index/resource_index/package_run_dependencies/play_motion2
+[27.741s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/share/ament_index/resource_index/parent_prefix_path/play_motion2
+[27.746s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/share/play_motion2/environment/ament_prefix_path.sh
+[27.752s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/share/play_motion2/environment/ament_prefix_path.dsv
+[27.758s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/share/play_motion2/environment/path.sh
+[27.763s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/share/play_motion2/environment/path.dsv
+[27.769s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/share/play_motion2/local_setup.bash
+[27.774s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/share/play_motion2/local_setup.sh
+[27.779s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/share/play_motion2/local_setup.zsh
+[27.783s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/share/play_motion2/local_setup.dsv
+[27.788s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/share/play_motion2/package.dsv
+[27.793s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/share/ament_index/resource_index/packages/play_motion2
+[27.798s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/play_motion2
+[27.804s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/share/ament_index/resource_index/controller_interface__pluginlib__plugin/play_motion2
+[27.808s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/share/play_motion2/cmake/ament_cmake_export_dependencies-extras.cmake
+[27.813s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/share/play_motion2/cmake/ament_cmake_export_include_directories-extras.cmake
+[27.818s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/share/play_motion2/cmake/ament_cmake_export_libraries-extras.cmake
+[27.823s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/share/play_motion2/cmake/play_motion2Config.cmake
+[27.828s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/share/play_motion2/cmake/play_motion2Config-version.cmake
+[27.833s] -- Symlinking: /workspaces/TIAgo_humble/install/play_motion2/share/play_motion2/package.xml
+[27.861s] Listing '/workspaces/TIAgo_humble/install/play_motion2/local/lib/python3.10/dist-packages/play_motion2'...
+[27.861s] Compiling '/workspaces/TIAgo_humble/install/play_motion2/local/lib/python3.10/dist-packages/play_motion2/__init__.py'...
+[27.866s] Invoked command in '/workspaces/TIAgo_humble/build/play_motion2' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/play_motion2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/play_motion2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/TIAgo_humble/install/play_motion2_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/TIAgo_humble/build/play_motion2

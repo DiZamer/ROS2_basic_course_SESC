@@ -1,0 +1,23 @@
+[0.524s] Invoking command in '/workspaces/TIAgo_humble/build/play_motion2_cli': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/play_motion2:/workspaces/TIAgo_humble/install/play_motion2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/play_motion2:/workspaces/TIAgo_humble/install/play_motion2_msgs LD_LIBRARY_PATH=/workspaces/TIAgo_humble/install/play_motion2/lib:/workspaces/TIAgo_humble/install/play_motion2_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/workspaces/TIAgo_humble/build/play_motion2_cli/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/TIAgo_humble/install/play_motion2_cli/lib/python3.10/site-packages:/workspaces/TIAgo_humble/install/play_motion2/local/lib/python3.10/dist-packages:/workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspaces/TIAgo_humble/build/play_motion2_cli/build --no-deps symlink_data
+[0.667s] running develop
+[0.739s] running egg_info
+[0.739s] creating play_motion2_cli.egg-info
+[0.739s] writing play_motion2_cli.egg-info/PKG-INFO
+[0.740s] writing dependency_links to play_motion2_cli.egg-info/dependency_links.txt
+[0.740s] writing entry points to play_motion2_cli.egg-info/entry_points.txt
+[0.740s] writing requirements to play_motion2_cli.egg-info/requires.txt
+[0.740s] writing top-level names to play_motion2_cli.egg-info/top_level.txt
+[0.741s] writing manifest file 'play_motion2_cli.egg-info/SOURCES.txt'
+[0.742s] reading manifest file 'play_motion2_cli.egg-info/SOURCES.txt'
+[0.742s] writing manifest file 'play_motion2_cli.egg-info/SOURCES.txt'
+[0.743s] running build_ext
+[0.743s] Creating /workspaces/TIAgo_humble/install/play_motion2_cli/lib/python3.10/site-packages/play-motion2-cli.egg-link (link to .)
+[0.744s] 
+[0.744s] Installed /workspaces/TIAgo_humble/build/play_motion2_cli
+[0.744s] running symlink_data
+[0.744s] symbolically linking /workspaces/TIAgo_humble/build/play_motion2_cli/package.xml -> /workspaces/TIAgo_humble/install/play_motion2_cli/share/play_motion2_cli
+[0.744s] creating /workspaces/TIAgo_humble/install/play_motion2_cli/share/ament_index
+[0.744s] creating /workspaces/TIAgo_humble/install/play_motion2_cli/share/ament_index/resource_index
+[0.744s] creating /workspaces/TIAgo_humble/install/play_motion2_cli/share/ament_index/resource_index/packages
+[0.744s] symbolically linking /workspaces/TIAgo_humble/build/play_motion2_cli/resource/play_motion2_cli -> /workspaces/TIAgo_humble/install/play_motion2_cli/share/ament_index/resource_index/packages
+[0.762s] Invoked command in '/workspaces/TIAgo_humble/build/play_motion2_cli' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/play_motion2:/workspaces/TIAgo_humble/install/play_motion2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/play_motion2:/workspaces/TIAgo_humble/install/play_motion2_msgs LD_LIBRARY_PATH=/workspaces/TIAgo_humble/install/play_motion2/lib:/workspaces/TIAgo_humble/install/play_motion2_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/workspaces/TIAgo_humble/build/play_motion2_cli/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/TIAgo_humble/install/play_motion2_cli/lib/python3.10/site-packages:/workspaces/TIAgo_humble/install/play_motion2/local/lib/python3.10/dist-packages:/workspaces/TIAgo_humble/install/play_motion2_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspaces/TIAgo_humble/build/play_motion2_cli/build --no-deps symlink_data

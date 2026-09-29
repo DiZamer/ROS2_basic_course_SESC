@@ -1,0 +1,15 @@
+/workspaces/TIAgo_humble/install/pal_robotiq_gripper/share/ament_index/resource_index/package_run_dependencies/pal_robotiq_gripper
+/workspaces/TIAgo_humble/install/pal_robotiq_gripper/share/ament_index/resource_index/parent_prefix_path/pal_robotiq_gripper
+/workspaces/TIAgo_humble/install/pal_robotiq_gripper/share/pal_robotiq_gripper/environment/ament_prefix_path.sh
+/workspaces/TIAgo_humble/install/pal_robotiq_gripper/share/pal_robotiq_gripper/environment/ament_prefix_path.dsv
+/workspaces/TIAgo_humble/install/pal_robotiq_gripper/share/pal_robotiq_gripper/environment/path.sh
+/workspaces/TIAgo_humble/install/pal_robotiq_gripper/share/pal_robotiq_gripper/environment/path.dsv
+/workspaces/TIAgo_humble/install/pal_robotiq_gripper/share/pal_robotiq_gripper/local_setup.bash
+/workspaces/TIAgo_humble/install/pal_robotiq_gripper/share/pal_robotiq_gripper/local_setup.sh
+/workspaces/TIAgo_humble/install/pal_robotiq_gripper/share/pal_robotiq_gripper/local_setup.zsh
+/workspaces/TIAgo_humble/install/pal_robotiq_gripper/share/pal_robotiq_gripper/local_setup.dsv
+/workspaces/TIAgo_humble/install/pal_robotiq_gripper/share/pal_robotiq_gripper/package.dsv
+/workspaces/TIAgo_humble/install/pal_robotiq_gripper/share/ament_index/resource_index/packages/pal_robotiq_gripper
+/workspaces/TIAgo_humble/install/pal_robotiq_gripper/share/pal_robotiq_gripper/cmake/pal_robotiq_gripperConfig.cmake
+/workspaces/TIAgo_humble/install/pal_robotiq_gripper/share/pal_robotiq_gripper/cmake/pal_robotiq_gripperConfig-version.cmake
+/workspaces/TIAgo_humble/install/pal_robotiq_gripper/share/pal_robotiq_gripper/package.xml

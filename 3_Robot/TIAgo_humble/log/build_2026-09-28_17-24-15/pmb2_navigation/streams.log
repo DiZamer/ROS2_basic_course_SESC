@@ -1,0 +1,41 @@
+[0.013s] Invoking command in '/workspaces/TIAgo_humble/build/pmb2_navigation': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_2dnav:/workspaces/TIAgo_humble/install/pmb2_laser_sensors:/workspaces/TIAgo_humble/install/pal_maps:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_2dnav:/workspaces/TIAgo_humble/install/pmb2_laser_sensors:/workspaces/TIAgo_humble/install/pal_maps:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/pmb2_navigation/pmb2_navigation -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/pmb2_navigation
+[0.084s] -- The C compiler identification is GNU 11.4.0
+[0.167s] -- The CXX compiler identification is GNU 11.4.0
+[0.185s] -- Detecting C compiler ABI info
+[0.340s] -- Detecting C compiler ABI info - done
+[0.356s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.358s] -- Detecting C compile features
+[0.358s] -- Detecting C compile features - done
+[0.365s] -- Detecting CXX compiler ABI info
+[0.514s] -- Detecting CXX compiler ABI info - done
+[0.529s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.530s] -- Detecting CXX compile features
+[0.531s] -- Detecting CXX compile features - done
+[0.537s] -- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.851s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.989s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.301s] -- Configuring done
+[1.306s] -- Generating done
+[1.310s] -- Build files have been written to: /workspaces/TIAgo_humble/build/pmb2_navigation
+[1.324s] Invoked command in '/workspaces/TIAgo_humble/build/pmb2_navigation' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_2dnav:/workspaces/TIAgo_humble/install/pmb2_laser_sensors:/workspaces/TIAgo_humble/install/pal_maps:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_2dnav:/workspaces/TIAgo_humble/install/pmb2_laser_sensors:/workspaces/TIAgo_humble/install/pal_maps:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/pmb2_navigation/pmb2_navigation -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/pmb2_navigation
+[1.329s] Invoking command in '/workspaces/TIAgo_humble/build/pmb2_navigation': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_2dnav:/workspaces/TIAgo_humble/install/pmb2_laser_sensors:/workspaces/TIAgo_humble/install/pal_maps:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_2dnav:/workspaces/TIAgo_humble/install/pmb2_laser_sensors:/workspaces/TIAgo_humble/install/pal_maps:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/TIAgo_humble/build/pmb2_navigation -- -j24 -l24
+[1.433s] Invoked command in '/workspaces/TIAgo_humble/build/pmb2_navigation' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_2dnav:/workspaces/TIAgo_humble/install/pmb2_laser_sensors:/workspaces/TIAgo_humble/install/pal_maps:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_2dnav:/workspaces/TIAgo_humble/install/pmb2_laser_sensors:/workspaces/TIAgo_humble/install/pal_maps:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/TIAgo_humble/build/pmb2_navigation -- -j24 -l24
+[1.436s] Invoking command in '/workspaces/TIAgo_humble/build/pmb2_navigation': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_2dnav:/workspaces/TIAgo_humble/install/pmb2_laser_sensors:/workspaces/TIAgo_humble/install/pal_maps:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_2dnav:/workspaces/TIAgo_humble/install/pmb2_laser_sensors:/workspaces/TIAgo_humble/install/pal_maps:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/TIAgo_humble/build/pmb2_navigation
+[1.445s] -- Install configuration: "Release"
+[1.445s] -- Execute custom install script
+[1.446s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_navigation/share/ament_index/resource_index/package_run_dependencies/pmb2_navigation
+[1.462s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_navigation/share/ament_index/resource_index/parent_prefix_path/pmb2_navigation
+[1.490s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_navigation/share/pmb2_navigation/environment/ament_prefix_path.sh
+[1.503s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_navigation/share/pmb2_navigation/environment/ament_prefix_path.dsv
+[1.507s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_navigation/share/pmb2_navigation/environment/path.sh
+[1.517s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_navigation/share/pmb2_navigation/environment/path.dsv
+[1.548s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_navigation/share/pmb2_navigation/local_setup.bash
+[1.571s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_navigation/share/pmb2_navigation/local_setup.sh
+[1.582s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_navigation/share/pmb2_navigation/local_setup.zsh
+[1.599s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_navigation/share/pmb2_navigation/local_setup.dsv
+[1.617s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_navigation/share/pmb2_navigation/package.dsv
+[1.629s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_navigation/share/ament_index/resource_index/packages/pmb2_navigation
+[1.646s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_navigation/share/pmb2_navigation/cmake/pmb2_navigationConfig.cmake
+[1.661s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_navigation/share/pmb2_navigation/cmake/pmb2_navigationConfig-version.cmake
+[1.684s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_navigation/share/pmb2_navigation/package.xml
+[1.732s] Invoked command in '/workspaces/TIAgo_humble/build/pmb2_navigation' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_2dnav:/workspaces/TIAgo_humble/install/pmb2_laser_sensors:/workspaces/TIAgo_humble/install/pal_maps:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_2dnav:/workspaces/TIAgo_humble/install/pmb2_laser_sensors:/workspaces/TIAgo_humble/install/pal_maps:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/TIAgo_humble/build/pmb2_navigation

@@ -1,0 +1,13 @@
+# Sets led color
+
+LedGroup leds
+
+# RGBA of color, transparency is not available in leds, so alpha will be ignored
+std_msgs/ColorRGBA color
+
+#Duration of the effect, when the time is over the previous effect will be restored. 0 will make it display forever
+builtin_interfaces/Duration effect_duration
+
+#priority of the effect, 0 is no priority, 255 is max priority
+uint8 priority
+

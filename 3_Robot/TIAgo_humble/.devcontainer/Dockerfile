@@ -55,6 +55,7 @@ RUN echo "source /opt/ros/${ROS_DISTRO}/setup.bash" >> ~/.bashrc
 # --- Install TIAGo dependencies (MoveIt2, Nav2, ros2_control, etc.)
 RUN sudo apt-get update && sudo apt-get install -y --no-install-recommends \
     ros-humble-moveit \
+    ros-humble-moveit-ros-perception \
     ros-humble-navigation2 \
     ros-humble-nav2-bringup \
     ros-humble-slam-toolbox \

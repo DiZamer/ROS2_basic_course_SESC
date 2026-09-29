@@ -1,0 +1,24 @@
+{
+  "package_name": "pal_device_msgs",
+  "non_idl_tuples": [
+    "/workspaces/TIAgo_humble/ros2_ws/src/pal_msgs/pal_device_msgs:action/DoTimedLedEffect.action",
+    "/workspaces/TIAgo_humble/ros2_ws/src/pal_msgs/pal_device_msgs:msg/BatteryState.msg",
+    "/workspaces/TIAgo_humble/ros2_ws/src/pal_msgs/pal_device_msgs:msg/Bumper.msg",
+    "/workspaces/TIAgo_humble/ros2_ws/src/pal_msgs/pal_device_msgs:msg/LedGroup.msg",
+    "/workspaces/TIAgo_humble/ros2_ws/src/pal_msgs/pal_device_msgs:msg/LedEffectParams.msg",
+    "/workspaces/TIAgo_humble/ros2_ws/src/pal_msgs/pal_device_msgs:msg/LedFixedColorParams.msg",
+    "/workspaces/TIAgo_humble/ros2_ws/src/pal_msgs/pal_device_msgs:msg/LedRainbowParams.msg",
+    "/workspaces/TIAgo_humble/ros2_ws/src/pal_msgs/pal_device_msgs:msg/LedFadeParams.msg",
+    "/workspaces/TIAgo_humble/ros2_ws/src/pal_msgs/pal_device_msgs:msg/LedBlinkParams.msg",
+    "/workspaces/TIAgo_humble/ros2_ws/src/pal_msgs/pal_device_msgs:msg/LedProgressParams.msg",
+    "/workspaces/TIAgo_humble/ros2_ws/src/pal_msgs/pal_device_msgs:msg/LedFlowParams.msg",
+    "/workspaces/TIAgo_humble/ros2_ws/src/pal_msgs/pal_device_msgs:msg/LedDataArrayParams.msg",
+    "/workspaces/TIAgo_humble/ros2_ws/src/pal_msgs/pal_device_msgs:msg/LedEffectViaTopicParams.msg",
+    "/workspaces/TIAgo_humble/ros2_ws/src/pal_msgs/pal_device_msgs:msg/LedPreProgrammedParams.msg",
+    "/workspaces/TIAgo_humble/ros2_ws/src/pal_msgs/pal_device_msgs:srv/CancelEffect.srv",
+    "/workspaces/TIAgo_humble/ros2_ws/src/pal_msgs/pal_device_msgs:srv/ShutdownAndWakeUpRobot.srv",
+    "/workspaces/TIAgo_humble/ros2_ws/src/pal_msgs/pal_device_msgs:srv/TimedBlinkEffect.srv",
+    "/workspaces/TIAgo_humble/ros2_ws/src/pal_msgs/pal_device_msgs:srv/TimedColourEffect.srv",
+    "/workspaces/TIAgo_humble/ros2_ws/src/pal_msgs/pal_device_msgs:srv/TimedFadeEffect.srv"
+  ]
+}

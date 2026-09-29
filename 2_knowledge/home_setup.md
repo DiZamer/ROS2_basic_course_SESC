@@ -73,8 +73,8 @@ WSL2 — слой совместимости, запускающий Linux вн�
 5. Откройте терминал Ubuntu (из меню «Пуск») и склонируйте проект:
 
    ```bash
-   git clone <URL-репозитория> ROS2_course_sesc
-   cd ROS2_course_sesc
+   git clone <URL-репозитория> ROS2_basic_course_SESC
+   cd ROS2_basic_course_SESC
    code .
    ```
 
@@ -91,13 +91,13 @@ WSL2 — слой совместимости, запускающий Linux вн�
 3. Склонируйте репозиторий (PowerShell или Git Bash):
 
    ```bash
-   git clone <URL-репозитория> ROS2_course_sesc
+   git clone <URL-репозитория> ROS2_basic_course_SESC
    ```
 
 4. Откройте папку в VS Code:
 
    ```bash
-   code ROS2_course_sesc
+   code ROS2_basic_course_SESC
    ```
 
 5. В VS Code нажмите Ctrl+Shift+P → «Dev Containers: Reopen in Container». Первая сборка скачивает образ и собирает контейнер — дождитесь окончания.
@@ -121,8 +121,8 @@ WSL2 — слой совместимости, запускающий Linux вн�
 6. Внутри ВМ склонируйте проект и соберите контейнер:
 
    ```bash
-   git clone <URL-репозитория> ROS2_course_sesc
-   cd ROS2_course_sesc
+   git clone <URL-репозитория> ROS2_basic_course_SESC
+   cd ROS2_basic_course_SESC
    code .
    ```
 

@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-bb93bb563fc2f9ff5256.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.2"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "pal_gazebo_plugins",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "gazebo_underactuated_finger::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gazebo_underactuated_finger-Release-3b5f3a9f09e26b97053c.json",
+					"name" : "gazebo_underactuated_finger",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gazebo_world_odometry::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gazebo_world_odometry-Release-7d0ae401445b1fc30fe7.json",
+					"name" : "gazebo_world_odometry",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pal_gazebo_collisions::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pal_gazebo_collisions-Release-47e7c65a37bb00b7b3ae.json",
+					"name" : "pal_gazebo_collisions",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pal_gazebo_plugins_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pal_gazebo_plugins_uninstall-Release-bd7bc489c975d9a0c015.json",
+					"name" : "pal_gazebo_plugins_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-811b985ee6dc903ea837.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/workspaces/TIAgo_humble/build/pal_gazebo_plugins",
+		"source" : "/workspaces/TIAgo_humble/ros2_ws/src/pal_gazebo_plugins"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

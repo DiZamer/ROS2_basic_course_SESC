@@ -1,0 +1,4 @@
+source;share/tiago_rgbd_sensors/local_setup.bash
+source;share/tiago_rgbd_sensors/local_setup.dsv
+source;share/tiago_rgbd_sensors/local_setup.sh
+source;share/tiago_rgbd_sensors/local_setup.zsh

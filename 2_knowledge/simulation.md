@@ -47,11 +47,13 @@ flowchart LR
 
 ```bash
 # Уровень 2: учебный робот в gz-sim (пакет 2_code/gazebo_demo)
-cd 2_code && colcon build --symlink-install
+cd 2_code && colcon build
 ros2 launch gazebo_demo gazebo.launch.py
 
 # Уровень 3: TIAGo в Gazebo Classic
-ros2 launch tiago_gazebo tiago_gazebo.launch.py
+ros2 launch tiago_gazebo tiago_gazebo.launch.py is_public_sim:=True
+# is_public_sim:=True обязателен для публичной симуляции PAL;
+# без него launch останавливается с ошибкой (нужен реальный robot_info)
 
 # Типичная структура launch-файла симуляции
 # 1. Запустить Gazebo с миром (world)

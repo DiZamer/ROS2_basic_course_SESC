@@ -1,0 +1,73 @@
+[0.214s] Invoking command in '/workspaces/TIAgo_humble/build/pal_maps': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/pal_maps -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/pal_maps
+[0.323s] -- The C compiler identification is GNU 11.4.0
+[0.421s] -- The CXX compiler identification is GNU 11.4.0
+[0.434s] -- Detecting C compiler ABI info
+[0.551s] -- Detecting C compiler ABI info - done
+[0.565s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.566s] -- Detecting C compile features
+[0.566s] -- Detecting C compile features - done
+[0.572s] -- Detecting CXX compiler ABI info
+[0.680s] -- Detecting CXX compiler ABI info - done
+[0.694s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.695s] -- Detecting CXX compile features
+[0.696s] -- Detecting CXX compile features - done
+[0.704s] -- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.907s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.983s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.128s] -- Configuring done
+[1.130s] -- Generating done
+[1.132s] -- Build files have been written to: /workspaces/TIAgo_humble/build/pal_maps
+[1.137s] Invoked command in '/workspaces/TIAgo_humble/build/pal_maps' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/pal_maps -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/pal_maps
+[1.139s] Invoking command in '/workspaces/TIAgo_humble/build/pal_maps': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/TIAgo_humble/build/pal_maps -- -j24 -l24
+[1.183s] Invoked command in '/workspaces/TIAgo_humble/build/pal_maps' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/TIAgo_humble/build/pal_maps -- -j24 -l24
+[1.197s] Invoking command in '/workspaces/TIAgo_humble/build/pal_maps': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/TIAgo_humble/build/pal_maps
+[1.207s] -- Install configuration: "Release"
+[1.207s] -- Execute custom install script
+[1.208s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/maps/corridor_110cm/map.pgm
+[1.216s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/maps/corridor_110cm/map.yaml
+[1.226s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/maps/corridor_85cm/map.pgm
+[1.236s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/maps/corridor_85cm/map.yaml
+[1.250s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/maps/corridor_95cm/map.pgm
+[1.259s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/maps/corridor_95cm/map.yaml
+[1.267s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/maps/dynamic_obstacle_avoidance_world/map.pgm
+[1.277s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/maps/dynamic_obstacle_avoidance_world/map.yaml
+[1.290s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/maps/home/map.pgm
+[1.300s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/maps/home/map.yaml
+[1.316s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/maps/hospital/map.pgm
+[1.328s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/maps/hospital/map.yaml
+[1.336s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/maps/hospital_with_aruco/map.pgm
+[1.348s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/maps/hospital_with_aruco/map.yaml
+[1.360s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/maps/navigation_gym/map.pgm
+[1.368s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/maps/navigation_gym/map.yaml
+[1.377s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/maps/obstacle_avoidance_world/map.pgm
+[1.386s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/maps/obstacle_avoidance_world/map.yaml
+[1.398s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/maps/pal_office/map.pgm
+[1.410s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/maps/pal_office/map.yaml
+[1.423s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/maps/pal_office_7th_floor/map.pgm
+[1.431s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/maps/pal_office_7th_floor/map.yaml
+[1.443s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/maps/roscon_es_25/map.pgm
+[1.454s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/maps/roscon_es_25/map.yaml
+[1.465s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/maps/small_house/map.pgm
+[1.475s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/maps/small_house/map.yaml
+[1.486s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/maps/small_office/map.pgm
+[1.494s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/maps/small_office/map.yaml
+[1.504s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/maps/small_warehouse/map.pgm
+[1.513s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/maps/small_warehouse/map.yaml
+[1.528s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/maps/willow_garage/map.pgm
+[1.534s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/maps/willow_garage/map.yaml
+[1.547s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/ament_index/resource_index/package_run_dependencies/pal_maps
+[1.556s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/ament_index/resource_index/parent_prefix_path/pal_maps
+[1.566s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/environment/ament_prefix_path.sh
+[1.583s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/environment/ament_prefix_path.dsv
+[1.597s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/environment/path.sh
+[1.598s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/environment/path.dsv
+[1.609s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/local_setup.bash
+[1.620s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/local_setup.sh
+[1.633s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/local_setup.zsh
+[1.645s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/local_setup.dsv
+[1.654s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/package.dsv
+[1.665s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/ament_index/resource_index/packages/pal_maps
+[1.676s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/cmake/pal_mapsConfig.cmake
+[1.685s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/cmake/pal_mapsConfig-version.cmake
+[1.696s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_maps/share/pal_maps/package.xml
+[1.709s] Invoked command in '/workspaces/TIAgo_humble/build/pal_maps' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/TIAgo_humble/build/pal_maps

@@ -1,0 +1,1 @@
+/workspaces/TIAgo_humble/build/play_motion2_msgs/rosidl_generator_py/play_motion2_msgs/__init__.py

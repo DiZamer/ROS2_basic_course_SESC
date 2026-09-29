@@ -44,7 +44,7 @@
 ```bash
 # 1. Склонировать проект
 git clone <адрес репозитория>
-cd ROS2_course_sesc
+cd ROS2_basic_course_SESC
 
 # 2. Открыть проект в VS Code с Dev Containers
 # 3. Пересобрать контейнер при первом запуске
@@ -85,7 +85,7 @@ DISPLAY=:100 ros2 run turtlesim turtlesim_node
 cd 2_code
 ros2 pkg create --build-type ament_python my_pkg
 # Пересобрать после правок
-colcon build --symlink-install
+colcon build
 ```
 
 Для **запуска** достаточно `ros2 launch <pkg> <file>.launch.py` — overlay подключается автоматически при создании контейнера.
@@ -96,14 +96,15 @@ colcon build --symlink-install
 - файлы и пакеты в смонтированной рабочей папке (`/workspaces/...`) — сохраняются;
 - изменения **вне** рабочей папки (например, в `/opt/ros`, `/usr`) — **не** сохраняются; Rebuild возвращает образ к исходному состоянию.
 
-`colcon build` в `postCreateCommand` выполняется при создании/пересборке контейнера, а не при каждом открытии.
+`colcon build` в `postCreateCommand` (скрипт `.devcontainer/post_create.sh`) выполняется при создании/пересборке контейнера, а не при каждом открытии.
 
 ### Типичные ошибки
 
 | Ошибка | Причина | Исправление |
 | --- | --- | --- |
 | `Package '...' not found` | Overlay не подключён (старый контейнер) | **Rebuild Container**; диагностика: `ros2 pkg prefix gazebo_demo` |
-| Пакет не найден после правок | Пакет не пересобран | `cd 2_code && colcon build --symlink-install`, затем новый терминал |
+| `Package '...' not found` после переименования папки проекта | Абсолютные пути в `build/install` устарели | `cd 2_code && rm -rf build install log && colcon build` |
+| Пакет не найден после правок | Пакет не пересобран | `cd 2_code && colcon build`, затем новый терминал |
 | `ros2: command not found` | Контейнер не активен | Открыть проект в Dev Container |
 
 ## Структура проекта

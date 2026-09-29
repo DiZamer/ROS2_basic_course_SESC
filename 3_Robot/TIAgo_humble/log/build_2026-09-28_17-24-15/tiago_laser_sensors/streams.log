@@ -1,0 +1,44 @@
+[0.047s] Invoking command in '/workspaces/TIAgo_humble/build/tiago_laser_sensors': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_laser_sensors:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_laser_sensors:/opt/ros/humble /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/tiago_navigation/tiago_laser_sensors -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/tiago_laser_sensors
+[0.111s] -- The C compiler identification is GNU 11.4.0
+[0.179s] -- The CXX compiler identification is GNU 11.4.0
+[0.187s] -- Detecting C compiler ABI info
+[0.263s] -- Detecting C compiler ABI info - done
+[0.271s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.272s] -- Detecting C compile features
+[0.273s] -- Detecting C compile features - done
+[0.278s] -- Detecting CXX compiler ABI info
+[0.393s] -- Detecting CXX compiler ABI info - done
+[0.401s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.401s] -- Detecting CXX compile features
+[0.402s] -- Detecting CXX compile features - done
+[0.406s] -- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.580s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.653s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.816s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.818s] -- Added test 'lint_cmake' to check CMake code style
+[0.819s] -- Added test 'xmllint' to check XML markup files
+[0.821s] -- Configuring done
+[0.824s] -- Generating done
+[0.826s] -- Build files have been written to: /workspaces/TIAgo_humble/build/tiago_laser_sensors
+[0.832s] Invoked command in '/workspaces/TIAgo_humble/build/tiago_laser_sensors' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_laser_sensors:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_laser_sensors:/opt/ros/humble /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/tiago_navigation/tiago_laser_sensors -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/tiago_laser_sensors
+[0.834s] Invoking command in '/workspaces/TIAgo_humble/build/tiago_laser_sensors': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_laser_sensors:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_laser_sensors:/opt/ros/humble /usr/bin/cmake --build /workspaces/TIAgo_humble/build/tiago_laser_sensors -- -j24 -l24
+[0.877s] Invoked command in '/workspaces/TIAgo_humble/build/tiago_laser_sensors' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_laser_sensors:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_laser_sensors:/opt/ros/humble /usr/bin/cmake --build /workspaces/TIAgo_humble/build/tiago_laser_sensors -- -j24 -l24
+[0.878s] Invoking command in '/workspaces/TIAgo_humble/build/tiago_laser_sensors': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_laser_sensors:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_laser_sensors:/opt/ros/humble /usr/bin/cmake --install /workspaces/TIAgo_humble/build/tiago_laser_sensors
+[0.888s] -- Install configuration: "Release"
+[0.889s] -- Execute custom install script
+[0.889s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_laser_sensors/share/ament_index/resource_index/package_run_dependencies/tiago_laser_sensors
+[0.902s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_laser_sensors/share/ament_index/resource_index/parent_prefix_path/tiago_laser_sensors
+[0.914s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_laser_sensors/share/tiago_laser_sensors/environment/ament_prefix_path.sh
+[0.922s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_laser_sensors/share/tiago_laser_sensors/environment/ament_prefix_path.dsv
+[0.933s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_laser_sensors/share/tiago_laser_sensors/environment/path.sh
+[0.941s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_laser_sensors/share/tiago_laser_sensors/environment/path.dsv
+[0.951s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_laser_sensors/share/tiago_laser_sensors/local_setup.bash
+[0.959s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_laser_sensors/share/tiago_laser_sensors/local_setup.sh
+[0.969s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_laser_sensors/share/tiago_laser_sensors/local_setup.zsh
+[0.977s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_laser_sensors/share/tiago_laser_sensors/local_setup.dsv
+[0.989s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_laser_sensors/share/tiago_laser_sensors/package.dsv
+[1.002s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_laser_sensors/share/ament_index/resource_index/packages/tiago_laser_sensors
+[1.012s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_laser_sensors/share/tiago_laser_sensors/cmake/tiago_laser_sensorsConfig.cmake
+[1.023s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_laser_sensors/share/tiago_laser_sensors/cmake/tiago_laser_sensorsConfig-version.cmake
+[1.033s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_laser_sensors/share/tiago_laser_sensors/package.xml
+[1.046s] Invoked command in '/workspaces/TIAgo_humble/build/tiago_laser_sensors' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_laser_sensors:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_laser_sensors:/opt/ros/humble /usr/bin/cmake --install /workspaces/TIAgo_humble/build/tiago_laser_sensors

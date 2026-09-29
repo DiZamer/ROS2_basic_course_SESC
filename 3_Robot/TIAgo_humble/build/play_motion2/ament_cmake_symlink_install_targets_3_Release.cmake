@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/workspaces/TIAgo_humble/build/play_motion2/play_motion2_node" "/workspaces/TIAgo_humble/build/play_motion2/run_motion" "TARGETS" "play_motion2_node" "run_motion" "DESTINATION" "lib/play_motion2")

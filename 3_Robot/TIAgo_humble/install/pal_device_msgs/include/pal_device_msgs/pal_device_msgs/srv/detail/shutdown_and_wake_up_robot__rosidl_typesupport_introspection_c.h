@@ -1,0 +1,1 @@
+/workspaces/TIAgo_humble/build/pal_device_msgs/rosidl_typesupport_introspection_c/pal_device_msgs/srv/detail/shutdown_and_wake_up_robot__rosidl_typesupport_introspection_c.h

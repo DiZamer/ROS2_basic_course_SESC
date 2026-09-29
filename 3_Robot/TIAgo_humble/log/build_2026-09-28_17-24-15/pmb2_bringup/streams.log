@@ -1,0 +1,55 @@
+[0.036s] Invoking command in '/workspaces/TIAgo_humble/build/pmb2_bringup': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_description:/workspaces/TIAgo_humble/install/pmb2_controller_configuration:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_description:/workspaces/TIAgo_humble/install/pmb2_controller_configuration:/workspaces/TIAgo_humble/install/pal_urdf_utils:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/install/pmb2_description/local/lib/python3.10/dist-packages:/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/pmb2_robot/pmb2_bringup -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/pmb2_bringup
+[0.318s] -- The C compiler identification is GNU 11.4.0
+[0.496s] -- The CXX compiler identification is GNU 11.4.0
+[0.516s] -- Detecting C compiler ABI info
+[0.840s] -- Detecting C compiler ABI info - done
+[0.843s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.843s] -- Detecting C compile features
+[0.843s] -- Detecting C compile features - done
+[0.848s] -- Detecting CXX compiler ABI info
+[1.097s] -- Detecting CXX compiler ABI info - done
+[1.163s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.164s] -- Detecting CXX compile features
+[1.165s] -- Detecting CXX compile features - done
+[1.180s] -- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.688s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.915s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.596s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.807s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.822s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.823s] -- Added test 'lint_cmake' to check CMake code style
+[2.833s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.842s] -- Added test 'xmllint' to check XML markup files
+[2.867s] -- Configuring done
+[2.872s] -- Generating done
+[2.990s] -- Build files have been written to: /workspaces/TIAgo_humble/build/pmb2_bringup
+[2.991s] Invoked command in '/workspaces/TIAgo_humble/build/pmb2_bringup' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_description:/workspaces/TIAgo_humble/install/pmb2_controller_configuration:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_description:/workspaces/TIAgo_humble/install/pmb2_controller_configuration:/workspaces/TIAgo_humble/install/pal_urdf_utils:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/install/pmb2_description/local/lib/python3.10/dist-packages:/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/pmb2_robot/pmb2_bringup -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/pmb2_bringup
+[2.991s] Invoking command in '/workspaces/TIAgo_humble/build/pmb2_bringup': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_description:/workspaces/TIAgo_humble/install/pmb2_controller_configuration:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_description:/workspaces/TIAgo_humble/install/pmb2_controller_configuration:/workspaces/TIAgo_humble/install/pal_urdf_utils:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/install/pmb2_description/local/lib/python3.10/dist-packages:/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/TIAgo_humble/build/pmb2_bringup -- -j24 -l24
+[3.076s] Invoked command in '/workspaces/TIAgo_humble/build/pmb2_bringup' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_description:/workspaces/TIAgo_humble/install/pmb2_controller_configuration:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_description:/workspaces/TIAgo_humble/install/pmb2_controller_configuration:/workspaces/TIAgo_humble/install/pal_urdf_utils:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/install/pmb2_description/local/lib/python3.10/dist-packages:/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/TIAgo_humble/build/pmb2_bringup -- -j24 -l24
+[3.077s] Invoking command in '/workspaces/TIAgo_humble/build/pmb2_bringup': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_description:/workspaces/TIAgo_humble/install/pmb2_controller_configuration:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_description:/workspaces/TIAgo_humble/install/pmb2_controller_configuration:/workspaces/TIAgo_humble/install/pal_urdf_utils:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/install/pmb2_description/local/lib/python3.10/dist-packages:/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/TIAgo_humble/build/pmb2_bringup
+[3.116s] -- Install configuration: "Release"
+[3.117s] -- Execute custom install script
+[3.118s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_bringup/share/pmb2_bringup/config/joy_teleop/joystick_analyzers.yaml
+[3.121s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_bringup/share/pmb2_bringup/config/twist_mux/joystick.yaml
+[3.164s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_bringup/share/pmb2_bringup/config/twist_mux/twist_mux_analyzers.yaml
+[3.199s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_bringup/share/pmb2_bringup/config/twist_mux/twist_mux_locks.yaml
+[3.217s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_bringup/share/pmb2_bringup/config/twist_mux/twist_mux_topics.yaml
+[3.301s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_bringup/share/pmb2_bringup/launch/joystick_teleop.launch.py
+[3.302s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_bringup/share/pmb2_bringup/launch/pmb2_bringup.launch.py
+[3.306s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_bringup/share/pmb2_bringup/launch/twist_mux.launch.py
+[3.329s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_bringup/share/ament_index/resource_index/package_run_dependencies/pmb2_bringup
+[3.358s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_bringup/share/ament_index/resource_index/parent_prefix_path/pmb2_bringup
+[3.385s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_bringup/share/pmb2_bringup/environment/ament_prefix_path.sh
+[3.423s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_bringup/share/pmb2_bringup/environment/ament_prefix_path.dsv
+[3.440s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_bringup/share/pmb2_bringup/environment/path.sh
+[3.463s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_bringup/share/pmb2_bringup/environment/path.dsv
+[3.492s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_bringup/share/pmb2_bringup/local_setup.bash
+[3.576s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_bringup/share/pmb2_bringup/local_setup.sh
+[3.610s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_bringup/share/pmb2_bringup/local_setup.zsh
+[3.651s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_bringup/share/pmb2_bringup/local_setup.dsv
+[3.681s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_bringup/share/pmb2_bringup/package.dsv
+[3.703s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_bringup/share/ament_index/resource_index/packages/pmb2_bringup
+[3.728s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_bringup/share/pmb2_bringup/cmake/pmb2_bringupConfig.cmake
+[3.753s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_bringup/share/pmb2_bringup/cmake/pmb2_bringupConfig-version.cmake
+[3.779s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_bringup/share/pmb2_bringup/package.xml
+[3.804s] Invoked command in '/workspaces/TIAgo_humble/build/pmb2_bringup' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_description:/workspaces/TIAgo_humble/install/pmb2_controller_configuration:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_description:/workspaces/TIAgo_humble/install/pmb2_controller_configuration:/workspaces/TIAgo_humble/install/pal_urdf_utils:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/install/pmb2_description/local/lib/python3.10/dist-packages:/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/TIAgo_humble/build/pmb2_bringup

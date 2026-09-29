@@ -1,0 +1,146 @@
+[0.071s] Invoking command in '/workspaces/TIAgo_humble/build/tiago_description': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_description:/workspaces/TIAgo_humble/install/pal_hey5_description:/workspaces/TIAgo_humble/install/pal_gripper_description:/workspaces/TIAgo_humble/install/omni_base_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_robotiq_description:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_description:/workspaces/TIAgo_humble/install/pal_hey5_description:/workspaces/TIAgo_humble/install/pal_gripper_description:/workspaces/TIAgo_humble/install/omni_base_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_robotiq_description:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/install/pmb2_description/local/lib/python3.10/dist-packages:/workspaces/TIAgo_humble/install/omni_base_description/local/lib/python3.10/dist-packages:/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/tiago_robot/tiago_description -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/tiago_description
+[0.311s] -- The C compiler identification is GNU 11.4.0
+[0.553s] -- The CXX compiler identification is GNU 11.4.0
+[0.589s] -- Detecting C compiler ABI info
+[0.763s] -- Detecting C compiler ABI info - done
+[0.773s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.774s] -- Detecting C compile features
+[0.775s] -- Detecting C compile features - done
+[0.802s] -- Detecting CXX compiler ABI info
+[1.084s] -- Detecting CXX compiler ABI info - done
+[1.142s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.155s] -- Detecting CXX compile features
+[1.156s] -- Detecting CXX compile features - done
+[1.177s] -- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.720s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.953s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.551s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.749s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.881s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[3.005s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[3.005s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.005s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.005s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[3.042s] -- Found PythonExtra: .so  
+[4.061s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.095s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.095s] -- Added test 'lint_cmake' to check CMake code style
+[4.096s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.110s] -- Added test 'xmllint' to check XML markup files
+[4.114s] -- Configuring done
+[4.126s] -- Generating done
+[4.132s] -- Build files have been written to: /workspaces/TIAgo_humble/build/tiago_description
+[4.142s] Invoked command in '/workspaces/TIAgo_humble/build/tiago_description' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_description:/workspaces/TIAgo_humble/install/pal_hey5_description:/workspaces/TIAgo_humble/install/pal_gripper_description:/workspaces/TIAgo_humble/install/omni_base_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_robotiq_description:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_description:/workspaces/TIAgo_humble/install/pal_hey5_description:/workspaces/TIAgo_humble/install/pal_gripper_description:/workspaces/TIAgo_humble/install/omni_base_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_robotiq_description:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/install/pmb2_description/local/lib/python3.10/dist-packages:/workspaces/TIAgo_humble/install/omni_base_description/local/lib/python3.10/dist-packages:/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/tiago_robot/tiago_description -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/tiago_description
+[4.144s] Invoking command in '/workspaces/TIAgo_humble/build/tiago_description': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_description:/workspaces/TIAgo_humble/install/pal_hey5_description:/workspaces/TIAgo_humble/install/pal_gripper_description:/workspaces/TIAgo_humble/install/omni_base_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_robotiq_description:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_description:/workspaces/TIAgo_humble/install/pal_hey5_description:/workspaces/TIAgo_humble/install/pal_gripper_description:/workspaces/TIAgo_humble/install/omni_base_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_robotiq_description:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/install/pmb2_description/local/lib/python3.10/dist-packages:/workspaces/TIAgo_humble/install/omni_base_description/local/lib/python3.10/dist-packages:/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/TIAgo_humble/build/tiago_description -- -j24 -l24
+[4.290s] Built target ament_cmake_python_symlink_tiago_description
+[4.864s] running egg_info
+[4.867s] creating tiago_description.egg-info
+[4.868s] writing tiago_description.egg-info/PKG-INFO
+[4.868s] writing dependency_links to tiago_description.egg-info/dependency_links.txt
+[4.868s] writing top-level names to tiago_description.egg-info/top_level.txt
+[4.871s] writing manifest file 'tiago_description.egg-info/SOURCES.txt'
+[4.877s] reading manifest file 'tiago_description.egg-info/SOURCES.txt'
+[4.878s] writing manifest file 'tiago_description.egg-info/SOURCES.txt'
+[4.941s] Built target ament_cmake_python_build_tiago_description_egg
+[4.961s] Invoked command in '/workspaces/TIAgo_humble/build/tiago_description' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_description:/workspaces/TIAgo_humble/install/pal_hey5_description:/workspaces/TIAgo_humble/install/pal_gripper_description:/workspaces/TIAgo_humble/install/omni_base_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_robotiq_description:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_description:/workspaces/TIAgo_humble/install/pal_hey5_description:/workspaces/TIAgo_humble/install/pal_gripper_description:/workspaces/TIAgo_humble/install/omni_base_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_robotiq_description:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/install/pmb2_description/local/lib/python3.10/dist-packages:/workspaces/TIAgo_humble/install/omni_base_description/local/lib/python3.10/dist-packages:/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/TIAgo_humble/build/tiago_description -- -j24 -l24
+[4.971s] Invoking command in '/workspaces/TIAgo_humble/build/tiago_description': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_description:/workspaces/TIAgo_humble/install/pal_hey5_description:/workspaces/TIAgo_humble/install/pal_gripper_description:/workspaces/TIAgo_humble/install/omni_base_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_robotiq_description:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_description:/workspaces/TIAgo_humble/install/pal_hey5_description:/workspaces/TIAgo_humble/install/pal_gripper_description:/workspaces/TIAgo_humble/install/omni_base_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_robotiq_description:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/install/pmb2_description/local/lib/python3.10/dist-packages:/workspaces/TIAgo_humble/install/omni_base_description/local/lib/python3.10/dist-packages:/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/TIAgo_humble/build/tiago_description
+[4.980s] -- Install configuration: "Release"
+[4.984s] -- Execute custom install script
+[4.988s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/environment/pythonpath.sh
+[5.005s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/environment/pythonpath.dsv
+[5.025s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/local/lib/python3.10/dist-packages/tiago_description-5.1.3-py3.10.egg-info/PKG-INFO
+[5.122s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/local/lib/python3.10/dist-packages/tiago_description-5.1.3-py3.10.egg-info/SOURCES.txt
+[5.204s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/local/lib/python3.10/dist-packages/tiago_description-5.1.3-py3.10.egg-info/dependency_links.txt
+[5.223s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/local/lib/python3.10/dist-packages/tiago_description-5.1.3-py3.10.egg-info/top_level.txt
+[5.255s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/local/lib/python3.10/dist-packages/tiago_description/__init__.py
+[5.283s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/local/lib/python3.10/dist-packages/tiago_description/launch_arguments.py
+[5.307s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/local/lib/python3.10/dist-packages/tiago_description/tiago_launch_utils.py
+[5.356s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/launch/robot_state_publisher.launch.py
+[5.357s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/launch/show.launch.py
+[5.365s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/arm/arm_1.stl
+[5.386s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/arm/arm_1_collision.stl
+[5.407s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/arm/arm_1_collision_dual.stl
+[5.430s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/arm/arm_1_collision_dual_reflected.stl
+[5.446s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/arm/arm_1_dual.stl
+[5.467s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/arm/arm_1_dual_reflected.stl
+[5.486s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/arm/arm_2.stl
+[5.522s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/arm/arm_2_collision.stl
+[5.564s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/arm/arm_2_collision_reflected.stl
+[5.594s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/arm/arm_2_reflected.stl
+[5.611s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/arm/arm_3.stl
+[5.627s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/arm/arm_3_collision.stl
+[5.714s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/arm/arm_3_collision_reflected.stl
+[5.716s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/arm/arm_3_reflected.stl
+[5.716s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/arm/arm_4.stl
+[5.725s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/arm/arm_4_collision.stl
+[5.725s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/arm/arm_4_collision_reflected.stl
+[5.725s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/arm/arm_4_reflected.stl
+[5.725s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/arm/arm_5-wrist-2010.stl
+[5.726s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/arm/arm_5-wrist-2010_reflected.stl
+[5.727s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/arm/arm_5-wrist-2017.stl
+[5.747s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/arm/arm_5-wrist-2017_reflected.stl
+[5.769s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/arm/arm_5_collision-wrist-2010.stl
+[5.788s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/arm/arm_5_collision-wrist-2010_reflected.stl
+[5.800s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/arm/arm_5_collision-wrist-2017.stl
+[6.006s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/arm/arm_5_collision-wrist-2017_reflected.stl
+[6.006s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/arm/arm_6-wrist-2010.stl
+[6.006s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/arm/arm_6-wrist-2010_reflected.stl
+[6.006s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/arm/arm_6-wrist-2017.stl
+[6.006s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/arm/arm_6-wrist-2017_reflected.stl
+[6.006s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/arm/arm_6_collision-wrist-2010.stl
+[6.006s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/arm/arm_6_collision-wrist-2010_reflected.stl
+[6.010s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/arm/arm_6_collision-wrist-2017.stl
+[6.021s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/arm/arm_6_collision-wrist-2017_reflected.stl
+[6.033s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/head/head_1.stl
+[6.045s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/head/head_1_collision.dae
+[6.055s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/head/head_2.stl
+[6.067s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/head/head_2_collision.dae
+[6.080s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/torso/tiago_screen.stl
+[6.097s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/torso/tiago_screen_collision.stl
+[6.108s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/torso/torso_fix.stl
+[6.118s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/torso/torso_lift_collision.dae
+[6.127s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/torso/torso_lift_collision_core.dae
+[6.146s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/torso/torso_lift_collision_neck.dae
+[6.150s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/torso/torso_lift_collision_shoulder.dae
+[6.159s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/torso/torso_lift_with_arm.stl
+[6.179s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/meshes/torso/torso_lift_without_arm.stl
+[6.185s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/robots/tiago.urdf.xacro
+[6.195s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/ros2_control/gazebo_controller_manager_cfg.yaml
+[6.206s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/ros2_control/ros2_control.urdf.xacro
+[6.221s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/ros2_control/transmissions.urdf.xacro
+[6.243s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/urdf/arm/arm.ros2_control.xacro
+[6.251s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/urdf/arm/arm.urdf.xacro
+[6.261s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/urdf/arm/wrist.ros2_control.xacro
+[6.271s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/urdf/arm/wrist.urdf.xacro
+[6.281s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/urdf/calibration/camera_extrinsic_calibration.urdf.xacro
+[6.299s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/urdf/calibration/camera_extrinsic_calibration.urdf.xacro.j2
+[6.314s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/urdf/calibration/eye_hand_calibration.urdf.xacro
+[6.330s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/urdf/calibration/eye_hand_calibration.urdf.xacro.j2
+[6.348s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/urdf/end_effector/end_effector.urdf.xacro
+[6.365s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/urdf/head/head.ros2_control.xacro
+[6.375s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/urdf/head/head.urdf.xacro
+[6.388s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/urdf/torso/torso.ros2_control.xacro
+[6.402s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/urdf/torso/torso.urdf.xacro
+[6.415s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/config/tiago.rviz
+[6.425s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/config/tiago_configuration.yaml
+[6.438s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/config/urdf.rviz
+[6.451s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/ament_index/resource_index/package_run_dependencies/tiago_description
+[6.463s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/ament_index/resource_index/parent_prefix_path/tiago_description
+[6.476s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/environment/ament_prefix_path.sh
+[6.493s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/environment/ament_prefix_path.dsv
+[6.507s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/environment/path.sh
+[6.521s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/environment/path.dsv
+[6.534s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/local_setup.bash
+[6.547s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/local_setup.sh
+[6.560s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/local_setup.zsh
+[6.573s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/local_setup.dsv
+[6.585s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/package.dsv
+[6.599s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/ament_index/resource_index/packages/tiago_description
+[6.612s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/cmake/tiago_descriptionConfig.cmake
+[6.625s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/cmake/tiago_descriptionConfig-version.cmake
+[6.638s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_description/share/tiago_description/package.xml
+[6.723s] Listing '/workspaces/TIAgo_humble/install/tiago_description/local/lib/python3.10/dist-packages/tiago_description'...
+[6.724s] Compiling '/workspaces/TIAgo_humble/install/tiago_description/local/lib/python3.10/dist-packages/tiago_description/__init__.py'...
+[6.724s] Compiling '/workspaces/TIAgo_humble/install/tiago_description/local/lib/python3.10/dist-packages/tiago_description/launch_arguments.py'...
+[6.724s] Compiling '/workspaces/TIAgo_humble/install/tiago_description/local/lib/python3.10/dist-packages/tiago_description/tiago_launch_utils.py'...
+[6.738s] Invoked command in '/workspaces/TIAgo_humble/build/tiago_description' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_description:/workspaces/TIAgo_humble/install/pal_hey5_description:/workspaces/TIAgo_humble/install/pal_gripper_description:/workspaces/TIAgo_humble/install/omni_base_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_robotiq_description:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_description:/workspaces/TIAgo_humble/install/pal_hey5_description:/workspaces/TIAgo_humble/install/pal_gripper_description:/workspaces/TIAgo_humble/install/omni_base_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_robotiq_description:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/install/pmb2_description/local/lib/python3.10/dist-packages:/workspaces/TIAgo_humble/install/omni_base_description/local/lib/python3.10/dist-packages:/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/TIAgo_humble/build/tiago_description

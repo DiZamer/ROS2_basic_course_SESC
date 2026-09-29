@@ -1,0 +1,220 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-5ca58909c9984a7a7cd4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14
+					]
+				},
+				{
+					"build" : "gtest",
+					"jsonFile" : "directory-gtest-Release-a2408fe1a73b92c5e636.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "/opt/ros/humble/src/gtest_vendor",
+					"targetIndexes" : 
+					[
+						4,
+						5
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "play_motion2",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "gtest",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_play_motion2_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_play_motion2_egg-Release-0a6c851797052f500845.json",
+					"name" : "ament_cmake_python_build_play_motion2_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_play_motion2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_play_motion2-Release-1f78e68da20211cb91d8.json",
+					"name" : "ament_cmake_python_symlink_play_motion2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-client-Release-e0a2f690f496d99b8703.json",
+					"name" : "client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "client_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-client_test-Release-811d7bef5c3adaf416a7.json",
+					"name" : "client_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "gtest::@0af4add9fe94340e763e",
+					"jsonFile" : "target-gtest-Release-e9402027dc5a680caa7d.json",
+					"name" : "gtest",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "gtest_main::@0af4add9fe94340e763e",
+					"jsonFile" : "target-gtest_main-Release-f3a2f353d402ac9c0663.json",
+					"name" : "gtest_main",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motion_loader_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motion_loader_test-Release-124466e7ae010987e0fd.json",
+					"name" : "motion_loader_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "passthrough_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-passthrough_controller-Release-5a6907e6b8172bd37874.json",
+					"name" : "passthrough_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "passthrough_controller_parameters::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-passthrough_controller_parameters-Release-3b67704654bd4d47bf36.json",
+					"name" : "passthrough_controller_parameters",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "play_motion2_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-play_motion2_node-Release-17d5839ead8ba0550629.json",
+					"name" : "play_motion2_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "play_motion2_node_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-play_motion2_node_test-Release-a630b235bb7331fc688c.json",
+					"name" : "play_motion2_node_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "play_motion2_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-play_motion2_uninstall-Release-a21d07a41c41267e067f.json",
+					"name" : "play_motion2_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rrbot_system::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rrbot_system-Release-169b9c1dae2defaa6be3.json",
+					"name" : "rrbot_system",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "run_motion::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-run_motion-Release-9d6f150af4720c2d51e3.json",
+					"name" : "run_motion",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-e5f2881d5bde5c50cf3c.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/workspaces/TIAgo_humble/build/play_motion2",
+		"source" : "/workspaces/TIAgo_humble/ros2_ws/src/play_motion2/play_motion2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

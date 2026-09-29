@@ -154,12 +154,17 @@ TIAGo позволяет изучать робототехнику с разны
    ```
    При появлении запроса выберите **"Reopen in Container"**.
 
-4. **Первый запуск (20-40 минут)** — всё происходит автоматически внутри контейнера:
-   - `Dockerfile` собирает образ с ROS2 и зависимостями (~1-2 мин)
-   - `vcs import` клонирует 18 репозиториев TIAGo из GitHub
-   - `fetch_external.sh` клонирует пакеты, недоступные через apt (`moveit_ros_control_interface`)
-   - `rosdep install` устанавливает недостающие deb-пакеты
-   - `colcon build` собирает все пакеты TIAGo из исходников (~15-35 мин)
+4. **Первый запуск (20-40 минут)** — всё происходит автоматически внутри контейнера.
+   Логика вынесена в два скрипта в `.devcontainer/`:
+   - `post_create.sh` (однократно, `postCreateCommand`) — создаёт `ros2_ws/src/` и подключает overlay в `~/.bashrc`;
+   - `post_start.sh` (`postStartCommand`, при каждом старте) —
+     - `vcs import` клонирует 18 репозиториев TIAGo из GitHub;
+     - `fetch_external.sh` клонирует пакеты, недоступные через apt (`moveit_ros_control_interface`);
+     - `rosdep install` устанавливает недостающие deb-пакеты;
+     - `colcon build` собирает все пакеты TIAGo из исходников (~15-35 мин).
+   - `Dockerfile` собирает образ с ROS2 и зависимостями (~1-2 мин).
+
+   `post_start.sh` идемпотентен: если `src/` и `install/` уже готовы, повторный старт контейнера занимает секунды. Чтобы заставить пересобрать — удалите `ros2_ws/install/`.
 
 5. **Все последующие запуски — мгновенно.**
 
@@ -232,11 +237,13 @@ Gazebo и RViz появятся в браузере на странице noVNC.
 
 Контейнер использует **виртуальный дисплей (Xvfb)** с доступом через VNC/браузер. Это работает на всех ОС без установки X11-сервера на хосте.
 
-В `devcontainer.json` заложены 5 вариантов настройки — по умолчанию активен **Вариант 1 (VNC/браузер)**. Образ собирается из `Dockerfile` автоматически при первом запуске (с `--network=host`), отдельный образ `tiago_humble:gpu` больше не нужен. Чтобы переключиться на прямой X11 (Варианты 2–5), откройте `.devcontainer/devcontainer.json`, закомментируйте блок Варианта 1, раскомментируйте нужный вариант и блок `mounts`, затем выполните **Rebuild Container**.
+В `devcontainer.json` заложены 5 вариантов настройки — по умолчанию активен **Вариант 1 (VNC/браузер)**. Образ собирается из `Dockerfile` автоматически при первом запуске (с `--network=host`), отдельный образ `tiago_humble:gpu` больше не нужен. Чтобы переключиться на прямой X11 (Варианты 2–5), откройте `.devcontainer/devcontainer.json`, **закомментируйте** блок `runArgs` / `containerEnv` / `forwardPorts` Варианта 1, **раскомментируйте** нужный вариант (и блок `mounts`, если он есть), затем выполните **Rebuild Container**.
 
 > **Файлы конфигурации:**
 > - `devcontainer.json` — активный: все 5 вариантов, включён **Вариант 1 (VNC/браузер)**
 > - `devcontainer_prod.json` — копия активного (эталон)
+> - `post_create.sh` — одноразовая подготовка окружения (`postCreateCommand`)
+> - `post_start.sh` — клонирование, зависимости, `colcon build` (`postStartCommand`)
 > - `start_gui.sh`, `novnc_index.html` — виртуальный дисплей Xvfb/VNC и стартовая страница noVNC
 > - остальные варианты (2–5) — в комментариях `devcontainer.json`
 
@@ -269,14 +276,50 @@ ros2 launch tiago_gazebo tiago_gazebo.launch.py is_public_sim:=True
 # Терминал 1 — поднять два экрана
 start_gui.sh --displays 2
 
-# Терминал 2 — Gazebo на дисплее 0
-DISPLAY=:99 ros2 launch tiago_gazebo tiago_gazebo.launch.py is_public_sim:=True
+# Терминал 2 — Gazebo + робот на дисплее 0 (встроенный RViz отключён)
+DISPLAY=:99 ros2 launch tiago_gazebo tiago_gazebo.launch.py \
+  is_public_sim:=True rviz:=False
 
-# Терминал 3 — RViz2 на дисплее 1
-DISPLAY=:100 rviz2
+# Терминал 3 — RViz2 на дисплее 1 с конфигом симуляции TIAGo
+DISPLAY=:100 rviz2 -d \
+  /workspaces/TIAgo_humble/ros2_ws/install/tiago_gazebo/share/tiago_gazebo/config/tiago_sim.rviz
 
 # Браузер: вкладка 1 → http://localhost:6080 (Gazebo)
 #          вкладка 2 → http://localhost:6081 (RViz2)
+```
+
+> **Почему нужен `rviz:=False`.** По умолчанию `tiago_gazebo.launch.py` поднимает Gazebo **и** RViz2 вместе, оба на `DISPLAY=:99`. Если запустить его без флага, встроенный RViz появится на первом экране, а второй экран останется пустым. `rviz:=False` оставляет Gazebo на `:99`, а RViz2 вы запускаете отдельно на `:100` с нужным конфигом.
+
+> **Если две вкладки не нужны** — одна команда: `start_gui.sh`, затем `DISPLAY=:99 ros2 launch tiago_gazebo tiago_gazebo.launch.py is_public_sim:=True`. Gazebo и RViz2 окажутся рядом на `:99` (`http://localhost:6080`).
+
+> **Почему не одной командой.** В отличие от уровня 2 (`2_code/gazebo_demo`), у PAL-пакета `tiago_gazebo.launch.py` нет аргумента `rviz_display`, а править PAL-пакеты нельзя. Поэтому здесь две команды: Gazebo наследует `DISPLAY=:99`, RViz2 запускается отдельно на `:100`.
+
+> **Навигация.** При `navigation:=True` RViz поднимается внутри navigation-launch (`navigation_public_sim.launch.py` включает `nav2_bringup/.../rviz_launch.py`; `navigation_private_sim.launch.py` создаёт собственный узел `rviz2`). Флаг `rviz` — общий (`CommonArgs.rviz`), поэтому `rviz:=False` отключает **и** встроенный, **и** навигационный RViz. Аргумента `rviz_display` у PAL-пакета нет.
+
+**Навигация + два экрана** (Gazebo на `:99`, RViz2 на `:100`):
+
+```bash
+# Терминал 1 — поднять два экрана
+start_gui.sh --displays 2
+
+# Терминал 2 — Gazebo + Nav2 на дисплее 0 (любой RViz отключён)
+DISPLAY=:99 ros2 launch tiago_gazebo tiago_gazebo.launch.py \
+  is_public_sim:=True navigation:=True rviz:=False
+
+# Терминал 3 — RViz2 на дисплее 1
+DISPLAY=:100 rviz2 -d \
+  /workspaces/TIAgo_humble/ros2_ws/install/tiago_gazebo/share/tiago_gazebo/config/tiago.rviz
+```
+
+**Манипуляция + два экрана** (MoveIt2-плагин на `:100`):
+
+```bash
+# Терминал 2 — Gazebo + MoveIt2 на дисплее 0
+DISPLAY=:99 ros2 launch tiago_gazebo tiago_gazebo.launch.py \
+  is_public_sim:=True moveit:=True rviz:=False
+
+# Терминал 3 — RViz с плагином MoveIt2 на дисплее 1
+DISPLAY=:100 ros2 launch tiago_moveit_config moveit_rviz.launch.py
 ```
 
 Gazebo здесь — **Gazebo Classic 11** (ROS2 Humble). В контейнере уровня 2 используется **gz-sim** через `ros_gz` (ROS2 Jazzy) с пакетом `2_code/gazebo_demo`, поэтому команда запуска там другая.
@@ -346,8 +389,8 @@ docker ps                       # на хосте: проброшены 6080-608
 
 **Как переключиться:**
 1. Откройте `.devcontainer/devcontainer.json`
-2. Закомментируйте блок `containerEnv` + `runArgs` + `forwardPorts` **Варианта 1**
-3. Раскомментируйте блок `containerEnv` + `runArgs` + `forwardPorts` **и блок `mounts`** (`/tmp/.X11-unix`) для своей ОС
+2. **Закомментируйте** блок `containerEnv` + `runArgs` + `forwardPorts` **Варианта 1**
+3. **Раскомментируйте** блок `containerEnv` + `runArgs` + `forwardPorts` **и блок `mounts`** (`/tmp/.X11-unix`) для своей ОС
 4. Выполните **Rebuild Container**
 
 #### Ubuntu (X11) — Docker Desktop или native Docker Engine
@@ -457,27 +500,75 @@ ros2 launch tiago_gazebo tiago_gazebo.launch.py is_public_sim:=True
 ## Быстрый старт
 После того как вы настроили окружение, проверьте его работу. Все команды выполняются в **контейнере**:
 
+> **Перед каждым запуском.** `tiago_gazebo.launch.py` поднимает Gazebo, `controller_manager`, контроллеры и ROS-стек.
+> Второй запуск, пока предыдущий ещё не завершился, **не сработает**: Gazebo не поднимется, контроллеры
+> (`controller_manager`) не загрузятся, и режимы манипуляции/навигации будут «пустыми».
+> Всегда дожидайтесь полного останова (Ctrl+C), затем проверьте:
+> ```bash
+> ros2 node list                                              # должно быть пусто
+> ps aux | grep -E "gzserver|gzclient|move_group" | grep -v grep   # пусто
+> ```
+> Если процессы остались — завершите их (`pkill -f gzserver; pkill -f gzclient; pkill -f move_group`) и запускайте заново.
+
 ### Запуск симуляции в Gazebo
 Перед запуском — убедитесь, что `start_gui.sh` запущен в соседнем терминале (если вы используете первый вариант запуска).
 ```bash
 ros2 launch tiago_gazebo tiago_gazebo.launch.py is_public_sim:=True
 ```
 
-### Запуск навигации
+### Запуск навигации (Nav2)
 ```bash
-ros2 launch tiago_navigation nav2_bringup.launch.py
+# moveit:=False — не поднимать лишний стек MoveIt, если манипуляция не нужна
+ros2 launch tiago_gazebo tiago_gazebo.launch.py \
+  is_public_sim:=True navigation:=True moveit:=False
 ```
 
-### Запуск манипуляции через MoveIt
+### Запуск навигации + SLAM
 ```bash
-ros2 launch tiago_moveit moveit.launch.py
+ros2 launch tiago_gazebo tiago_gazebo.launch.py \
+  is_public_sim:=True navigation:=True slam:=True moveit:=False
+```
+SLAM-карта строится **только при движении робота**: без перемещения и сканирования лидаром карта
+останется пустой. После запуска подайте движение (или задайте goal в RViz: 2D Goal Pose):
+```bash
+ros2 topic pub -r 10 /mobile_base_controller/cmd_vel_unstamped \
+  geometry_msgs/msg/Twist '{linear: {x: 0.2}, angular: {z: 0.3}}'
+```
+Проверка, что карта появилась: `ros2 topic echo /map --once`.
+Остановить движение: `Ctrl+C` в терминале с `topic pub`.
+
+### Запуск манипуляции через MoveIt2
+```bash
+# Симуляция + MoveIt2 (moveit:=True — значение по умолчанию)
+ros2 launch tiago_gazebo tiago_gazebo.launch.py is_public_sim:=True moveit:=True
+
+# RViz с плагином MoveIt2 (отдельный терминал)
+ros2 launch tiago_moveit_config moveit_rviz.launch.py
 ```
 
-### Запуск всех туториалов
+### Полный стек: навигация + манипуляция
 ```bash
-ros2 launch tiago_tutorials <название_туториала>.launch.py
+ros2 launch tiago_gazebo tiago_gazebo.launch.py \
+  is_public_sim:=True navigation:=True moveit:=True
 ```
-Все туториалы доступны в репозитории tiago_tutorials и описаны в официальной документации.
+
+> **Важно про пакеты.** В TIAGo нет отдельных launch-пакетов `tiago_navigation` и `tiago_moveit` (и нет `tiago_nav_bringup.launch.py`).
+> `tiago_navigation` и `tiago_2dnav` — это **мета-пакеты** (зависимости, без launch-файлов).
+> Пакета `tiago_moveit` не существует — конфигурация MoveIt2 лежит в `tiago_moveit_config`.
+> Все режимы включаются **аргументами одного** `tiago_gazebo.launch.py`: `navigation`, `slam`, `moveit`, `end_effector`, `rviz` и т.д.
+> Полный список аргументов: `ros2 launch tiago_gazebo tiago_gazebo.launch.py --show-arguments`.
+
+### ⚠️ Типичные ошибки при запуске режимов
+
+| Симптом | Причина | Решение |
+|---------|---------|---------|
+| `spawner-... process has died ... exit code 1` (для `arm_controller`, `mobile_base_controller` и др.) | `controller_manager` не поднялся — Gazebo не стартовал, обычно из-за незавершённого предыдущего запуска | Полностью остановить предыдущий launch, проверить `ps aux \| grep gzserver`, перезапустить |
+| `[play_motion2_executor]: PlayMotion2 is busy` / `Joint Trajectory failed` | Контроллеры не загружены (см. строку выше) | То же: чистый перезапуск |
+| `[arm_tucker]: Failed to tuck arm after 5 tries` | Следствие отсутствия контроллеров | То же |
+| `[move_group]: Failed to read controllers from /controller_manager/list_controllers` | То же | То же |
+| `[move_group]: Failed to load sensor: pointcloud_octomap_updater` | Не установлен `ros-humble-moveit-ros-perception` (плагин октомапа) | Обновить контейнер (Rebuild); пакет добавлен в Dockerfile |
+| SLAM запущен, но карта не строится | Робот не двигается | Подать `cmd_vel` или goal в RViz (см. выше) |
+| `process has died ... exit code -11` для `move_group`/`gzclient` при остановке | SIGSEGV при завершении по Ctrl+C — косметика, не причина сбоя | Игнорировать, если стек работал до остановки |
 
 ### ⚠️ `diagnostic_aggregator` — ROS1 пакет, отсутствующий в ROS2
 

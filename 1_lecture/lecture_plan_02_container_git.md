@@ -120,7 +120,7 @@ ROS2 на хост не ставится; Docker-демон работает н�
 ### Что показать в архитектуре
 
 - Уровень 2 — один общий контейнер `.devcontainer/`; уровень 3 — отдельный тяжёлый контейнер `3_Robot/TIAgo_humble/` (образ `osrf/ros:humble-desktop` + пакеты TIAGo, сборка `colcon build`).
-- Dockerfile и `devcontainer.json` контейнера робота: `postCreateCommand` клонирует пакеты через `vcs import`, ставит зависимости, собирает workspace.
+- Dockerfile и `devcontainer.json` контейнера робота: `postCreateCommand` → `post_create.sh` (подготовка, overlay), `postStartCommand` → `post_start.sh` (клонирует пакеты через `vcs import`, ставит зависимости, собирает workspace).
 - `.gitignore` проекта: `build/`, `install/`, `log/`, ключи не попадают в историю.
 - История коммитов пакетов TIAGo в `ros2_ws/src/`.
 

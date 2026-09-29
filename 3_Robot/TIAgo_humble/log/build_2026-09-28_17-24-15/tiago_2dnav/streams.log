@@ -1,0 +1,45 @@
+[0.017s] Invoking command in '/workspaces/TIAgo_humble/build/tiago_2dnav': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_2dnav:/workspaces/TIAgo_humble/install/pal_maps:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_2dnav:/workspaces/TIAgo_humble/install/pal_maps:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/tiago_navigation/tiago_2dnav -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/tiago_2dnav
+[0.112s] -- The C compiler identification is GNU 11.4.0
+[0.200s] -- The CXX compiler identification is GNU 11.4.0
+[0.218s] -- Detecting C compiler ABI info
+[0.360s] -- Detecting C compiler ABI info - done
+[0.378s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.378s] -- Detecting C compile features
+[0.378s] -- Detecting C compile features - done
+[0.387s] -- Detecting CXX compiler ABI info
+[0.538s] -- Detecting CXX compiler ABI info - done
+[0.549s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.549s] -- Detecting CXX compile features
+[0.549s] -- Detecting CXX compile features - done
+[0.554s] -- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.933s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.014s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.314s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.382s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.383s] -- Added test 'lint_cmake' to check CMake code style
+[1.386s] -- Added test 'xmllint' to check XML markup files
+[1.388s] -- Configuring done
+[1.388s] -- Generating done
+[1.391s] -- Build files have been written to: /workspaces/TIAgo_humble/build/tiago_2dnav
+[1.411s] Invoked command in '/workspaces/TIAgo_humble/build/tiago_2dnav' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_2dnav:/workspaces/TIAgo_humble/install/pal_maps:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_2dnav:/workspaces/TIAgo_humble/install/pal_maps:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/tiago_navigation/tiago_2dnav -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/tiago_2dnav
+[1.412s] Invoking command in '/workspaces/TIAgo_humble/build/tiago_2dnav': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_2dnav:/workspaces/TIAgo_humble/install/pal_maps:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_2dnav:/workspaces/TIAgo_humble/install/pal_maps:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/TIAgo_humble/build/tiago_2dnav -- -j24 -l24
+[1.482s] Invoked command in '/workspaces/TIAgo_humble/build/tiago_2dnav' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_2dnav:/workspaces/TIAgo_humble/install/pal_maps:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_2dnav:/workspaces/TIAgo_humble/install/pal_maps:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/TIAgo_humble/build/tiago_2dnav -- -j24 -l24
+[1.484s] Invoking command in '/workspaces/TIAgo_humble/build/tiago_2dnav': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_2dnav:/workspaces/TIAgo_humble/install/pal_maps:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_2dnav:/workspaces/TIAgo_humble/install/pal_maps:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/TIAgo_humble/build/tiago_2dnav
+[1.509s] -- Install configuration: "Release"
+[1.509s] -- Execute custom install script
+[1.512s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_2dnav/share/ament_index/resource_index/package_run_dependencies/tiago_2dnav
+[1.513s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_2dnav/share/ament_index/resource_index/parent_prefix_path/tiago_2dnav
+[1.563s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_2dnav/share/tiago_2dnav/environment/ament_prefix_path.sh
+[1.573s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_2dnav/share/tiago_2dnav/environment/ament_prefix_path.dsv
+[1.585s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_2dnav/share/tiago_2dnav/environment/path.sh
+[1.601s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_2dnav/share/tiago_2dnav/environment/path.dsv
+[1.605s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_2dnav/share/tiago_2dnav/local_setup.bash
+[1.627s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_2dnav/share/tiago_2dnav/local_setup.sh
+[1.643s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_2dnav/share/tiago_2dnav/local_setup.zsh
+[1.658s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_2dnav/share/tiago_2dnav/local_setup.dsv
+[1.680s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_2dnav/share/tiago_2dnav/package.dsv
+[1.700s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_2dnav/share/ament_index/resource_index/packages/tiago_2dnav
+[1.733s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_2dnav/share/tiago_2dnav/cmake/tiago_2dnavConfig.cmake
+[1.770s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_2dnav/share/tiago_2dnav/cmake/tiago_2dnavConfig-version.cmake
+[1.806s] -- Symlinking: /workspaces/TIAgo_humble/install/tiago_2dnav/share/tiago_2dnav/package.xml
+[1.858s] Invoked command in '/workspaces/TIAgo_humble/build/tiago_2dnav' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_2dnav:/workspaces/TIAgo_humble/install/pal_maps:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pmb2_2dnav:/workspaces/TIAgo_humble/install/pal_maps:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/TIAgo_humble/build/tiago_2dnav

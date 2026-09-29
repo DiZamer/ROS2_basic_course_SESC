@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from pal_device_msgs/srv/CancelEffect.srv
+// generated code does not contain a copyright notice
+
+
+module pal_device_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "Id of the effect, used to cancel an effect")
+    struct CancelEffect_Request {
+      uint32 effect_id;
+    };
+    @verbatim (language="comment", text=
+      "True if effect was canceled, false if effectId doesn't exist or has already been canceled")
+    struct CancelEffect_Response {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from pal_device_msgs/msg/LedPreProgrammedParams.msg
+// generated code does not contain a copyright notice
+
+
+module pal_device_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "Id of pre-programmed effect, most likely device specific")
+    struct LedPreProgrammedParams {
+      uint8 preprogrammed_id;
+    };
+  };
+};

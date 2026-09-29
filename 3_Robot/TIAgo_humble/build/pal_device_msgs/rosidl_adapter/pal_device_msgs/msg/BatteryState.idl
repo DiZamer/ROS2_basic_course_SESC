@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from pal_device_msgs/msg/BatteryState.msg
+// generated code does not contain a copyright notice
+
+
+module pal_device_msgs {
+  module msg {
+    module BatteryState_Constants {
+      const octet FULL = 5;
+      const octet HIGH = 4;
+      const octet MEDIUM = 3;
+      const octet LOW = 2;
+      const octet CRITICAL_LOW = 1;
+    };
+    struct BatteryState {
+      int8 charge_state;
+
+      float battery_percentage;
+    };
+  };
+};

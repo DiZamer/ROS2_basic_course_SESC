@@ -1,0 +1,41 @@
+[0.022s] Invoking command in '/workspaces/TIAgo_humble/build/pal_hey5': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_hey5_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_hey5_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_hey5_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_hey5_controller_configuration:/opt/ros/humble /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/pal_hey5/pal_hey5 -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/pal_hey5
+[0.110s] -- The C compiler identification is GNU 11.4.0
+[0.235s] -- The CXX compiler identification is GNU 11.4.0
+[0.249s] -- Detecting C compiler ABI info
+[0.451s] -- Detecting C compiler ABI info - done
+[0.471s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.472s] -- Detecting C compile features
+[0.473s] -- Detecting C compile features - done
+[0.482s] -- Detecting CXX compiler ABI info
+[0.641s] -- Detecting CXX compiler ABI info - done
+[0.681s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.681s] -- Detecting CXX compile features
+[0.681s] -- Detecting CXX compile features - done
+[0.693s] -- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.259s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.384s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.635s] -- Configuring done
+[1.639s] -- Generating done
+[1.642s] -- Build files have been written to: /workspaces/TIAgo_humble/build/pal_hey5
+[1.661s] Invoked command in '/workspaces/TIAgo_humble/build/pal_hey5' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_hey5_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_hey5_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_hey5_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_hey5_controller_configuration:/opt/ros/humble /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/pal_hey5/pal_hey5 -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/pal_hey5
+[1.662s] Invoking command in '/workspaces/TIAgo_humble/build/pal_hey5': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_hey5_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_hey5_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_hey5_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_hey5_controller_configuration:/opt/ros/humble /usr/bin/cmake --build /workspaces/TIAgo_humble/build/pal_hey5 -- -j24 -l24
+[1.848s] Invoked command in '/workspaces/TIAgo_humble/build/pal_hey5' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_hey5_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_hey5_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_hey5_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_hey5_controller_configuration:/opt/ros/humble /usr/bin/cmake --build /workspaces/TIAgo_humble/build/pal_hey5 -- -j24 -l24
+[1.849s] Invoking command in '/workspaces/TIAgo_humble/build/pal_hey5': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_hey5_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_hey5_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_hey5_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_hey5_controller_configuration:/opt/ros/humble /usr/bin/cmake --install /workspaces/TIAgo_humble/build/pal_hey5
+[1.865s] -- Install configuration: "Release"
+[1.865s] -- Execute custom install script
+[1.870s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5/share/ament_index/resource_index/package_run_dependencies/pal_hey5
+[1.894s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5/share/ament_index/resource_index/parent_prefix_path/pal_hey5
+[1.912s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5/share/pal_hey5/environment/ament_prefix_path.sh
+[1.934s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5/share/pal_hey5/environment/ament_prefix_path.dsv
+[2.000s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5/share/pal_hey5/environment/path.sh
+[2.031s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5/share/pal_hey5/environment/path.dsv
+[2.064s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5/share/pal_hey5/local_setup.bash
+[2.113s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5/share/pal_hey5/local_setup.sh
+[2.144s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5/share/pal_hey5/local_setup.zsh
+[2.173s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5/share/pal_hey5/local_setup.dsv
+[2.211s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5/share/pal_hey5/package.dsv
+[2.255s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5/share/ament_index/resource_index/packages/pal_hey5
+[2.278s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5/share/pal_hey5/cmake/pal_hey5Config.cmake
+[2.300s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5/share/pal_hey5/cmake/pal_hey5Config-version.cmake
+[2.336s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_hey5/share/pal_hey5/package.xml
+[2.394s] Invoked command in '/workspaces/TIAgo_humble/build/pal_hey5' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_hey5_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_hey5_controller_configuration:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_hey5_description:/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/pal_hey5_controller_configuration:/opt/ros/humble /usr/bin/cmake --install /workspaces/TIAgo_humble/build/pal_hey5

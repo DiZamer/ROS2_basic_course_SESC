@@ -1,0 +1,113 @@
+[0.016s] Invoking command in '/workspaces/TIAgo_humble/build/pmb2_description': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/pmb2_robot/pmb2_description -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/pmb2_description
+[0.078s] -- The C compiler identification is GNU 11.4.0
+[0.145s] -- The CXX compiler identification is GNU 11.4.0
+[0.153s] -- Detecting C compiler ABI info
+[0.233s] -- Detecting C compiler ABI info - done
+[0.243s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.244s] -- Detecting C compile features
+[0.246s] -- Detecting C compile features - done
+[0.249s] -- Detecting CXX compiler ABI info
+[0.336s] -- Detecting CXX compiler ABI info - done
+[0.345s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.345s] -- Detecting CXX compile features
+[0.345s] -- Detecting CXX compile features - done
+[0.348s] -- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.611s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.744s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.063s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.163s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.222s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.245s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.245s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.245s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.246s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.301s] -- Found PythonExtra: .so  
+[2.535s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.535s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.565s] -- Added test 'lint_cmake' to check CMake code style
+[2.569s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.585s] -- Added test 'xmllint' to check XML markup files
+[2.585s] -- Configuring done
+[2.596s] -- Generating done
+[2.597s] -- Build files have been written to: /workspaces/TIAgo_humble/build/pmb2_description
+[2.611s] Invoked command in '/workspaces/TIAgo_humble/build/pmb2_description' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/pmb2_robot/pmb2_description -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/pmb2_description
+[2.613s] Invoking command in '/workspaces/TIAgo_humble/build/pmb2_description': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/TIAgo_humble/build/pmb2_description -- -j24 -l24
+[2.827s] Built target ament_cmake_python_symlink_pmb2_description
+[3.470s] running egg_info
+[3.475s] creating pmb2_description.egg-info
+[3.475s] writing pmb2_description.egg-info/PKG-INFO
+[3.475s] writing dependency_links to pmb2_description.egg-info/dependency_links.txt
+[3.482s] writing top-level names to pmb2_description.egg-info/top_level.txt
+[3.485s] writing manifest file 'pmb2_description.egg-info/SOURCES.txt'
+[3.486s] reading manifest file 'pmb2_description.egg-info/SOURCES.txt'
+[3.488s] writing manifest file 'pmb2_description.egg-info/SOURCES.txt'
+[3.583s] Built target ament_cmake_python_build_pmb2_description_egg
+[3.639s] Invoked command in '/workspaces/TIAgo_humble/build/pmb2_description' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/TIAgo_humble/build/pmb2_description -- -j24 -l24
+[3.640s] Invoking command in '/workspaces/TIAgo_humble/build/pmb2_description': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/TIAgo_humble/build/pmb2_description
+[3.667s] -- Install configuration: "Release"
+[3.667s] -- Execute custom install script
+[3.672s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/environment/pythonpath.sh
+[3.696s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/environment/pythonpath.dsv
+[3.721s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/local/lib/python3.10/dist-packages/pmb2_description-5.12.0-py3.10.egg-info/PKG-INFO
+[3.757s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/local/lib/python3.10/dist-packages/pmb2_description-5.12.0-py3.10.egg-info/SOURCES.txt
+[3.794s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/local/lib/python3.10/dist-packages/pmb2_description-5.12.0-py3.10.egg-info/dependency_links.txt
+[3.825s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/local/lib/python3.10/dist-packages/pmb2_description-5.12.0-py3.10.egg-info/top_level.txt
+[3.843s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/local/lib/python3.10/dist-packages/pmb2_description/__init__.py
+[3.865s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/local/lib/python3.10/dist-packages/pmb2_description/launch_arguments.py
+[3.886s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/rviz/pmb2.rviz
+[3.922s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/launch/robot_state_publisher.launch.py
+[3.955s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/launch/show.launch.py
+[3.984s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/meshes/base/base.stl
+[4.043s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/meshes/base/base_collision.dae
+[4.061s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/meshes/base/base_dock_link.stl
+[4.099s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/meshes/base/base_ring.stl
+[4.124s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/meshes/base/high_resolution/base.stl
+[4.160s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/meshes/base/high_resolution/base_collision.stl
+[4.183s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/meshes/cameras_add_on/cameras_add_on.stl
+[4.206s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/meshes/cameras_add_on/cameras_add_on_collision.stl
+[4.241s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/meshes/dock/dock.stl
+[4.272s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/meshes/dock/dock_collision.stl
+[4.298s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/meshes/objects/antenna.stl
+[4.403s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/meshes/objects/cover.stl
+[4.431s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/meshes/objects/high_resolution/cover.stl
+[4.467s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/meshes/wheels/caster_1.stl
+[4.532s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/meshes/wheels/caster_2.stl
+[4.841s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/meshes/wheels/high_resolution/caster_1.stl
+[4.841s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/meshes/wheels/high_resolution/caster_2.stl
+[4.841s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/meshes/wheels/high_resolution/wheel.stl
+[4.851s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/meshes/wheels/wheel.stl
+[4.878s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/config/pmb2_configuration.yaml
+[4.904s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/robots/pmb2.urdf.xacro
+[5.010s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/ros2_control/gazebo_controller_manager_cfg.yaml
+[5.010s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/ros2_control/ros2_control.urdf.xacro
+[5.011s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/urdf/base/base.gazebo.xacro
+[5.037s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/urdf/base/base.urdf.xacro
+[5.077s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/urdf/base/base_sensors.urdf.xacro
+[5.108s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/urdf/cameras_add_on/cameras_add_on.urdf.xacro
+[5.183s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/urdf/dock/dock.urdf.xacro
+[5.191s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/urdf/objects/antenna.urdf.xacro
+[5.196s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/urdf/objects/cover.urdf.xacro
+[5.219s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/urdf/wheels/caster.gazebo.xacro
+[5.241s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/urdf/wheels/caster.urdf.xacro
+[5.260s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/urdf/wheels/wheel.gazebo.xacro
+[5.279s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/urdf/wheels/wheel.ros2_control.xacro
+[5.298s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/urdf/wheels/wheel.urdf.xacro
+[5.355s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/ament_index/resource_index/package_run_dependencies/pmb2_description
+[5.376s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/ament_index/resource_index/parent_prefix_path/pmb2_description
+[5.396s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/environment/ament_prefix_path.sh
+[5.417s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/environment/ament_prefix_path.dsv
+[5.439s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/environment/path.sh
+[5.465s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/environment/path.dsv
+[5.484s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/local_setup.bash
+[5.505s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/local_setup.sh
+[5.525s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/local_setup.zsh
+[5.546s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/local_setup.dsv
+[5.566s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/package.dsv
+[5.681s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/ament_index/resource_index/packages/pmb2_description
+[5.701s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/cmake/pmb2_descriptionConfig.cmake
+[5.727s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/cmake/pmb2_descriptionConfig-version.cmake
+[5.761s] -- Symlinking: /workspaces/TIAgo_humble/install/pmb2_description/share/pmb2_description/package.xml
+[5.950s] Listing '/workspaces/TIAgo_humble/install/pmb2_description/local/lib/python3.10/dist-packages/pmb2_description'...
+[5.950s] Compiling '/workspaces/TIAgo_humble/install/pmb2_description/local/lib/python3.10/dist-packages/pmb2_description/__init__.py'...
+[5.950s] Compiling '/workspaces/TIAgo_humble/install/pmb2_description/local/lib/python3.10/dist-packages/pmb2_description/launch_arguments.py'...
+[5.972s] Invoked command in '/workspaces/TIAgo_humble/build/pmb2_description' returned '0': AMENT_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/workspaces/TIAgo_humble/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/TIAgo_humble/install/pal_urdf_utils:/opt/ros/humble PYTHONPATH=/workspaces/TIAgo_humble/build/launch_pal:/workspaces/TIAgo_humble/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/TIAgo_humble/build/pmb2_description

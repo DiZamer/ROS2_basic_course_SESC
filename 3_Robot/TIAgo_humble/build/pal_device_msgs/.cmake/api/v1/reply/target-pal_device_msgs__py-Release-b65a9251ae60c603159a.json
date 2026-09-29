@@ -1,0 +1,79 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target"
+		],
+		"files" : 
+		[
+			"/workspaces/TIAgo_humble/build/pal_device_msgs/pal_device_msgs__py/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 34,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "pal_device_msgs::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "pal_device_msgs__py::@d24725dd91535cf065d0",
+	"name" : "pal_device_msgs__py",
+	"paths" : 
+	{
+		"build" : "pal_device_msgs__py",
+		"source" : "/workspaces/TIAgo_humble/build/pal_device_msgs/pal_device_msgs__py"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/workspaces/TIAgo_humble/build/pal_device_msgs/pal_device_msgs__py/CMakeFiles/pal_device_msgs__py",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/workspaces/TIAgo_humble/build/pal_device_msgs/pal_device_msgs__py/CMakeFiles/pal_device_msgs__py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/workspaces/TIAgo_humble/build/pal_device_msgs/rosidl_generator_py/pal_device_msgs/_pal_device_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

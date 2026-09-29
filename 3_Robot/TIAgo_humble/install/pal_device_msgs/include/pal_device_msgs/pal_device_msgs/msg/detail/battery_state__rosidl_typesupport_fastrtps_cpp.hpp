@@ -1,0 +1,1 @@
+/workspaces/TIAgo_humble/build/pal_device_msgs/rosidl_typesupport_fastrtps_cpp/pal_device_msgs/msg/detail/battery_state__rosidl_typesupport_fastrtps_cpp.hpp

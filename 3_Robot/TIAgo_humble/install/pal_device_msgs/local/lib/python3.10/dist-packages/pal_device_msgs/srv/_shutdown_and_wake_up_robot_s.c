@@ -1,0 +1,1 @@
+/workspaces/TIAgo_humble/build/pal_device_msgs/rosidl_generator_py/pal_device_msgs/srv/_shutdown_and_wake_up_robot_s.c

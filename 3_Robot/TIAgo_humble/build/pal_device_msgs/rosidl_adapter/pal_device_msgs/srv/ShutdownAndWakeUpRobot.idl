@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from pal_device_msgs/srv/ShutdownAndWakeUpRobot.srv
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Duration.idl"
+
+module pal_device_msgs {
+  module srv {
+    struct ShutdownAndWakeUpRobot_Request {
+      builtin_interfaces::msg::Duration shutdown_duration;
+    };
+    struct ShutdownAndWakeUpRobot_Response {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

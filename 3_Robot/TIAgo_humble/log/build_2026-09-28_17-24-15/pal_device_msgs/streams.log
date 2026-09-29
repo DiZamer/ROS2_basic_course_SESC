@@ -1,0 +1,703 @@
+[0.213s] Invoking command in '/workspaces/TIAgo_humble/build/pal_device_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/pal_msgs/pal_device_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/pal_device_msgs
+[0.309s] -- The C compiler identification is GNU 11.4.0
+[0.402s] -- The CXX compiler identification is GNU 11.4.0
+[0.415s] -- Detecting C compiler ABI info
+[0.498s] -- Detecting C compiler ABI info - done
+[0.506s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.507s] -- Detecting C compile features
+[0.507s] -- Detecting C compile features - done
+[0.510s] -- Detecting CXX compiler ABI info
+[0.618s] -- Detecting CXX compiler ABI info - done
+[0.633s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.633s] -- Detecting CXX compile features
+[0.634s] -- Detecting CXX compile features - done
+[0.640s] -- Found action_msgs: 1.2.3 (/opt/ros/humble/share/action_msgs/cmake)
+[0.884s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.966s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.097s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.106s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.121s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.144s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.172s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.239s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.255s] -- Found std_msgs: 4.9.2 (/opt/ros/humble/share/std_msgs/cmake)
+[1.752s] -- Found ament_cmake_cppcheck: 0.12.15 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)
+[1.756s] -- Found ament_cmake_cpplint: 0.12.15 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)
+[1.760s] -- Found ament_cmake_uncrustify: 0.12.15 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)
+[1.765s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.240s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.432s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.467s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.472s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.507s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[2.507s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.507s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.507s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.537s] -- Found PythonExtra: .so  
+[2.612s] -- Found ament_cmake_flake8: 0.12.15 (/opt/ros/humble/share/ament_cmake_flake8/cmake)
+[2.616s] -- Found ament_cmake_pep257: 0.12.15 (/opt/ros/humble/share/ament_cmake_pep257/cmake)
+[2.748s] -- Configuring done
+[2.825s] -- Generating done
+[2.841s] -- Build files have been written to: /workspaces/TIAgo_humble/build/pal_device_msgs
+[2.854s] Invoked command in '/workspaces/TIAgo_humble/build/pal_device_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/TIAgo_humble/ros2_ws/src/pal_msgs/pal_device_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/TIAgo_humble/install/pal_device_msgs
+[2.858s] Invoking command in '/workspaces/TIAgo_humble/build/pal_device_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/TIAgo_humble/build/pal_device_msgs -- -j24 -l24
+[2.937s] [  0%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.958s] [  0%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.970s] [  1%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[2.981s] [  1%] Built target ament_cmake_python_symlink_pal_device_msgs
+[3.241s] running egg_info
+[3.242s] creating pal_device_msgs.egg-info
+[3.242s] writing pal_device_msgs.egg-info/PKG-INFO
+[3.242s] writing dependency_links to pal_device_msgs.egg-info/dependency_links.txt
+[3.242s] writing top-level names to pal_device_msgs.egg-info/top_level.txt
+[3.244s] writing manifest file 'pal_device_msgs.egg-info/SOURCES.txt'
+[3.246s] reading manifest file 'pal_device_msgs.egg-info/SOURCES.txt'
+[3.247s] writing manifest file 'pal_device_msgs.egg-info/SOURCES.txt'
+[3.283s] [  1%] Built target ament_cmake_python_build_pal_device_msgs_egg
+[4.129s] [  1%] Built target pal_device_msgs__rs
+[5.312s] [  1%] Built target pal_device_msgs__cpp
+[5.334s] [  2%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[5.336s] [  3%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[5.339s] [  4%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[5.636s] [  5%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_c.dir/rosidl_generator_c/pal_device_msgs/action/detail/do_timed_led_effect__functions.c.o[0m
+[5.639s] [  5%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_c.dir/rosidl_generator_c/pal_device_msgs/msg/detail/battery_state__functions.c.o[0m
+[5.648s] [  6%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_c.dir/rosidl_generator_c/pal_device_msgs/msg/detail/bumper__functions.c.o[0m
+[5.649s] [  6%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_c.dir/rosidl_generator_c/pal_device_msgs/msg/detail/led_blink_params__functions.c.o[0m
+[5.649s] [  6%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_c.dir/rosidl_generator_c/pal_device_msgs/msg/detail/led_group__functions.c.o[0m
+[5.653s] [  7%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_c.dir/rosidl_generator_c/pal_device_msgs/msg/detail/led_effect_params__functions.c.o[0m
+[5.654s] [  9%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_c.dir/rosidl_generator_c/pal_device_msgs/msg/detail/led_data_array_params__functions.c.o[0m
+[5.654s] [  9%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_c.dir/rosidl_generator_c/pal_device_msgs/msg/detail/led_progress_params__functions.c.o[0m
+[5.654s] [  9%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_c.dir/rosidl_generator_c/pal_device_msgs/msg/detail/led_flow_params__functions.c.o[0m
+[5.659s] [  9%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_c.dir/rosidl_generator_c/pal_device_msgs/msg/detail/led_rainbow_params__functions.c.o[0m
+[5.662s] [  9%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_c.dir/rosidl_generator_c/pal_device_msgs/srv/detail/shutdown_and_wake_up_robot__functions.c.o[0m
+[5.666s] [ 11%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_c.dir/rosidl_generator_c/pal_device_msgs/msg/detail/led_effect_via_topic_params__functions.c.o[0m
+[5.668s] [ 11%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_c.dir/rosidl_generator_c/pal_device_msgs/msg/detail/led_pre_programmed_params__functions.c.o[0m
+[5.669s] [ 11%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_c.dir/rosidl_generator_c/pal_device_msgs/srv/detail/cancel_effect__functions.c.o[0m
+[5.675s] [ 12%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_c.dir/rosidl_generator_c/pal_device_msgs/msg/detail/led_fixed_color_params__functions.c.o[0m
+[5.679s] [ 13%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_c.dir/rosidl_generator_c/pal_device_msgs/srv/detail/timed_blink_effect__functions.c.o[0m
+[5.695s] [ 14%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_c.dir/rosidl_generator_c/pal_device_msgs/srv/detail/timed_fade_effect__functions.c.o[0m
+[5.705s] [ 14%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_c.dir/rosidl_generator_c/pal_device_msgs/srv/detail/timed_colour_effect__functions.c.o[0m
+[5.720s] [ 15%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_c.dir/rosidl_generator_c/pal_device_msgs/msg/detail/led_fade_params__functions.c.o[0m
+[7.300s] [ 16%] [32m[1mLinking C shared library libpal_device_msgs__rosidl_generator_c.so[0m
+[7.300s] [ 16%] Built target pal_device_msgs__rosidl_generator_c
+[7.300s] [ 17%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[7.300s] [ 18%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[7.300s] [ 19%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[7.961s] [ 19%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pal_device_msgs/msg/bumper__type_support.cpp.o[0m
+[7.965s] [ 19%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pal_device_msgs/msg/led_effect_params__type_support.cpp.o[0m
+[7.965s] [ 19%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pal_device_msgs/action/do_timed_led_effect__type_support.cpp.o[0m
+[7.987s] [ 21%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pal_device_msgs/msg/led_group__type_support.cpp.o[0m
+[7.987s] [ 21%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pal_device_msgs/msg/led_rainbow_params__type_support.cpp.o[0m
+[7.987s] [ 22%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pal_device_msgs/msg/battery_state__type_support.cpp.o[0m
+[7.990s] [ 23%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pal_device_msgs/msg/led_flow_params__type_support.cpp.o[0m
+[7.993s] [ 21%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pal_device_msgs/msg/led_data_array_params__type_support.cpp.o[0m
+[7.993s] [ 24%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pal_device_msgs/msg/led_effect_via_topic_params__type_support.cpp.o[0m
+[7.995s] [ 24%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pal_device_msgs/msg/led_progress_params__type_support.cpp.o[0m
+[7.998s] [ 26%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pal_device_msgs/msg/led_blink_params__type_support.cpp.o[0m
+[8.009s] [ 26%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pal_device_msgs/srv/cancel_effect__type_support.cpp.o[0m
+[8.009s] [ 26%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pal_device_msgs/msg/led_pre_programmed_params__type_support.cpp.o[0m
+[8.018s] [ 28%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pal_device_msgs/srv/shutdown_and_wake_up_robot__type_support.cpp.o[0m
+[8.019s] [ 28%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pal_device_msgs/srv/timed_blink_effect__type_support.cpp.o[0m
+[8.021s] [ 29%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pal_device_msgs/msg/led_fixed_color_params__type_support.cpp.o[0m
+[8.022s] [ 29%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pal_device_msgs/srv/timed_colour_effect__type_support.cpp.o[0m
+[8.032s] [ 29%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pal_device_msgs/msg/led_fade_params__type_support.cpp.o[0m
+[8.042s] [ 29%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pal_device_msgs/srv/timed_fade_effect__type_support.cpp.o[0m
+[9.493s] [ 30%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pal_device_msgs/msg/detail/battery_state__type_support.cpp.o[0m
+[9.508s] [ 31%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pal_device_msgs/msg/detail/led_rainbow_params__type_support.cpp.o[0m
+[9.508s] [ 32%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pal_device_msgs/msg/detail/led_group__type_support.cpp.o[0m
+[9.523s] [ 32%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pal_device_msgs/msg/detail/led_effect_params__type_support.cpp.o[0m
+[9.523s] [ 33%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pal_device_msgs/msg/detail/led_blink_params__type_support.cpp.o[0m
+[9.523s] [ 33%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pal_device_msgs/action/detail/do_timed_led_effect__type_support.cpp.o[0m
+[9.523s] [ 33%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pal_device_msgs/msg/detail/led_progress_params__type_support.cpp.o[0m
+[9.530s] [ 33%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pal_device_msgs/msg/detail/bumper__type_support.cpp.o[0m
+[9.530s] [ 33%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pal_device_msgs/msg/detail/led_fade_params__type_support.cpp.o[0m
+[9.532s] [ 34%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pal_device_msgs/msg/detail/led_fixed_color_params__type_support.cpp.o[0m
+[9.539s] [ 35%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pal_device_msgs/msg/detail/led_flow_params__type_support.cpp.o[0m
+[9.556s] [ 35%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pal_device_msgs/action/detail/dds_fastrtps/do_timed_led_effect__type_support.cpp.o[0m
+[9.609s] [ 35%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pal_device_msgs/msg/detail/led_data_array_params__type_support.cpp.o[0m
+[9.769s] [ 37%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pal_device_msgs/msg/detail/dds_fastrtps/battery_state__type_support.cpp.o[0m
+[9.769s] [ 37%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pal_device_msgs/msg/detail/led_effect_via_topic_params__type_support.cpp.o[0m
+[9.917s] [ 38%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pal_device_msgs/msg/detail/led_pre_programmed_params__type_support.cpp.o[0m
+[9.957s] [ 38%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pal_device_msgs/msg/detail/dds_fastrtps/bumper__type_support.cpp.o[0m
+[9.964s] [ 38%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pal_device_msgs/srv/detail/cancel_effect__type_support.cpp.o[0m
+[10.046s] [ 39%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pal_device_msgs/srv/detail/shutdown_and_wake_up_robot__type_support.cpp.o[0m
+[10.360s] [ 40%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pal_device_msgs/msg/detail/dds_fastrtps/led_group__type_support.cpp.o[0m
+[10.430s] [ 40%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pal_device_msgs/srv/detail/timed_blink_effect__type_support.cpp.o[0m
+[10.615s] [ 41%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pal_device_msgs/srv/detail/timed_colour_effect__type_support.cpp.o[0m
+[10.672s] [ 41%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pal_device_msgs/msg/detail/dds_fastrtps/led_effect_params__type_support.cpp.o[0m
+[10.781s] [ 42%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pal_device_msgs/msg/detail/dds_fastrtps/led_fixed_color_params__type_support.cpp.o[0m
+[11.026s] [ 43%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pal_device_msgs/msg/detail/dds_fastrtps/led_rainbow_params__type_support.cpp.o[0m
+[11.081s] [ 44%] [32m[1mLinking CXX shared library libpal_device_msgs__rosidl_typesupport_cpp.so[0m
+[11.121s] [ 44%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pal_device_msgs/srv/detail/timed_fade_effect__type_support.cpp.o[0m
+[11.139s] [ 44%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pal_device_msgs/msg/detail/dds_fastrtps/led_fade_params__type_support.cpp.o[0m
+[11.177s] [ 45%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pal_device_msgs/msg/detail/dds_fastrtps/led_blink_params__type_support.cpp.o[0m
+[11.190s] [ 45%] Built target pal_device_msgs__rosidl_typesupport_cpp
+[11.225s] [ 45%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pal_device_msgs/msg/detail/dds_fastrtps/led_progress_params__type_support.cpp.o[0m
+[11.235s] [ 46%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pal_device_msgs/msg/detail/dds_fastrtps/led_flow_params__type_support.cpp.o[0m
+[11.312s] [ 46%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pal_device_msgs/msg/detail/dds_fastrtps/led_data_array_params__type_support.cpp.o[0m
+[11.395s] [ 47%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pal_device_msgs/msg/detail/dds_fastrtps/led_effect_via_topic_params__type_support.cpp.o[0m
+[11.399s] [ 47%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pal_device_msgs/action/do_timed_led_effect__type_support.cpp.o[0m
+[11.608s] [ 48%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pal_device_msgs/msg/detail/dds_fastrtps/led_pre_programmed_params__type_support.cpp.o[0m
+[11.705s] [ 49%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pal_device_msgs/msg/battery_state__type_support.cpp.o[0m
+[11.737s] [ 49%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pal_device_msgs/msg/bumper__type_support.cpp.o[0m
+[11.795s] [ 50%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pal_device_msgs/msg/led_group__type_support.cpp.o[0m
+[11.831s] [ 50%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pal_device_msgs/msg/led_effect_params__type_support.cpp.o[0m
+[11.864s] [ 51%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pal_device_msgs/msg/led_fixed_color_params__type_support.cpp.o[0m
+[11.894s] [ 52%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pal_device_msgs/srv/detail/dds_fastrtps/shutdown_and_wake_up_robot__type_support.cpp.o[0m
+[11.905s] [ 52%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pal_device_msgs/srv/detail/dds_fastrtps/cancel_effect__type_support.cpp.o[0m
+[11.951s] [ 52%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pal_device_msgs/msg/led_rainbow_params__type_support.cpp.o[0m
+[11.978s] [ 52%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pal_device_msgs/srv/detail/dds_fastrtps/timed_blink_effect__type_support.cpp.o[0m
+[11.999s] [ 53%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pal_device_msgs/srv/detail/dds_fastrtps/timed_colour_effect__type_support.cpp.o[0m
+[12.015s] [ 54%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pal_device_msgs/msg/led_fade_params__type_support.cpp.o[0m
+[12.133s] [ 55%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pal_device_msgs/msg/led_blink_params__type_support.cpp.o[0m
+[12.141s] [ 55%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pal_device_msgs/srv/detail/dds_fastrtps/timed_fade_effect__type_support.cpp.o[0m
+[12.225s] [ 55%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pal_device_msgs/msg/led_progress_params__type_support.cpp.o[0m
+[12.251s] [ 56%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pal_device_msgs/msg/led_flow_params__type_support.cpp.o[0m
+[12.296s] [ 56%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pal_device_msgs/msg/led_data_array_params__type_support.cpp.o[0m
+[12.338s] [ 56%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pal_device_msgs/msg/led_pre_programmed_params__type_support.cpp.o[0m
+[12.339s] [ 57%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pal_device_msgs/msg/led_effect_via_topic_params__type_support.cpp.o[0m
+[12.354s] [ 58%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pal_device_msgs/srv/cancel_effect__type_support.cpp.o[0m
+[12.439s] [ 59%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pal_device_msgs/srv/shutdown_and_wake_up_robot__type_support.cpp.o[0m
+[12.440s] [ 60%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pal_device_msgs/srv/timed_colour_effect__type_support.cpp.o[0m
+[12.450s] [ 60%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pal_device_msgs/srv/timed_blink_effect__type_support.cpp.o[0m
+[12.480s] [ 60%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pal_device_msgs/srv/timed_fade_effect__type_support.cpp.o[0m
+[12.707s] [ 61%] [32m[1mLinking CXX shared library libpal_device_msgs__rosidl_typesupport_c.so[0m
+[12.715s] [ 62%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pal_device_msgs/msg/detail/bumper__type_support.c.o[0m
+[12.716s] [ 63%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pal_device_msgs/msg/detail/battery_state__type_support.c.o[0m
+[12.717s] [ 63%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pal_device_msgs/msg/detail/led_group__type_support.c.o[0m
+[12.717s] [ 63%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pal_device_msgs/msg/detail/led_effect_params__type_support.c.o[0m
+[12.721s] [ 64%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pal_device_msgs/msg/detail/led_fixed_color_params__type_support.c.o[0m
+[12.727s] [ 65%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pal_device_msgs/msg/detail/led_blink_params__type_support.c.o[0m
+[12.739s] [ 65%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pal_device_msgs/msg/detail/led_rainbow_params__type_support.c.o[0m
+[12.790s] [ 66%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pal_device_msgs/msg/detail/led_fade_params__type_support.c.o[0m
+[12.795s] [ 66%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pal_device_msgs/msg/detail/led_progress_params__type_support.c.o[0m
+[12.814s] [ 67%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pal_device_msgs/msg/detail/led_flow_params__type_support.c.o[0m
+[12.820s] [ 67%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pal_device_msgs/msg/detail/led_data_array_params__type_support.c.o[0m
+[12.827s] [ 68%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pal_device_msgs/msg/detail/led_effect_via_topic_params__type_support.c.o[0m
+[12.829s] [ 68%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pal_device_msgs/action/detail/do_timed_led_effect__type_support.c.o[0m
+[12.847s] [ 69%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pal_device_msgs/msg/detail/led_pre_programmed_params__type_support.c.o[0m
+[12.850s] [ 69%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pal_device_msgs/srv/detail/cancel_effect__type_support.c.o[0m
+[12.858s] [ 70%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pal_device_msgs/srv/detail/shutdown_and_wake_up_robot__type_support.c.o[0m
+[12.863s] [ 70%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pal_device_msgs/srv/detail/timed_blink_effect__type_support.c.o[0m
+[12.867s] [ 70%] Built target pal_device_msgs__rosidl_typesupport_c
+[13.032s] [ 70%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pal_device_msgs/srv/detail/timed_fade_effect__type_support.c.o[0m
+[13.032s] [ 71%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pal_device_msgs/srv/detail/timed_colour_effect__type_support.c.o[0m
+[13.144s] [ 72%] [32m[1mLinking C shared library libpal_device_msgs__rosidl_typesupport_introspection_c.so[0m
+[13.220s] [ 72%] Built target pal_device_msgs__rosidl_typesupport_introspection_c
+[13.364s] [ 73%] [32m[1mLinking CXX shared library libpal_device_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[13.381s] [ 74%] [32m[1mLinking CXX shared library libpal_device_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[13.479s] [ 74%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pal_device_msgs/msg/detail/bumper__type_support_c.cpp.o[0m
+[13.482s] [ 75%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pal_device_msgs/msg/detail/battery_state__type_support_c.cpp.o[0m
+[13.482s] [ 75%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pal_device_msgs/action/detail/do_timed_led_effect__type_support_c.cpp.o[0m
+[13.483s] [ 76%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pal_device_msgs/msg/detail/led_blink_params__type_support_c.cpp.o[0m
+[13.483s] [ 76%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pal_device_msgs/msg/detail/led_rainbow_params__type_support_c.cpp.o[0m
+[13.486s] [ 76%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pal_device_msgs/msg/detail/led_effect_params__type_support_c.cpp.o[0m
+[13.486s] [ 77%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pal_device_msgs/msg/detail/led_group__type_support_c.cpp.o[0m
+[13.487s] [ 78%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pal_device_msgs/msg/detail/led_fixed_color_params__type_support_c.cpp.o[0m
+[13.487s] [ 79%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pal_device_msgs/msg/detail/led_fade_params__type_support_c.cpp.o[0m
+[13.487s] [ 79%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pal_device_msgs/msg/detail/led_pre_programmed_params__type_support_c.cpp.o[0m
+[13.488s] [ 80%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pal_device_msgs/msg/detail/led_flow_params__type_support_c.cpp.o[0m
+[13.488s] [ 80%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pal_device_msgs/msg/detail/led_progress_params__type_support_c.cpp.o[0m
+[13.488s] [ 81%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pal_device_msgs/msg/detail/led_effect_via_topic_params__type_support_c.cpp.o[0m
+[13.488s] [ 81%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pal_device_msgs/msg/detail/led_data_array_params__type_support_c.cpp.o[0m
+[13.492s] [ 81%] Built target pal_device_msgs__rosidl_typesupport_fastrtps_cpp
+[13.541s] [ 82%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pal_device_msgs/srv/detail/shutdown_and_wake_up_robot__type_support_c.cpp.o[0m
+[13.547s] [ 82%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pal_device_msgs/srv/detail/timed_blink_effect__type_support_c.cpp.o[0m
+[13.554s] [ 83%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pal_device_msgs/srv/detail/cancel_effect__type_support_c.cpp.o[0m
+[13.570s] [ 84%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pal_device_msgs/srv/detail/timed_colour_effect__type_support_c.cpp.o[0m
+[13.583s] [ 84%] [32mBuilding CXX object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pal_device_msgs/srv/detail/timed_fade_effect__type_support_c.cpp.o[0m
+[13.691s] [ 84%] Built target pal_device_msgs__rosidl_typesupport_introspection_cpp
+[14.784s] [ 85%] [32m[1mLinking CXX shared library libpal_device_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[14.911s] [ 85%] Built target pal_device_msgs__rosidl_typesupport_fastrtps_c
+[14.942s] [ 85%] Built target pal_device_msgs
+[14.974s] [ 86%] [34m[1mGenerating Python code for ROS interfaces[0m
+[18.153s] [ 86%] Built target pal_device_msgs__py
+[18.175s] [ 86%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_py.dir/rosidl_generator_py/pal_device_msgs/msg/_led_effect_params_s.c.o[0m
+[18.175s] [ 86%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_py.dir/rosidl_generator_py/pal_device_msgs/action/_do_timed_led_effect_s.c.o[0m
+[18.176s] [ 88%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_py.dir/rosidl_generator_py/pal_device_msgs/msg/_battery_state_s.c.o[0m
+[18.176s] [ 88%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_py.dir/rosidl_generator_py/pal_device_msgs/msg/_led_progress_params_s.c.o[0m
+[18.176s] [ 88%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_py.dir/rosidl_generator_py/pal_device_msgs/msg/_led_group_s.c.o[0m
+[18.176s] [ 90%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_py.dir/rosidl_generator_py/pal_device_msgs/msg/_led_flow_params_s.c.o[0m
+[18.176s] [ 90%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_py.dir/rosidl_generator_py/pal_device_msgs/msg/_led_rainbow_params_s.c.o[0m
+[18.176s] [ 90%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_py.dir/rosidl_generator_py/pal_device_msgs/msg/_bumper_s.c.o[0m
+[18.176s] [ 90%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_py.dir/rosidl_generator_py/pal_device_msgs/msg/_led_fade_params_s.c.o[0m
+[18.177s] [ 91%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_py.dir/rosidl_generator_py/pal_device_msgs/msg/_led_pre_programmed_params_s.c.o[0m
+[18.177s] [ 91%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_py.dir/rosidl_generator_py/pal_device_msgs/srv/_cancel_effect_s.c.o[0m
+[18.177s] [ 92%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_py.dir/rosidl_generator_py/pal_device_msgs/msg/_led_effect_via_topic_params_s.c.o[0m
+[18.177s] [ 94%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_py.dir/rosidl_generator_py/pal_device_msgs/msg/_led_blink_params_s.c.o[0m
+[18.177s] [ 94%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_py.dir/rosidl_generator_py/pal_device_msgs/srv/_timed_colour_effect_s.c.o[0m
+[18.177s] [ 94%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_py.dir/rosidl_generator_py/pal_device_msgs/msg/_led_data_array_params_s.c.o[0m
+[18.177s] [ 94%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_py.dir/rosidl_generator_py/pal_device_msgs/srv/_timed_blink_effect_s.c.o[0m
+[18.178s] [ 95%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_py.dir/rosidl_generator_py/pal_device_msgs/msg/_led_fixed_color_params_s.c.o[0m
+[18.181s] [ 96%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_py.dir/rosidl_generator_py/pal_device_msgs/srv/_shutdown_and_wake_up_robot_s.c.o[0m
+[18.182s] [ 96%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_generator_py.dir/rosidl_generator_py/pal_device_msgs/srv/_timed_fade_effect_s.c.o[0m
+[18.541s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/pal_device_msgs/libpal_device_msgs__rosidl_generator_py.so[0m
+[18.592s] [ 97%] Built target pal_device_msgs__rosidl_generator_py
+[18.612s] [ 97%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/pal_device_msgs/_pal_device_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[18.612s] [ 97%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/pal_device_msgs/_pal_device_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[18.612s] [ 97%] [32mBuilding C object CMakeFiles/pal_device_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/pal_device_msgs/_pal_device_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[19.068s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/pal_device_msgs/pal_device_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[19.081s] [ 99%] [32m[1mLinking C shared library rosidl_generator_py/pal_device_msgs/pal_device_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[19.084s] [100%] [32m[1mLinking C shared library rosidl_generator_py/pal_device_msgs/pal_device_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[19.110s] [100%] Built target pal_device_msgs__rosidl_typesupport_fastrtps_c__pyext
+[19.122s] [100%] Built target pal_device_msgs__rosidl_typesupport_introspection_c__pyext
+[19.123s] [100%] Built target pal_device_msgs__rosidl_typesupport_c__pyext
+[19.134s] Invoked command in '/workspaces/TIAgo_humble/build/pal_device_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/TIAgo_humble/build/pal_device_msgs -- -j24 -l24
+[19.135s] Invoking command in '/workspaces/TIAgo_humble/build/pal_device_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/TIAgo_humble/build/pal_device_msgs
+[19.142s] -- Install configuration: "Release"
+[19.143s] -- Execute custom install script
+[19.144s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/ament_index/resource_index/rosidl_interfaces/pal_device_msgs
+[19.152s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/action/detail/do_timed_led_effect__functions.h
+[19.159s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/action/detail/do_timed_led_effect__struct.h
+[19.165s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/action/detail/do_timed_led_effect__type_support.h
+[19.171s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/action/do_timed_led_effect.h
+[19.177s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/battery_state.h
+[19.184s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/bumper.h
+[19.190s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/battery_state__functions.h
+[19.198s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/battery_state__struct.h
+[19.206s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/battery_state__type_support.h
+[19.213s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/bumper__functions.h
+[19.220s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/bumper__struct.h
+[19.228s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/bumper__type_support.h
+[19.235s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_blink_params__functions.h
+[19.243s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_blink_params__struct.h
+[19.250s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_blink_params__type_support.h
+[19.258s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_data_array_params__functions.h
+[19.265s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_data_array_params__struct.h
+[19.271s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_data_array_params__type_support.h
+[19.278s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_effect_params__functions.h
+[19.285s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_effect_params__struct.h
+[19.292s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_effect_params__type_support.h
+[19.300s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_effect_via_topic_params__functions.h
+[19.307s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_effect_via_topic_params__struct.h
+[19.316s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_effect_via_topic_params__type_support.h
+[19.323s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_fade_params__functions.h
+[19.330s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_fade_params__struct.h
+[19.337s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_fade_params__type_support.h
+[19.344s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_fixed_color_params__functions.h
+[19.351s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_fixed_color_params__struct.h
+[19.357s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_fixed_color_params__type_support.h
+[19.364s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_flow_params__functions.h
+[19.373s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_flow_params__struct.h
+[19.380s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_flow_params__type_support.h
+[19.388s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_group__functions.h
+[19.395s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_group__struct.h
+[19.402s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_group__type_support.h
+[19.409s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_pre_programmed_params__functions.h
+[19.416s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_pre_programmed_params__struct.h
+[19.424s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_pre_programmed_params__type_support.h
+[19.431s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_progress_params__functions.h
+[19.437s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_progress_params__struct.h
+[19.444s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_progress_params__type_support.h
+[19.451s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_rainbow_params__functions.h
+[19.458s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_rainbow_params__struct.h
+[19.464s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_rainbow_params__type_support.h
+[19.470s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/led_blink_params.h
+[19.476s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/led_data_array_params.h
+[19.483s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/led_effect_params.h
+[19.490s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/led_effect_via_topic_params.h
+[19.496s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/led_fade_params.h
+[19.502s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/led_fixed_color_params.h
+[19.510s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/led_flow_params.h
+[19.517s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/led_group.h
+[19.524s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/led_pre_programmed_params.h
+[19.531s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/led_progress_params.h
+[19.538s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/led_rainbow_params.h
+[19.545s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/rosidl_generator_c__visibility_control.h
+[19.552s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/cancel_effect.h
+[19.558s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/cancel_effect__functions.h
+[19.565s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/cancel_effect__struct.h
+[19.572s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/cancel_effect__type_support.h
+[19.580s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/shutdown_and_wake_up_robot__functions.h
+[19.587s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/shutdown_and_wake_up_robot__struct.h
+[19.594s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/shutdown_and_wake_up_robot__type_support.h
+[19.601s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/timed_blink_effect__functions.h
+[19.608s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/timed_blink_effect__struct.h
+[19.615s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/timed_blink_effect__type_support.h
+[19.622s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/timed_colour_effect__functions.h
+[19.629s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/timed_colour_effect__struct.h
+[19.636s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/timed_colour_effect__type_support.h
+[19.643s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/timed_fade_effect__functions.h
+[19.650s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/timed_fade_effect__struct.h
+[19.657s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/timed_fade_effect__type_support.h
+[19.663s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/shutdown_and_wake_up_robot.h
+[19.670s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/timed_blink_effect.h
+[19.676s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/timed_colour_effect.h
+[19.683s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/timed_fade_effect.h
+[19.691s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/environment/library_path.sh
+[19.699s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/environment/library_path.dsv
+[19.707s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/action/detail/do_timed_led_effect__rosidl_typesupport_fastrtps_c.h
+[19.714s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/battery_state__rosidl_typesupport_fastrtps_c.h
+[19.722s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/bumper__rosidl_typesupport_fastrtps_c.h
+[19.729s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_blink_params__rosidl_typesupport_fastrtps_c.h
+[19.737s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_data_array_params__rosidl_typesupport_fastrtps_c.h
+[19.745s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_effect_params__rosidl_typesupport_fastrtps_c.h
+[19.753s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_effect_via_topic_params__rosidl_typesupport_fastrtps_c.h
+[19.762s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_fade_params__rosidl_typesupport_fastrtps_c.h
+[19.770s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_fixed_color_params__rosidl_typesupport_fastrtps_c.h
+[19.778s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_flow_params__rosidl_typesupport_fastrtps_c.h
+[19.787s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_group__rosidl_typesupport_fastrtps_c.h
+[19.797s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_pre_programmed_params__rosidl_typesupport_fastrtps_c.h
+[19.806s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_progress_params__rosidl_typesupport_fastrtps_c.h
+[19.816s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_rainbow_params__rosidl_typesupport_fastrtps_c.h
+[19.824s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[19.832s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/cancel_effect__rosidl_typesupport_fastrtps_c.h
+[19.839s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/shutdown_and_wake_up_robot__rosidl_typesupport_fastrtps_c.h
+[19.847s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/timed_blink_effect__rosidl_typesupport_fastrtps_c.h
+[19.853s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/timed_colour_effect__rosidl_typesupport_fastrtps_c.h
+[19.860s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/timed_fade_effect__rosidl_typesupport_fastrtps_c.h
+[19.868s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/action/detail/do_timed_led_effect__builder.hpp
+[19.875s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/action/detail/do_timed_led_effect__struct.hpp
+[19.881s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/action/detail/do_timed_led_effect__traits.hpp
+[19.888s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/action/detail/do_timed_led_effect__type_support.hpp
+[19.895s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/action/do_timed_led_effect.hpp
+[19.903s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/battery_state.hpp
+[19.913s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/bumper.hpp
+[19.922s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/battery_state__builder.hpp
+[19.932s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/battery_state__struct.hpp
+[19.940s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/battery_state__traits.hpp
+[19.949s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/battery_state__type_support.hpp
+[19.959s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/bumper__builder.hpp
+[19.968s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/bumper__struct.hpp
+[19.975s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/bumper__traits.hpp
+[19.983s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/bumper__type_support.hpp
+[19.992s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_blink_params__builder.hpp
+[20.001s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_blink_params__struct.hpp
+[20.009s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_blink_params__traits.hpp
+[20.016s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_blink_params__type_support.hpp
+[20.023s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_data_array_params__builder.hpp
+[20.030s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_data_array_params__struct.hpp
+[20.038s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_data_array_params__traits.hpp
+[20.047s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_data_array_params__type_support.hpp
+[20.055s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_effect_params__builder.hpp
+[20.064s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_effect_params__struct.hpp
+[20.074s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_effect_params__traits.hpp
+[20.082s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_effect_params__type_support.hpp
+[20.090s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_effect_via_topic_params__builder.hpp
+[20.098s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_effect_via_topic_params__struct.hpp
+[20.107s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_effect_via_topic_params__traits.hpp
+[20.115s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_effect_via_topic_params__type_support.hpp
+[20.123s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_fade_params__builder.hpp
+[20.132s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_fade_params__struct.hpp
+[20.141s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_fade_params__traits.hpp
+[20.151s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_fade_params__type_support.hpp
+[20.160s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_fixed_color_params__builder.hpp
+[20.169s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_fixed_color_params__struct.hpp
+[20.178s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_fixed_color_params__traits.hpp
+[20.187s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_fixed_color_params__type_support.hpp
+[20.195s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_flow_params__builder.hpp
+[20.204s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_flow_params__struct.hpp
+[20.212s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_flow_params__traits.hpp
+[20.220s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_flow_params__type_support.hpp
+[20.228s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_group__builder.hpp
+[20.235s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_group__struct.hpp
+[20.242s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_group__traits.hpp
+[20.249s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_group__type_support.hpp
+[20.256s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_pre_programmed_params__builder.hpp
+[20.262s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_pre_programmed_params__struct.hpp
+[20.268s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_pre_programmed_params__traits.hpp
+[20.274s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_pre_programmed_params__type_support.hpp
+[20.280s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_progress_params__builder.hpp
+[20.286s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_progress_params__struct.hpp
+[20.292s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_progress_params__traits.hpp
+[20.299s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_progress_params__type_support.hpp
+[20.306s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_rainbow_params__builder.hpp
+[20.314s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_rainbow_params__struct.hpp
+[20.322s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_rainbow_params__traits.hpp
+[20.330s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_rainbow_params__type_support.hpp
+[20.337s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/led_blink_params.hpp
+[20.344s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/led_data_array_params.hpp
+[20.350s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/led_effect_params.hpp
+[20.357s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/led_effect_via_topic_params.hpp
+[20.364s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/led_fade_params.hpp
+[20.372s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/led_fixed_color_params.hpp
+[20.379s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/led_flow_params.hpp
+[20.386s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/led_group.hpp
+[20.395s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/led_pre_programmed_params.hpp
+[20.402s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/led_progress_params.hpp
+[20.410s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/led_rainbow_params.hpp
+[20.417s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[20.425s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/cancel_effect.hpp
+[20.432s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/cancel_effect__builder.hpp
+[20.440s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/cancel_effect__struct.hpp
+[20.446s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/cancel_effect__traits.hpp
+[20.453s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/cancel_effect__type_support.hpp
+[20.461s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/shutdown_and_wake_up_robot__builder.hpp
+[20.469s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/shutdown_and_wake_up_robot__struct.hpp
+[20.476s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/shutdown_and_wake_up_robot__traits.hpp
+[20.483s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/shutdown_and_wake_up_robot__type_support.hpp
+[20.491s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/timed_blink_effect__builder.hpp
+[20.499s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/timed_blink_effect__struct.hpp
+[20.506s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/timed_blink_effect__traits.hpp
+[20.513s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/timed_blink_effect__type_support.hpp
+[20.520s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/timed_colour_effect__builder.hpp
+[20.527s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/timed_colour_effect__struct.hpp
+[20.534s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/timed_colour_effect__traits.hpp
+[20.540s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/timed_colour_effect__type_support.hpp
+[20.548s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/timed_fade_effect__builder.hpp
+[20.554s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/timed_fade_effect__struct.hpp
+[20.561s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/timed_fade_effect__traits.hpp
+[20.567s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/timed_fade_effect__type_support.hpp
+[20.574s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/shutdown_and_wake_up_robot.hpp
+[20.581s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/timed_blink_effect.hpp
+[20.588s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/timed_colour_effect.hpp
+[20.595s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/timed_fade_effect.hpp
+[20.604s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/action/detail/do_timed_led_effect__rosidl_typesupport_fastrtps_cpp.hpp
+[20.611s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/battery_state__rosidl_typesupport_fastrtps_cpp.hpp
+[20.618s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/bumper__rosidl_typesupport_fastrtps_cpp.hpp
+[20.625s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_blink_params__rosidl_typesupport_fastrtps_cpp.hpp
+[20.632s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_data_array_params__rosidl_typesupport_fastrtps_cpp.hpp
+[20.639s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_effect_params__rosidl_typesupport_fastrtps_cpp.hpp
+[20.646s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_effect_via_topic_params__rosidl_typesupport_fastrtps_cpp.hpp
+[20.653s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_fade_params__rosidl_typesupport_fastrtps_cpp.hpp
+[20.659s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_fixed_color_params__rosidl_typesupport_fastrtps_cpp.hpp
+[20.666s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_flow_params__rosidl_typesupport_fastrtps_cpp.hpp
+[20.672s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_group__rosidl_typesupport_fastrtps_cpp.hpp
+[20.679s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_pre_programmed_params__rosidl_typesupport_fastrtps_cpp.hpp
+[20.685s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_progress_params__rosidl_typesupport_fastrtps_cpp.hpp
+[20.691s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_rainbow_params__rosidl_typesupport_fastrtps_cpp.hpp
+[20.698s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[20.705s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/cancel_effect__rosidl_typesupport_fastrtps_cpp.hpp
+[20.712s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/shutdown_and_wake_up_robot__rosidl_typesupport_fastrtps_cpp.hpp
+[20.719s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/timed_blink_effect__rosidl_typesupport_fastrtps_cpp.hpp
+[20.726s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/timed_colour_effect__rosidl_typesupport_fastrtps_cpp.hpp
+[20.733s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/timed_fade_effect__rosidl_typesupport_fastrtps_cpp.hpp
+[20.739s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/action/detail/do_timed_led_effect__rosidl_typesupport_introspection_c.h
+[20.746s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/battery_state__rosidl_typesupport_introspection_c.h
+[20.752s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/bumper__rosidl_typesupport_introspection_c.h
+[20.758s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_blink_params__rosidl_typesupport_introspection_c.h
+[20.764s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_data_array_params__rosidl_typesupport_introspection_c.h
+[20.770s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_effect_params__rosidl_typesupport_introspection_c.h
+[20.776s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_effect_via_topic_params__rosidl_typesupport_introspection_c.h
+[20.782s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_fade_params__rosidl_typesupport_introspection_c.h
+[20.788s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_fixed_color_params__rosidl_typesupport_introspection_c.h
+[20.793s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_flow_params__rosidl_typesupport_introspection_c.h
+[20.800s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_group__rosidl_typesupport_introspection_c.h
+[20.806s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_pre_programmed_params__rosidl_typesupport_introspection_c.h
+[20.812s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_progress_params__rosidl_typesupport_introspection_c.h
+[20.818s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_rainbow_params__rosidl_typesupport_introspection_c.h
+[20.825s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[20.831s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/cancel_effect__rosidl_typesupport_introspection_c.h
+[20.837s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/shutdown_and_wake_up_robot__rosidl_typesupport_introspection_c.h
+[20.843s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/timed_blink_effect__rosidl_typesupport_introspection_c.h
+[20.850s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/timed_colour_effect__rosidl_typesupport_introspection_c.h
+[20.856s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/timed_fade_effect__rosidl_typesupport_introspection_c.h
+[20.863s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/action/detail/do_timed_led_effect__rosidl_typesupport_introspection_cpp.hpp
+[20.870s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/battery_state__rosidl_typesupport_introspection_cpp.hpp
+[20.878s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/bumper__rosidl_typesupport_introspection_cpp.hpp
+[20.886s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_blink_params__rosidl_typesupport_introspection_cpp.hpp
+[20.893s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_data_array_params__rosidl_typesupport_introspection_cpp.hpp
+[20.901s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_effect_params__rosidl_typesupport_introspection_cpp.hpp
+[20.908s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_effect_via_topic_params__rosidl_typesupport_introspection_cpp.hpp
+[20.915s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_fade_params__rosidl_typesupport_introspection_cpp.hpp
+[20.923s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_fixed_color_params__rosidl_typesupport_introspection_cpp.hpp
+[20.930s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_flow_params__rosidl_typesupport_introspection_cpp.hpp
+[20.937s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_group__rosidl_typesupport_introspection_cpp.hpp
+[20.944s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_pre_programmed_params__rosidl_typesupport_introspection_cpp.hpp
+[20.951s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_progress_params__rosidl_typesupport_introspection_cpp.hpp
+[20.957s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/msg/detail/led_rainbow_params__rosidl_typesupport_introspection_cpp.hpp
+[20.964s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/cancel_effect__rosidl_typesupport_introspection_cpp.hpp
+[20.971s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/shutdown_and_wake_up_robot__rosidl_typesupport_introspection_cpp.hpp
+[20.978s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/timed_blink_effect__rosidl_typesupport_introspection_cpp.hpp
+[20.985s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/timed_colour_effect__rosidl_typesupport_introspection_cpp.hpp
+[20.992s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/include/pal_device_msgs/pal_device_msgs/srv/detail/timed_fade_effect__rosidl_typesupport_introspection_cpp.hpp
+[20.999s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/environment/pythonpath.sh
+[21.006s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/environment/pythonpath.dsv
+[21.013s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs-2.0.0-py3.10.egg-info/PKG-INFO
+[21.019s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs-2.0.0-py3.10.egg-info/SOURCES.txt
+[21.026s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs-2.0.0-py3.10.egg-info/dependency_links.txt
+[21.033s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs-2.0.0-py3.10.egg-info/top_level.txt
+[21.040s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/__init__.py
+[21.047s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/_pal_device_msgs_s.ep.rosidl_typesupport_c.c
+[21.053s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/_pal_device_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[21.059s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/_pal_device_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[21.065s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/action/__init__.py
+[21.071s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/action/_do_timed_led_effect.py
+[21.078s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/action/_do_timed_led_effect_s.c
+[21.085s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/libpal_device_msgs__rosidl_generator_py.so
+[21.091s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/__init__.py
+[21.098s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_battery_state.py
+[21.104s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_battery_state_s.c
+[21.110s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_bumper.py
+[21.117s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_bumper_s.c
+[21.123s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_led_blink_params.py
+[21.130s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_led_blink_params_s.c
+[21.137s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_led_data_array_params.py
+[21.143s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_led_data_array_params_s.c
+[21.150s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_led_effect_params.py
+[21.156s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_led_effect_params_s.c
+[21.162s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_led_effect_via_topic_params.py
+[21.169s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_led_effect_via_topic_params_s.c
+[21.175s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_led_fade_params.py
+[21.180s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_led_fade_params_s.c
+[21.186s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_led_fixed_color_params.py
+[21.193s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_led_fixed_color_params_s.c
+[21.198s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_led_flow_params.py
+[21.204s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_led_flow_params_s.c
+[21.210s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_led_group.py
+[21.217s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_led_group_s.c
+[21.223s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_led_pre_programmed_params.py
+[21.229s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_led_pre_programmed_params_s.c
+[21.235s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_led_progress_params.py
+[21.241s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_led_progress_params_s.c
+[21.247s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_led_rainbow_params.py
+[21.253s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_led_rainbow_params_s.c
+[21.259s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/pal_device_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[21.265s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/pal_device_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[21.271s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/pal_device_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[21.277s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/srv/__init__.py
+[21.282s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/srv/_cancel_effect.py
+[21.288s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/srv/_cancel_effect_s.c
+[21.293s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/srv/_shutdown_and_wake_up_robot.py
+[21.300s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/srv/_shutdown_and_wake_up_robot_s.c
+[21.306s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/srv/_timed_blink_effect.py
+[21.312s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/srv/_timed_blink_effect_s.c
+[21.319s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/srv/_timed_colour_effect.py
+[21.325s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/srv/_timed_colour_effect_s.c
+[21.332s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/srv/_timed_fade_effect.py
+[21.338s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/srv/_timed_fade_effect_s.c
+[21.345s] -- Up-to-date symlink: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/pal_device_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[21.345s] -- Up-to-date symlink: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/pal_device_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[21.345s] -- Up-to-date symlink: /workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/pal_device_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[21.345s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/ament_index/resource_index/rust_packages/pal_device_msgs
+[21.352s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/rust/Cargo.toml
+[21.357s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/rust/build.rs
+[21.363s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/rust/src/action.rs
+[21.369s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/rust/src/action/rmw.rs
+[21.375s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/rust/src/lib.rs
+[21.381s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/rust/src/msg.rs
+[21.388s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/rust/src/msg/rmw.rs
+[21.394s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/rust/src/srv.rs
+[21.400s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/rust/src/srv/rmw.rs
+[21.407s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/action/DoTimedLedEffect.idl
+[21.414s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/msg/BatteryState.idl
+[21.421s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/msg/Bumper.idl
+[21.428s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/msg/LedGroup.idl
+[21.433s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/msg/LedEffectParams.idl
+[21.439s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/msg/LedFixedColorParams.idl
+[21.445s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/msg/LedRainbowParams.idl
+[21.450s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/msg/LedFadeParams.idl
+[21.456s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/msg/LedBlinkParams.idl
+[21.462s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/msg/LedProgressParams.idl
+[21.469s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/msg/LedFlowParams.idl
+[21.476s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/msg/LedDataArrayParams.idl
+[21.483s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/msg/LedEffectViaTopicParams.idl
+[21.489s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/msg/LedPreProgrammedParams.idl
+[21.495s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/srv/CancelEffect.idl
+[21.502s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/srv/ShutdownAndWakeUpRobot.idl
+[21.508s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/srv/TimedBlinkEffect.idl
+[21.515s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/srv/TimedColourEffect.idl
+[21.521s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/srv/TimedFadeEffect.idl
+[21.528s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/action/DoTimedLedEffect.action
+[21.534s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/msg/BatteryState.msg
+[21.540s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/msg/Bumper.msg
+[21.547s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/msg/LedGroup.msg
+[21.553s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/msg/LedEffectParams.msg
+[21.560s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/msg/LedFixedColorParams.msg
+[21.566s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/msg/LedRainbowParams.msg
+[21.572s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/msg/LedFadeParams.msg
+[21.579s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/msg/LedBlinkParams.msg
+[21.585s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/msg/LedProgressParams.msg
+[21.592s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/msg/LedFlowParams.msg
+[21.598s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/msg/LedDataArrayParams.msg
+[21.604s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/msg/LedEffectViaTopicParams.msg
+[21.611s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/msg/LedPreProgrammedParams.msg
+[21.619s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/srv/CancelEffect.srv
+[21.626s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/srv/CancelEffect_Request.msg
+[21.633s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/srv/CancelEffect_Response.msg
+[21.639s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/srv/ShutdownAndWakeUpRobot.srv
+[21.646s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/srv/ShutdownAndWakeUpRobot_Request.msg
+[21.652s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/srv/ShutdownAndWakeUpRobot_Response.msg
+[21.659s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/srv/TimedBlinkEffect.srv
+[21.665s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/srv/TimedBlinkEffect_Request.msg
+[21.671s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/srv/TimedBlinkEffect_Response.msg
+[21.677s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/srv/TimedColourEffect.srv
+[21.683s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/srv/TimedColourEffect_Request.msg
+[21.690s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/srv/TimedColourEffect_Response.msg
+[21.696s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/srv/TimedFadeEffect.srv
+[21.702s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/srv/TimedFadeEffect_Request.msg
+[21.708s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/srv/TimedFadeEffect_Response.msg
+[21.715s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/ament_index/resource_index/package_run_dependencies/pal_device_msgs
+[21.723s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/ament_index/resource_index/parent_prefix_path/pal_device_msgs
+[21.729s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/environment/ament_prefix_path.sh
+[21.737s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/environment/ament_prefix_path.dsv
+[21.743s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/environment/path.sh
+[21.750s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/environment/path.dsv
+[21.756s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/local_setup.bash
+[21.763s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/local_setup.sh
+[21.769s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/local_setup.zsh
+[21.775s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/local_setup.dsv
+[21.780s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/package.dsv
+[21.786s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/ament_index/resource_index/packages/pal_device_msgs
+[21.792s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/cmake/rosidl_cmake-extras.cmake
+[21.797s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[21.804s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[21.811s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[21.817s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[21.825s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[21.831s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[21.838s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[21.844s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/cmake/pal_device_msgsConfig.cmake
+[21.850s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/cmake/pal_device_msgsConfig-version.cmake
+[21.856s] -- Symlinking: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/package.xml
+[21.862s] -- Installing: /workspaces/TIAgo_humble/install/pal_device_msgs/lib/libpal_device_msgs__rosidl_generator_c.so
+[21.862s] -- Set runtime path of "/workspaces/TIAgo_humble/install/pal_device_msgs/lib/libpal_device_msgs__rosidl_generator_c.so" to ""
+[21.862s] -- Installing: /workspaces/TIAgo_humble/install/pal_device_msgs/lib/libpal_device_msgs__rosidl_typesupport_fastrtps_c.so
+[21.863s] -- Set runtime path of "/workspaces/TIAgo_humble/install/pal_device_msgs/lib/libpal_device_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[21.863s] -- Installing: /workspaces/TIAgo_humble/install/pal_device_msgs/lib/libpal_device_msgs__rosidl_typesupport_fastrtps_cpp.so
+[21.863s] -- Set runtime path of "/workspaces/TIAgo_humble/install/pal_device_msgs/lib/libpal_device_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[21.863s] -- Installing: /workspaces/TIAgo_humble/install/pal_device_msgs/lib/libpal_device_msgs__rosidl_typesupport_introspection_c.so
+[21.863s] -- Set runtime path of "/workspaces/TIAgo_humble/install/pal_device_msgs/lib/libpal_device_msgs__rosidl_typesupport_introspection_c.so" to ""
+[21.863s] -- Installing: /workspaces/TIAgo_humble/install/pal_device_msgs/lib/libpal_device_msgs__rosidl_typesupport_c.so
+[21.863s] -- Set runtime path of "/workspaces/TIAgo_humble/install/pal_device_msgs/lib/libpal_device_msgs__rosidl_typesupport_c.so" to ""
+[21.863s] -- Installing: /workspaces/TIAgo_humble/install/pal_device_msgs/lib/libpal_device_msgs__rosidl_typesupport_introspection_cpp.so
+[21.864s] -- Set runtime path of "/workspaces/TIAgo_humble/install/pal_device_msgs/lib/libpal_device_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[21.864s] -- Installing: /workspaces/TIAgo_humble/install/pal_device_msgs/lib/libpal_device_msgs__rosidl_typesupport_cpp.so
+[21.864s] -- Set runtime path of "/workspaces/TIAgo_humble/install/pal_device_msgs/lib/libpal_device_msgs__rosidl_typesupport_cpp.so" to ""
+[21.909s] Listing '/workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs'...
+[21.910s] Compiling '/workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/__init__.py'...
+[21.910s] Listing '/workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/action'...
+[21.910s] Compiling '/workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/action/__init__.py'...
+[21.910s] Compiling '/workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/action/_do_timed_led_effect.py'...
+[21.910s] Listing '/workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg'...
+[21.910s] Compiling '/workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/__init__.py'...
+[21.910s] Compiling '/workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_battery_state.py'...
+[21.910s] Compiling '/workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_bumper.py'...
+[21.910s] Compiling '/workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_led_blink_params.py'...
+[21.910s] Compiling '/workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_led_data_array_params.py'...
+[21.910s] Compiling '/workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_led_effect_params.py'...
+[21.910s] Compiling '/workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_led_effect_via_topic_params.py'...
+[21.910s] Compiling '/workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_led_fade_params.py'...
+[21.910s] Compiling '/workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_led_fixed_color_params.py'...
+[21.910s] Compiling '/workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_led_flow_params.py'...
+[21.910s] Compiling '/workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_led_group.py'...
+[21.910s] Compiling '/workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_led_pre_programmed_params.py'...
+[21.910s] Compiling '/workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_led_progress_params.py'...
+[21.910s] Compiling '/workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/msg/_led_rainbow_params.py'...
+[21.910s] Listing '/workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/srv'...
+[21.910s] Compiling '/workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/srv/__init__.py'...
+[21.910s] Compiling '/workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/srv/_cancel_effect.py'...
+[21.910s] Compiling '/workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/srv/_shutdown_and_wake_up_robot.py'...
+[21.910s] Compiling '/workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/srv/_timed_blink_effect.py'...
+[21.910s] Compiling '/workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/srv/_timed_colour_effect.py'...
+[21.911s] Compiling '/workspaces/TIAgo_humble/install/pal_device_msgs/local/lib/python3.10/dist-packages/pal_device_msgs/srv/_timed_fade_effect.py'...
+[21.914s] -- Installing: /workspaces/TIAgo_humble/install/pal_device_msgs/lib/libpal_device_msgs__rosidl_generator_py.so
+[21.914s] -- Set runtime path of "/workspaces/TIAgo_humble/install/pal_device_msgs/lib/libpal_device_msgs__rosidl_generator_py.so" to ""
+[21.914s] -- Installing: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/cmake/export_pal_device_msgs__rosidl_generator_cExport.cmake
+[21.915s] -- Installing: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/cmake/export_pal_device_msgs__rosidl_generator_cExport-release.cmake
+[21.915s] -- Installing: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/cmake/export_pal_device_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[21.915s] -- Installing: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/cmake/export_pal_device_msgs__rosidl_typesupport_fastrtps_cExport-release.cmake
+[21.915s] -- Installing: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/cmake/export_pal_device_msgs__rosidl_generator_cppExport.cmake
+[21.915s] -- Installing: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/cmake/export_pal_device_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[21.915s] -- Installing: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/cmake/export_pal_device_msgs__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[21.915s] -- Installing: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/cmake/pal_device_msgs__rosidl_typesupport_introspection_cExport.cmake
+[21.915s] -- Installing: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/cmake/pal_device_msgs__rosidl_typesupport_introspection_cExport-release.cmake
+[21.915s] -- Installing: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/cmake/pal_device_msgs__rosidl_typesupport_cExport.cmake
+[21.915s] -- Installing: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/cmake/pal_device_msgs__rosidl_typesupport_cExport-release.cmake
+[21.916s] -- Installing: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/cmake/pal_device_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[21.916s] -- Installing: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/cmake/pal_device_msgs__rosidl_typesupport_introspection_cppExport-release.cmake
+[21.916s] -- Installing: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/cmake/pal_device_msgs__rosidl_typesupport_cppExport.cmake
+[21.916s] -- Installing: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/cmake/pal_device_msgs__rosidl_typesupport_cppExport-release.cmake
+[21.916s] -- Installing: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/cmake/export_pal_device_msgs__rosidl_generator_pyExport.cmake
+[21.916s] -- Installing: /workspaces/TIAgo_humble/install/pal_device_msgs/share/pal_device_msgs/cmake/export_pal_device_msgs__rosidl_generator_pyExport-release.cmake
+[21.919s] Invoked command in '/workspaces/TIAgo_humble/build/pal_device_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/TIAgo_humble/build/pal_device_msgs

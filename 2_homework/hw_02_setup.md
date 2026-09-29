@@ -34,8 +34,8 @@
 ### Шаг 2. Склонировать проект
 
 ```bash
-git clone <URL-репозитория> ROS2_course_sesc
-cd ROS2_course_sesc
+git clone <URL-репозитория> ROS2_basic_course_SESC
+cd ROS2_basic_course_SESC
 code .
 ```
 

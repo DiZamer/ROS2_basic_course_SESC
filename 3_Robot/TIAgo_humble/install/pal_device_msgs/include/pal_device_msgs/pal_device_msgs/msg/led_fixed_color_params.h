@@ -1,0 +1,1 @@
+/workspaces/TIAgo_humble/build/pal_device_msgs/rosidl_generator_c/pal_device_msgs/msg/led_fixed_color_params.h
