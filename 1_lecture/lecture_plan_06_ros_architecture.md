@@ -125,7 +125,7 @@ ros2 node list
 1. Запускают `ros2 doctor --report` и читают раздел про middleware.
 2. Проверяют `printenv RMW_IMPLEMENTATION` (пусто = дефолт Fast DDS).
 3. Поднимают `talker` и `listener`, смотрят граф через `ros2 node list` и `rqt_graph`.
-4. (Опционально) меняют RMW на Cyclone DDS и убеждаются, что узлы на разных RMW не видят друг друга.
+4. Проверяют выбранную RMW implementation и обсуждают, что кросс-вендорная совместимость зависит от конкретных реализаций и настроек.
 5. Показывают изоляцию: listener в домене 1 не получает сообщения от talker в домене 0.
 
 План Б практики: если нет графического интерфейса для `rqt_graph`, использовать `ros2 node list` и `ros2 topic list` и нарисовать граф на доске.
@@ -134,7 +134,7 @@ ros2 node list
 
 ### Что показать в архитектуре
 
-- Подсистемы TIAgo (карта — в [`3_Robot/TIAgo_humble/docs/tiago_architecture.md`](../../3_Robot/TIAgo_humble/docs/tiago_architecture.md)): пользовательский слой, планирование (Nav2, MoveIt2), восприятие (YOLO, LiDAR, камера), координация (twist_mux, ros2_control), сенсоры/симуляция (Gazebo).
+- Подсистемы TIAgo (карта — в [`3_Robot/TIAgo_humble/docs/tiago_architecture.md`](../3_Robot/TIAgo_humble/docs/tiago_architecture.md)): пользовательский слой, планирование (Nav2, MoveIt2), восприятие (YOLO, LiDAR, камера), координация (twist_mux, ros2_control), сенсоры/симуляция (Gazebo).
 - Middleware: TIAgo использует CycloneDDS (`RMW_IMPLEMENTATION=rmw_cyclonedds_cpp`) — рекомендовано PAL Robotics для multi-robot.
 - `ROS_DOMAIN_ID` по умолчанию 0; два экземпляра TIAgo в одной сети изолируют разными доменами.
 
@@ -159,19 +159,16 @@ ros2 node list    # пусто — изоляция работает
 - Ожидаемый результат: в домене 0 узлы видны, в домене 56 список пуст.
 - Возврат в норму: `unset ROS_DOMAIN_ID` и `ros2 daemon stop` в третьем терминале; симуляцию не трогаем.
 
-**Тест 2. «Два middleware не дружат»** — сравнить RMW (в контейнере уровня 2):
+**Тест 2. «Проверить выбранный middleware»** — посмотреть конфигурацию RMW (в контейнере уровня 2):
 
 ```bash
-# терминал 1: Fast DDS (дефолт)
-ros2 run demo_nodes_cpp talker
-# терминал 2: Cyclone DDS
-export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
-ros2 run demo_nodes_cpp listener   # тишина — разные DDS несовместимы
+printenv RMW_IMPLEMENTATION
+ros2 doctor --report
 ```
 
-- Цель: показать, что RMW — это выбор реализации, и все узлы системы должны использовать один middleware.
-- Ожидаемый результат: `listener` ничего не получает.
-- Возврат в норму: `unset RMW_IMPLEMENTATION`.
+- Цель: увидеть, что middleware выбирается конфигурацией среды, а не самим кодом узла.
+- Ожидаемый результат: CLI показывает отчёт; пустая переменная означает использование настройки по умолчанию, а не отсутствие middleware.
+- Не делать вывода о кросс-вендорной несовместимости только по одному учебному запуску.
 
 **Тест 3. «Разобрать подсистемы TIAgo»** — увидеть узлы по подсистемам:
 
@@ -198,14 +195,14 @@ ros2 action info /navigate_to_pose  # кто сервер? Navigation
 | Путают ROS2 с библиотекой или ОС | Ищут `import ros2` или ждут «установить ROS2 как Windows» | ROS2 — middleware; подключается API `rclpy`/`rclcpp`, запускается в контейнере |
 | Ждут, что ROS2 сам передаёт данные без DDS | Не понимают, откуда discovery и multicast | DDS — транспорт, RMW — адаптер к нему |
 | Разные `ROS_DOMAIN_ID` у узлов одной системы | Узлы не видят друг друга | Выставить одинаковый `ROS_DOMAIN_ID` у всех узлов системы |
-| Разные RMW у узлов | talker и listener не соединяются | Одинаковый `RMW_IMPLEMENTATION` для всех узлов |
+| Узлы не видят друг друга | Domain, network/discovery, RMW, QoS или namespace | Проверить каждый параметр; для учебной системы начать с одинакового RMW |
 | Путают домен и физическую сеть | Думают, что домен — отдельная машина | Домен — логическая изоляция внутри одной сети |
 
 ## План Б
 
 Если симуляция TIAgo не запускается:
 
-- Показать карту подсистем из [`3_Robot/TIAgo_humble/docs/tiago_architecture.md`](../../3_Robot/TIAgo_humble/docs/tiago_architecture.md) как текст.
+- Показать карту подсистем из [`3_Robot/TIAgo_humble/docs/tiago_architecture.md`](../3_Robot/TIAgo_humble/docs/tiago_architecture.md) как текст.
 - Выполнить план Б практики: `ros2 node list` / `ros2 topic list` и нарисовать граф на доске.
 - Показать `RMW_IMPLEMENTATION=rmw_cyclonedds_cpp` в `.bashrc` контейнера TIAgo и объяснить, что это и зачем.
 - Рассказать про `ROS_DOMAIN_ID` по [`../2_knowledge/robots_communication.md`](../2_knowledge/robots_communication.md) без живой симуляции.
@@ -230,6 +227,7 @@ ros2 action info /navigate_to_pose  # кто сервер? Navigation
 - Практика — [`../2_practice/06_ros_architecture.md`](../2_practice/06_ros_architecture.md).
 - Демонстрация — [`../1_demo/demo_06_ros_architecture.md`](../1_demo/demo_06_ros_architecture.md).
 - Домашнее задание — [`../2_homework/hw_06_ros_architecture.md`](../2_homework/hw_06_ros_architecture.md).
-- Карта подсистем TIAgo — [`3_Robot/TIAgo_humble/docs/tiago_architecture.md`](../../3_Robot/TIAgo_humble/docs/tiago_architecture.md).
+- Карта подсистем TIAgo — [`3_Robot/TIAgo_humble/docs/tiago_architecture.md`](../3_Robot/TIAgo_humble/docs/tiago_architecture.md).
 - Следующее занятие 7 «Workspace, package и сборка» — [`lectures_content.md`](lectures_content.md), тема 7.
+- Вариант материалов lecture-v2 — [`lecture-v2_plan_06_ros_architecture_v1.md`](lecture-v2_plan_06_ros_architecture_v1.md).
 - Источники: [ROS2 Concepts](https://docs.ros.org/en/jazzy/Concepts.html), [About different middleware vendors](https://docs.ros.org/en/jazzy/Concepts/Intermediate/About-Different-Middleware-Vendors.html), [About discovery](https://docs.ros.org/en/jazzy/Concepts/Intermediate/About-Discovery.html), [About Domain ID](https://docs.ros.org/en/jazzy/Concepts/Intermediate/About-Domain-ID.html).

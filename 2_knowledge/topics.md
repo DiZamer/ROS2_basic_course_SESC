@@ -219,6 +219,7 @@ ros2 topic pub /chatter std_msgs/msg/String "data: 'Hello'" --rate 10
 - [QoS](qos.md) — настройка доставки сообщений.
 - Практика занятия 9 — [`../2_practice/09_topic.md`](../2_practice/09_topic.md).
 - Домашнее задание 9 — [`../2_homework/hw_09_topic.md`](../2_homework/hw_09_topic.md).
+- Вариант lecture-v2 занятия 9 — [`../1_lecture/lecture-v2_content_09_topic_v1.md`](../1_lecture/lecture-v2_content_09_topic_v1.md).
 
 ## Источники
 

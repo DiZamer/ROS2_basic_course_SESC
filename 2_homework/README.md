@@ -67,6 +67,29 @@
 
 Темы и порядок занятий — источник истины [`1_lecture/lectures_content.md`](../1_lecture/lectures_content.md). ДЗ занятий 25–30 — из предварительного плана этапа 3 (реальные роботы); имена файлов могут уточняться при подготовке `3_Robot/MentorPi_M1/` и `3_Robot/MaxArm/`.
 
+## Расширенные комплекты lecture-v2
+
+Для занятий 1 и 3–5 подготовлены альтернативные расширенные комплекты. Они не заменяют базовые `hw_NN_*.md`; каждый вариант содержит своё содержание, план, слайды, практику и ДЗ.
+
+| Занятие | Комплект lecture-v2 |
+| --- | --- |
+| 1 · Ubuntu и командная строка | [Домашняя работа](homework-v2_01_ubuntu_v1.md) |
+| 3 · Агентная инженерия с OpenCode | [Домашняя работа](homework-v2_03_opencode_v1.md) |
+| 4 · RobotCAD | [Домашняя работа](homework-v2_04_robotcad_v1.md) |
+| 5 · Сенсоры | [Домашняя работа](homework-v2_05_sensors_v1.md) |
+| 6 · Архитектура ROS 2 | [Домашняя работа](homework-v2_06_ros_architecture_v1.md) |
+| 7 · Workspace и package | [Домашняя работа](homework-v2_07_workspace_v1.md) |
+| 8 · Node и callbacks | [Домашняя работа](homework-v2_08_node_v1.md) |
+| 9 · Topic и сообщения | [Домашняя работа](homework-v2_09_topic_v1.md) |
+| 10 · Service | [Домашняя работа](homework-v2_10_service_v1.md) |
+| 11 · Action | [Домашняя работа](homework-v2_11_action_v1.md) |
+| 6 · Архитектура ROS 2 | [Домашняя работа](homework-v2_06_ros_architecture_v1.md) |
+| 7 · Workspace и package | [Домашняя работа](homework-v2_07_workspace_v1.md) |
+| 8 · Node и callbacks | [Домашняя работа](homework-v2_08_node_v1.md) |
+| 9 · Topic и сообщения | [Домашняя работа](homework-v2_09_topic_v1.md) |
+| 10 · Service | [Домашняя работа](homework-v2_10_service_v1.md) |
+| 11 · Action | [Домашняя работа](homework-v2_11_action_v1.md) |
+
 ## Ссылки
 
 - Инструкция по домашней установке окружения: [`2_knowledge/home_setup.md`](../2_knowledge/home_setup.md).

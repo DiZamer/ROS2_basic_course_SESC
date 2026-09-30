@@ -55,15 +55,14 @@ rqt_graph
 
 **Что сказать**: «Два узла обмениваются сообщениями через тему `/chatter`. `rqt_graph` рисует эту связь. Сообщение не летит напрямую — его сериализует DDS, доставляет сеть, а на той стороне срабатывает callback.»
 
-### 3. Смена middleware
+### 3. Проверить выбранную RMW implementation
 
 ```bash
-sudo apt install -y ros-jazzy-rmw-cyclonedds-cpp
-export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+printenv RMW_IMPLEMENTATION
 ros2 doctor --report
 ```
 
-**Что сказать**: «Сменили DDS на Cyclone, не трогая код узлов. Запомните: узлы на разных RMW не видят друг друга — все узлы одной системы должны использовать один middleware.»
+**Что сказать**: «Пустая переменная не означает, что middleware отсутствует: используется настройка по умолчанию. Разные RMW могут взаимодействовать в некоторых конфигурациях, но кросс-вендорная совместимость не гарантируется. Для простой учебной системы используем один проверенный RMW.»
 
 ### 4. Изоляция графа: `ROS_DOMAIN_ID`
 
@@ -88,7 +87,7 @@ export ROS_DOMAIN_ID=1
 ros2 run demo_nodes_cpp listener   # тишина
 ```
 
-**Что сказать**: «`ROS_DOMAIN_ID` — номер логической сети DDS (0–101). Узлы с разными ID не видят друг друга. Один домен — когда роботам нужно общаться; разные — когда они не должны мешать друг другу.»
+**Что сказать**: «`ROS_DOMAIN_ID` разделяет ROS-группы логически. Узлы с разными ID обычно не обнаруживают друг друга; один домен нужен участникам одной системы. Domain ID не является физической сетью или firewall.»
 
 ### 5. Смелый тест: граф «исчез» (уровень 3, TIAgo)
 
@@ -131,14 +130,14 @@ ros2 node list    # пусто
 | `rqt_graph` не открывается | Нет графического интерфейса | Использовать `ros2 node list` + `ros2 topic list`, нарисовать граф на доске |
 | `ros2 node list` пуст, хотя узел запущен | `ros2`-демон остался в другом домене | `ros2 daemon stop`, повторить в нужном домене |
 | `sudo apt install ros-jazzy-rmw-cyclonedds-cpp` не находит | Не выполнен `apt update` | `sudo apt update` перед установкой |
-| talker и listener на разных RMW не видят друг друга | Разные `RMW_IMPLEMENTATION` | Одинаковый RMW для всех узлов |
+| Узлы не обнаруживают друг друга | Domain ID, network/discovery, RMW или QoS | Сверить фактические настройки обоих процессов |
 | Симуляция TIAgo не запустилась | GUI/драйверы не готовы | Перейти на план Б |
 
 ## План Б
 
 Если симуляция TIAgo не запускается:
 
-1. Показать карту подсистем из [`3_Robot/TIAgo_humble/docs/tiago_architecture.md`](../../3_Robot/TIAgo_humble/docs/tiago_architecture.md) как текст.
+1. Показать карту подсистем из [`3_Robot/TIAgo_humble/docs/tiago_architecture.md`](../3_Robot/TIAgo_humble/docs/tiago_architecture.md) как текст.
 2. Показать `RMW_IMPLEMENTATION=rmw_cyclonedds_cpp` в `.bashrc` контейнера TIAgo и объяснить, что это и зачем.
 3. Выполнить изоляцию доменов в контейнере уровня 2 (`talker`/`listener`) — она работает без симуляции.
 4. Рассказать про `ROS_DOMAIN_ID` по [`../2_knowledge/robots_communication.md`](../2_knowledge/robots_communication.md) без живого робота.
@@ -152,9 +151,11 @@ ros2 node list    # пусто
 - Домены и несколько роботов — [`../2_knowledge/robots_communication.md`](../2_knowledge/robots_communication.md).
 - Практика — [`../2_practice/06_ros_architecture.md`](../2_practice/06_ros_architecture.md).
 - Домашнее задание — [`../2_homework/hw_06_ros_architecture.md`](../2_homework/hw_06_ros_architecture.md).
+- Вариант lecture-v2 — [`../1_lecture/lecture-v2_plan_06_ros_architecture_v1.md`](../1_lecture/lecture-v2_plan_06_ros_architecture_v1.md).
+- Вариант материалов lecture-v2 — [`../1_lecture/lecture-v2_plan_06_ros_architecture_v1.md`](../1_lecture/lecture-v2_plan_06_ros_architecture_v1.md).
 
 ## Связь с роботом
 
 - TIAgo — полный пример архитектуры ROS2: десятки узлов, разделённых на подсистемы (Navigation, Manipulation, Perception, Mobile Base, Safety, Simulation).
 - Middleware — CycloneDDS (`RMW_IMPLEMENTATION=rmw_cyclonedds_cpp`), `ROS_DOMAIN_ID` по умолчанию 0; несколько экземпляров изолируют разными доменами.
-- Карта подсистем — [`3_Robot/TIAgo_humble/docs/tiago_architecture.md`](../../3_Robot/TIAgo_humble/docs/tiago_architecture.md), настройка RMW и DDS — [`3_Robot/TIAgo_humble/docs/rmw_dds.md`](../../3_Robot/TIAgo_humble/docs/rmw_dds.md).
+- Карта подсистем — [`3_Robot/TIAgo_humble/docs/tiago_architecture.md`](../3_Robot/TIAgo_humble/docs/tiago_architecture.md), настройка RMW и DDS — [`3_Robot/TIAgo_humble/docs/rmw_dds.md`](../3_Robot/TIAgo_humble/docs/rmw_dds.md).

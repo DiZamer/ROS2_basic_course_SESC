@@ -124,7 +124,7 @@ ros2 action send_goal /navigate_to_pose nav2_msgs/action/NavigateToPose \
 
 Если контейнер TIAgo не запускается:
 
-1. Показать таблицу actions TIAgo и схему навигации из [`3_Robot/TIAgo_humble/docs/navigation.md`](../../3_Robot/TIAgo_humble/docs/navigation.md) как текст.
+1. Показать таблицу actions TIAgo и схему навигации из [`3_Robot/TIAgo_humble/docs/navigation.md`](../3_Robot/TIAgo_humble/docs/navigation.md) как текст.
 2. Показать типовой вывод `ros2 action send_goal /navigate_to_pose ... --feedback` как пример.
 3. Полностью выполнить демонстрацию уровня 2 (server/client + CLI + внутренности action).
 4. Нарисовать на доске: client → goal → `/navigate_to_pose` → feedback (дистанция) → result; отмена по `Ctrl+C`.
@@ -135,10 +135,11 @@ ros2 action send_goal /navigate_to_pose nav2_msgs/action/NavigateToPose \
 - Практика — [`../2_practice/11_action.md`](../2_practice/11_action.md).
 - Домашнее задание — [`../2_homework/hw_11_action.md`](../2_homework/hw_11_action.md).
 - План занятия — [`../1_lecture/lecture_plan_11_action.md`](../1_lecture/lecture_plan_11_action.md).
+- Вариант lecture-v2 — [`../1_lecture/lecture-v2_plan_11_action_v1.md`](../1_lecture/lecture-v2_plan_11_action_v1.md).
 
 ## Связь с роботом
 
 - `/navigate_to_pose` (`nav2_msgs/action/NavigateToPose`) — навигация: goal — точка, feedback — дистанция, cancel — остановка.
 - `/follow_path` (`nav2_msgs/action/FollowPath`) — движение по пути из waypoints.
 - MoveIt2 planning (`moveit_msgs`) — планирование траектории руки.
-- Подробнее — [`3_Robot/TIAgo_humble/docs/navigation.md`](../../3_Robot/TIAgo_humble/docs/navigation.md) и [`3_Robot/TIAgo_humble/docs/manipulation.md`](../../3_Robot/TIAgo_humble/docs/manipulation.md).
+- Подробнее — [`3_Robot/TIAgo_humble/docs/navigation.md`](../3_Robot/TIAgo_humble/docs/navigation.md) и [`3_Robot/TIAgo_humble/docs/manipulation.md`](../3_Robot/TIAgo_humble/docs/manipulation.md).

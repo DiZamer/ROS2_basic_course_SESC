@@ -136,7 +136,7 @@ colcon build
 
 ## Пример в реальном роботе
 
-TIAGo использует такой же workspace: `ros2_ws/` с `src/`, `build/`, `install/`, `log/`. Пакеты загружаются из репозиториев PAL Robotics (`tiago.repos`), а весь workspace собирается одной командой `colcon build` в контейнере `3_Robot/TIAgo_humble/`. Подробнее — [`3_Robot/TIAgo_humble/docs/tiago_architecture.md`](../../3_Robot/TIAgo_humble/docs/tiago_architecture.md).
+TIAGo использует такой же workspace: `ros2_ws/` с `src/`, `build/`, `install/`, `log/`. Пакеты загружаются из репозиториев PAL Robotics (`tiago.repos`), а весь workspace собирается одной командой `colcon build` в контейнере `3_Robot/TIAgo_humble/`. Подробнее — [`3_Robot/TIAgo_humble/docs/tiago_architecture.md`](../3_Robot/TIAgo_humble/docs/tiago_architecture.md).
 
 ## Связанные темы
 
@@ -145,6 +145,7 @@ TIAGo использует такой же workspace: `ros2_ws/` с `src/`, `bui
 - [Nodes](nodes.md) — написание первого узла
 - Практика 7 — [`../2_practice/07_workspace.md`](../2_practice/07_workspace.md)
 - Домашнее задание 7 — [`../2_homework/hw_07_workspace.md`](../2_homework/hw_07_workspace.md)
+- Вариант lecture-v2 занятия 7 — [`../1_lecture/lecture-v2_content_07_workspace_v1.md`](../1_lecture/lecture-v2_content_07_workspace_v1.md)
 
 ## Источники
 

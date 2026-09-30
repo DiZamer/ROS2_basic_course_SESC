@@ -142,7 +142,7 @@ sudo tcpdump -i any -X udp port 7400
 
 - `ros2 doctor --report` показывает имя выбранного RMW/DDS.
 - `tcpdump` отображает RTPS-пакеты с именем узла в открытом виде.
-- При смене `RMW_IMPLEMENTATION` узлы продолжают нормально общаться.
+- Некоторые разные RMW способны обмениваться данными, но совместимость зависит от пары реализаций и конфигурации. Для обычного развертывания используй один подтверждённый RMW во всех узлах системы.
 
 ## Типичные ошибки
 
@@ -157,7 +157,7 @@ sudo tcpdump -i any -X udp port 7400
 ### Пример в реальном роботе
 
 Робот TIAGo использует **CycloneDDS** (`RMW_IMPLEMENTATION=rmw_cyclonedds_cpp`) — лёгкую реализацию DDS, рекомендованную PAL Robotics для multi-robot сценариев.
-В [`3_Robot/TIAgo_humble/docs/rmw_dds.md`](../../3_Robot/TIAgo_humble/docs/rmw_dds.md) описана настройка RMW, порты и конфигурация
+В [`3_Robot/TIAgo_humble/docs/rmw_dds.md`](../3_Robot/TIAgo_humble/docs/rmw_dds.md) описана настройка RMW, порты и конфигурация
 ROS_DOMAIN_ID в симуляции TIAGo.
 
 ## Связанные темы

@@ -186,6 +186,7 @@ ROS2 не устанавливается на хост. Хост использ�
 - Уровень 3: тот же терминал используется внутри контейнера `3_Robot/TIAgo_humble/`; показать `docker exec` в контейнер робота и SSH-доступ к Raspberry Pi реального ровера (этап 3).
 - Типичные ошибки: путаница `cd` с `ls`, потеря пути после `sudo`, редактирование системных файлов без резервной копии, попытка SSH без публичного ключа на целевой машине.
 - ДЗ: настроить терминал дома, повторить базовые команды, проверить `bash --version` и создать SSH-ключ.
+- Расширенный комплект lecture-v2: [содержание](lecture-v2_content_01_ubuntu_v1.md), [план](lecture-v2_plan_01_ubuntu_v1.md), [слайды](../1_slides/lecture-v2_slides_01_ubuntu_v1.md), [практика](../2_practice/practice-v2_01_ubuntu_v1.md), [ДЗ](../2_homework/homework-v2_01_ubuntu_v1.md).
 
 ### Тема 2. Контейнеризация и Git: Docker, Dev Container, версионирование
 
@@ -230,6 +231,7 @@ ROS2 не устанавливается на хост. Хост использ�
 - Уровень 3: использовать opencode, чтобы прочитать структуру `ros2_ws/src/` и объяснить назначение пакетов.
 - Типичные ошибки: слепое применение кода без проверки, запуск агента без понимания его прав, отсутствие `AGENTS.md` → агент действует хаотично.
 - ДЗ: инициализировать opencode в своём клоне проекта и сделать первый разобранный запрос.
+- Расширенный комплект lecture-v2: [содержание](lecture-v2_content_03_opencode_v1.md), [план](lecture-v2_plan_03_opencode_v1.md), [слайды](../1_slides/lecture-v2_slides_03_opencode_v1.md), [практика](../2_practice/practice-v2_03_opencode_v1.md), [ДЗ](../2_homework/homework-v2_03_opencode_v1.md).
 
 ### Тема 4. Проект робота и URDF в RobotCAD
 
@@ -251,6 +253,7 @@ ROS2 не устанавливается на хост. Хост использ�
 - Уровень 3: сравнить с `tiago_description/urdf/` и `meshes/` — реальный URDF, сгенерированный похожим способом.
 - Типичные ошибки: не задана масса/инерция → модель «улетает» в симуляции; не совпадают имена links/joints с конфигами `ros2_control`.
 - ДЗ: сделать набросок своей модели в RobotCAD (платформа + колёса).
+- Расширенный комплект lecture-v2: [содержание](lecture-v2_content_04_robotcad_v1.md), [план](lecture-v2_plan_04_robotcad_v1.md), [слайды](../1_slides/lecture-v2_slides_04_robotcad_v1.md), [практика](../2_practice/practice-v2_04_robotcad_v1.md), [ДЗ](../2_homework/homework-v2_04_robotcad_v1.md).
 
 ### Тема 5. Датчики: виртуальные и реальные сенсоры
 
@@ -261,15 +264,16 @@ ROS2 не устанавливается на хост. Хост использ�
 - Порядок объяснения:
   1. Сенсор превращает физическую величину в данные; робот «видит» мир только через сенсоры.
   2. Аналогия: сенсоры — органы чувств робота.
-  3. Виртуальные сенсоры в Gazebo/Ignition публикуют те же типы данных, что и реальные, — с ними можно работать до покупки железа.
+  3. Виртуальные сенсоры могут публиковать совместимые ROS 2 message types, что позволяет раньше разрабатывать потребителя; физические значения, шум, задержка, калибровка и timestamps при этом могут отличаться от реального датчика.
   4. Реальные датчики на Raspberry Pi: подключение по GPIO/I2C/SPI; дальше данные попадают в ROS2 (тема 9).
 - Фрагменты кода: не нужны на этом этапе; публикация сенсорных данных появляется в теме 9.
 - CLI-команды: `lsusb`, `i2cdetect` (проверка подключённых устройств).
 - Источники: [Gazebo sensors](https://gazebosim.org/docs), [Raspberry Pi documentation](https://www.raspberrypi.com/documentation/).
 - Уровень 2: `2_knowledge/sensors.md`, `2_practice/05_sensors.md`.
 - Уровень 3: `/scan` (LiDAR), `/camera/image_raw`, IMU в TIAgo и на ровере MentorPi M1 (этап 3).
-- Типичные ошибки: неправильная частота опроса, сенсор не инициализирован перед чтением, неверное сопоставление физической величины и типа данных.
+- Типичные ошибки: считать одинаковый message type гарантией одинаковых измерений; выбрать неподходящую частоту; перепутать физическую величину, формат данных и потребителя; предполагать, что устройство на host автоматически доступно внутри контейнера.
 - ДЗ: описать сенсоры своей будущей модели (какие данные и с какой частотой).
+- Расширенный комплект lecture-v2: [содержание](lecture-v2_content_05_sensors_v1.md), [план](lecture-v2_plan_05_sensors_v1.md), [слайды](../1_slides/lecture-v2_slides_05_sensors_v1.md), [практика](../2_practice/practice-v2_05_sensors_v1.md), [ДЗ](../2_homework/homework-v2_05_sensors_v1.md).
 
 ### Тема 6. Что такое ROS2: архитектура, ROS Graph и middleware
 
@@ -297,6 +301,8 @@ ROS2 не устанавливается на хост. Хост использ�
 - Уровень 3: обзорная схема подсистем робота из `3_Robot/TIAgo_humble/AGENTS.md`; RMW (Cyclone DDS) и DOMAIN ID в контейнере робота.
 - Типичные ошибки: путаница ROS2 с операционной системой или библиотекой; ожидание, что ROS2 сам передаёт данные (без DDS); разные DOMAIN ID у узлов одной системы (не видят друг друга).
 - ДЗ: зафиксировать идею своей модели и перечень узлов с их интерфейсами.
+- Расширенный комплект lecture-v2: [содержание](lecture-v2_content_06_ros_architecture_v1.md), [план](lecture-v2_plan_06_ros_architecture_v1.md), [слайды](../1_slides/lecture-v2_slides_06_ros_architecture_v1.md), [практика](../2_practice/practice-v2_06_ros_architecture_v1.md), [ДЗ](../2_homework/homework-v2_06_ros_architecture_v1.md).
+- Расширенный комплект lecture-v2: [содержание](lecture-v2_content_06_ros_architecture_v1.md), [план](lecture-v2_plan_06_ros_architecture_v1.md), [слайды](../1_slides/lecture-v2_slides_06_ros_architecture_v1.md), [практика](../2_practice/practice-v2_06_ros_architecture_v1.md), [ДЗ](../2_homework/homework-v2_06_ros_architecture_v1.md).
 
 ### Тема 7. Workspace, package и сборка через `colcon`
 
@@ -321,6 +327,8 @@ ROS2 не устанавливается на хост. Хост использ�
 - Уровень 3: структура `ros2_ws/src/` с пакетами TIAgo (`tiago_bringup`, `tiago_description`, `pmb2_navigation`, `tiago_moveit_config` и др.) — наглядный пример разных типов пакетов.
 - Типичные ошибки: забыли `source install/setup.bash`, имя пакета не совпадает с именем папки, пакет создан не в `src/`.
 - ДЗ: создать свой первый пакет.
+- Расширенный комплект lecture-v2: [содержание](lecture-v2_content_07_workspace_v1.md), [план](lecture-v2_plan_07_workspace_v1.md), [слайды](../1_slides/lecture-v2_slides_07_workspace_v1.md), [практика](../2_practice/practice-v2_07_workspace_v1.md), [ДЗ](../2_homework/homework-v2_07_workspace_v1.md).
+- Расширенный комплект lecture-v2: [содержание](lecture-v2_content_07_workspace_v1.md), [план](lecture-v2_plan_07_workspace_v1.md), [слайды](../1_slides/lecture-v2_slides_07_workspace_v1.md), [практика](../2_practice/practice-v2_07_workspace_v1.md), [ДЗ](../2_homework/homework-v2_07_workspace_v1.md).
 
 ### Тема 8. Node, Executor и callbacks
 
@@ -344,6 +352,8 @@ ROS2 не устанавливается на хост. Хост использ�
     - Возврат в норму: перезапустить узел.
 - Типичные ошибки: забыли `spin()`, блокирующий код в callback, неправильное имя executable в `setup.py`.
 - ДЗ: первый узел своей модели.
+- Расширенный комплект lecture-v2: [содержание](lecture-v2_content_08_node_v1.md), [план](lecture-v2_plan_08_node_v1.md), [слайды](../1_slides/lecture-v2_slides_08_node_v1.md), [практика](../2_practice/practice-v2_08_node_v1.md), [ДЗ](../2_homework/homework-v2_08_node_v1.md).
+- Расширенный комплект lecture-v2: [содержание](lecture-v2_content_08_node_v1.md), [план](lecture-v2_plan_08_node_v1.md), [слайды](../1_slides/lecture-v2_slides_08_node_v1.md), [практика](../2_practice/practice-v2_08_node_v1.md), [ДЗ](../2_homework/homework-v2_08_node_v1.md).
 
 ### Тема 9. Topic, publisher, subscriber и message types
 
@@ -372,6 +382,8 @@ ROS2 не устанавливается на хост. Хост использ�
     - Осторожно: только в симуляции; не на реальном ровере без инструктора.
 - Типичные ошибки: разные message types у pub и sub, неправильное QoS, topic не виден из-за namespace.
 - ДЗ: свой publisher/subscriber.
+- Расширенный комплект lecture-v2: [содержание](lecture-v2_content_09_topic_v1.md), [план](lecture-v2_plan_09_topic_v1.md), [слайды](../1_slides/lecture-v2_slides_09_topic_v1.md), [практика](../2_practice/practice-v2_09_topic_v1.md), [ДЗ](../2_homework/homework-v2_09_topic_v1.md).
+- Расширенный комплект lecture-v2: [содержание](lecture-v2_content_09_topic_v1.md), [план](lecture-v2_plan_09_topic_v1.md), [слайды](../1_slides/lecture-v2_slides_09_topic_v1.md), [практика](../2_practice/practice-v2_09_topic_v1.md), [ДЗ](../2_homework/homework-v2_09_topic_v1.md).
 
 ### Тема 10. Service и client
 
@@ -396,6 +408,8 @@ ROS2 не устанавливается на хост. Хост использ�
     - Осторожно: только в симуляции.
 - Типичные ошибки: client вызывает service до готовности server, забыли `spin()`, неправильный тип запроса.
 - ДЗ: service в своей модели.
+- Расширенный комплект lecture-v2: [содержание](lecture-v2_content_10_service_v1.md), [план](lecture-v2_plan_10_service_v1.md), [слайды](../1_slides/lecture-v2_slides_10_service_v1.md), [практика](../2_practice/practice-v2_10_service_v1.md), [ДЗ](../2_homework/homework-v2_10_service_v1.md).
+- Расширенный комплект lecture-v2: [содержание](lecture-v2_content_10_service_v1.md), [план](lecture-v2_plan_10_service_v1.md), [слайды](../1_slides/lecture-v2_slides_10_service_v1.md), [практика](../2_practice/practice-v2_10_service_v1.md), [ДЗ](../2_homework/homework-v2_10_service_v1.md).
 
 ### Тема 11. Action server и action client
 
@@ -419,6 +433,8 @@ ROS2 не устанавливается на хост. Хост использ�
     - Осторожно: только в симуляции.
 - Типичные ошибки: goal принят, но не выполняется; cancel не обработан в callback; забыли `spin()`.
 - ДЗ: action в своей модели.
+- Расширенный комплект lecture-v2: [содержание](lecture-v2_content_11_action_v1.md), [план](lecture-v2_plan_11_action_v1.md), [слайды](../1_slides/lecture-v2_slides_11_action_v1.md), [практика](../2_practice/practice-v2_11_action_v1.md), [ДЗ](../2_homework/homework-v2_11_action_v1.md).
+- Расширенный комплект lecture-v2: [содержание](lecture-v2_content_11_action_v1.md), [план](lecture-v2_plan_11_action_v1.md), [слайды](../1_slides/lecture-v2_slides_11_action_v1.md), [практика](../2_practice/practice-v2_11_action_v1.md), [ДЗ](../2_homework/homework-v2_11_action_v1.md).
 
 ### Тема 13. Собственные интерфейсы: `.msg`, `.srv`, `.action`
 
@@ -889,7 +905,4 @@ RobotCAD — верстак (workbench) FreeCAD для создания опис
 4. Реальный URL репозитория для `git clone` — вставить, когда репозиторий сформирован.
 
 Решено: нумерация по номерам занятий введена (`2_practice/NN_*.md`, `2_homework/hw_NN_*.md`, `1_demo/demo_NN_*`, `1_slides/lecture_NN_*`); инструкция `2_knowledge/home_setup.md` и `2_homework/hw_02_setup.md` созданы; зачётные материалы — `1_lecture/exam_01.md` (и `exam_02.md` на этапе 3); календарь и маршрут синхронизированы в `COURSE_ARCHITECTURE.md` и `README.md`.
-
-
-
 

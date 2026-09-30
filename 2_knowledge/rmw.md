@@ -2,7 +2,7 @@
 
 ## Коротко
 
-RMW (ROS Middleware) — тонкий слой-адаптер между ROS2 API (rcl/rclcpp/rclpy) и конкретной реализацией DDS. Благодаря RMW можно сменить транспортный протокол, не меняя ни строчки кода узлов.
+RMW (ROS Middleware Interface) — слой-адаптер между ROS2 API (rcl/rclcpp/rclpy) и реализацией middleware. Он помогает не привязывать application code к одной библиотеке DDS, хотя совместимость и поведение зависят от конкретных реализаций и конфигурации.
 
 > *Официальное определение*: «Чтобы использовать реализацию DDS/RTPS с ROS 2, необходимо создать пакет «интерфейса ROS Middleware» (RMW), который реализует абстрактный интерфейс ROS middleware с помощью API и инструментов данной реализации DDS/RTPS.» — [RMW](https://docs.ros.org/en/jazzy/Concepts/Intermediate/About-Different-Middleware-Vendors.html)
 
@@ -92,32 +92,29 @@ export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 sudo apt update
 sudo apt install ros-jazzy-rmw-cyclonedds-cpp
 
-# запустить с одним узлом на Fast DDS, другим на Cyclone DDS
-# (они НЕ увидят друг друга)
-# терминал 1:
-RMW_IMPLEMENTATION=rmw_fastrtps_cpp ros2 run demo_nodes_cpp talker
-# терминал 2:
-RMW_IMPLEMENTATION=rmw_cyclonedds_cpp ros2 run demo_nodes_cpp listener
+# посмотреть отчёт при выборе Cyclone, если пакет уже установлен
+RMW_IMPLEMENTATION=rmw_cyclonedds_cpp ros2 doctor --report
 ```
 
 ## Ожидаемый результат
 
 - `ros2 doctor --report` показывает выбранный RMW.
-- Два узла на разных RMW **не обнаруживают друг друга** (разные DDS-реализации несовместимы «из коробки»).
-- Узлы на одном RMW работают вне зависимости от `RMW_IMPLEMENTATION` в переменной.
+- Установленная и выбранная реализация видна в отчёте ROS 2.
+- Некоторые пары RMW умеют общаться, но cross-vendor совместимость не гарантируется для всех типов и настроек.
+- Для учебной системы используй один проверенный RMW во всех узлах.
 
 ## Типичные ошибки
 
 | Симптом | Причина | Исправление |
 |---|---|---|
-| Узлы на одном хосте не видят друг друга | Разные `RMW_IMPLEMENTATION` | Выставить одинаковый RMW |
+| Узлы на одном хосте не видят друг друга | Возможны разные domain ID, network/discovery settings, RMW или QoS | Проверить каждую настройку; не делать вывод только по RMW |
 | `ros2 doctor` жалуется на отсутствие RMW | Не установлен ни один RMW-пакет | `sudo apt install ros-jazzy-rmw-fastrtps-cpp` |
 | Демо работает на Fast DDS, но отказывается на Cyclone | Разные настройки QoS по умолчанию | Проверить совместимость QoS (см. [qos.md](qos.md)) |
 
 ### Пример в реальном роботе
 
 TIAGo использует `RMW_IMPLEMENTATION=rmw_cyclonedds_cpp` — CycloneDDS, рекомендованный PAL Robotics.
-В [`3_Robot/TIAgo_humble/docs/rmw_dds.md`](../../3_Robot/TIAgo_humble/docs/rmw_dds.md) показана настройка RMW,
+В [`3_Robot/TIAgo_humble/docs/rmw_dds.md`](../3_Robot/TIAgo_humble/docs/rmw_dds.md) показана настройка RMW,
 `ROS_DOMAIN_ID=0` (значение по умолчанию, если не задано) и конфигурация Shared Memory Transport в контейнере.
 
 ## Связанные темы
@@ -127,6 +124,7 @@ TIAGo использует `RMW_IMPLEMENTATION=rmw_cyclonedds_cpp` — CycloneDD
 - [QoS: настройки доставки сообщений](qos.md) — reliability, history, durability
 - [Архитектура ROS2](ros_architecture.md) — общая схема middleware
 - Практика занятия 6 — [`../2_practice/06_ros_architecture.md`](../2_practice/06_ros_architecture.md)
+- Вариант lecture-v2 занятия 6 — [`../1_lecture/lecture-v2_content_06_ros_architecture_v1.md`](../1_lecture/lecture-v2_content_06_ros_architecture_v1.md)
 
 ## Источники
 

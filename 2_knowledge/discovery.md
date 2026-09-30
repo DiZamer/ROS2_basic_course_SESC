@@ -154,7 +154,7 @@ sudo tcpdump -i any -X udp port 7400
 
 | Симптом | Причина | Исправление |
 |---|---|---|
-| `ros2 node list` пуст | Другой `ROS_DOMAIN_ID` или RMW | Проверить `echo $ROS_DOMAIN_ID` и `echo $RMW_IMPLEMENTATION` |
+| `ros2 node list` пуст | Другой `ROS_DOMAIN_ID`, CLI daemon в другом домене или network/discovery issue | Проверить `printenv ROS_DOMAIN_ID`, перезапустить CLI daemon и сверить сетевые настройки |
 | Узлы на разных хостах не видят друг друга | Multicast заблокирован сетью | Использовать Discovery Server или открыть UDP 7400-7500 |
 | Новые узлы не отвечают, старые работают | Исчерпаны порды (>100 participants) | Увеличить `mutation_tries` |
 | CLI-инструменты не видят nodes при Discovery Server | Daemon не в режиме Super Client | Настроить `super_client_profile` для ROS daemon |
@@ -164,7 +164,7 @@ sudo tcpdump -i any -X udp port 7400
 В TIAGo discovery работает через CycloneDDS с `ROS_DOMAIN_ID=0` (значение по умолчанию, если не задано).
 Узлы находят друг друга через SPDP/EDP по UDP multicast.
 Если два контейнера TIAGo запустить с разными ROS_DOMAIN_ID — они не увидят друг друга.
-Подробнее: [`3_Robot/TIAgo_humble/docs/rmw_dds.md`](../../3_Robot/TIAgo_humble/docs/rmw_dds.md).
+Подробнее: [`3_Robot/TIAgo_humble/docs/rmw_dds.md`](../3_Robot/TIAgo_humble/docs/rmw_dds.md).
 
 ## Связанные темы
 
@@ -173,6 +173,7 @@ sudo tcpdump -i any -X udp port 7400
 - [Управление флотом: ROS_DOMAIN_ID](robots_communication.md) — multi-robot и изоляция
 - [Архитектура ROS2](ros_architecture.md) — общая схема
 - Практика занятия 6 — [`../2_practice/06_ros_architecture.md`](../2_practice/06_ros_architecture.md)
+- Вариант lecture-v2 занятия 6 — [`../1_lecture/lecture-v2_content_06_ros_architecture_v1.md`](../1_lecture/lecture-v2_content_06_ros_architecture_v1.md)
 
 ## Источники
 

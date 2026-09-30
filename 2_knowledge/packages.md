@@ -241,7 +241,7 @@ Workspace TIAgo — готовый пример всех типов пакето
 - **конфиги** — `tiago_controller_configuration/`, `tiago_moveit_config/`.
 - **мета-пакеты** — `tiago_robot`, `pmb2_robot`, `tiago_navigation`.
 
-Подробнее — [`3_Robot/TIAgo_humble/docs/tiago_architecture.md`](../../3_Robot/TIAgo_humble/docs/tiago_architecture.md).
+Подробнее — [`3_Robot/TIAgo_humble/docs/tiago_architecture.md`](../3_Robot/TIAgo_humble/docs/tiago_architecture.md).
 
 ## Связанные темы
 
@@ -251,6 +251,7 @@ Workspace TIAgo — готовый пример всех типов пакето
 - [Topics](topics.md) — обмен сообщениями
 - Практика 7 — [`../2_practice/07_workspace.md`](../2_practice/07_workspace.md)
 - Домашнее задание 7 — [`../2_homework/hw_07_workspace.md`](../2_homework/hw_07_workspace.md)
+- Вариант lecture-v2 занятия 7 — [`../1_lecture/lecture-v2_content_07_workspace_v1.md`](../1_lecture/lecture-v2_content_07_workspace_v1.md)
 
 ## Источники
 

@@ -8,7 +8,7 @@ RobotCAD — верстак (workbench) FreeCAD, который превраща
 
 FreeCAD — открытый параметрический 3D-редактор. **Верстак (workbench)** — набор инструментов внутри FreeCAD для отдельной задачи.
 
-RobotCAD — верстак, который связывает CAD и ROS2. Исходный вариант — верстак CROSS (`galou/freecad.cross`), RobotCAD — его продолжение (форк).
+RobotCAD — сторонний верстак, который связывает CAD и описание робота для ROS/ROS2. Репозиторий RobotCAD — отдельный проект и форк `freecad.cross`; сверяйте совместимость и интерфейс по его актуальному README.
 
 В RobotCAD студент собирает робота не из текста, а из 3D-деталей и указывает структуру:
 
@@ -22,7 +22,7 @@ RobotCAD — верстак, который связывает CAD и ROS2. Ис
 Писать URDF вручную — значит руками считать положение каждого звена, массу и инерцию. RobotCAD убирает эту рутину:
 
 - ставишь звенья и сочленения в 3D — описания генерируются;
-- задаёшь материал — масса и инерция считаются автоматически;
+- задаёшь материал/массу — инструмент может рассчитать массу и инерционные параметры;
 - выгружаешь готовый ROS2-пакет с launch-файлами для Gazebo и RViz.
 
 ## Аналогия
@@ -62,19 +62,15 @@ flowchart LR
 
 ## Установка
 
-Рекомендуемый путь — через Addon Manager FreeCAD (нужна версия FreeCAD 1.x). Из README верстака:
+Один из способов установки — через Addon Manager FreeCAD. В актуальном README RobotCAD указана рекомендуемая версия FreeCAD и описан путь с Custom repositories. Совместимость меняется, поэтому до занятия преподаватель должен проверить текущие требования в upstream README. Общая последовательность:
 
 1. Открыть FreeCAD.
-2. Edit → Preferences → Addon Manager → блок «Custom repositories» (кастомные репозитории).
-3. Добавить `https://github.com/drfenixion/freecad.robotcad`, ветка `main`.
+2. Открыть настройки Addon Manager и блок Custom repositories.
+3. Добавить upstream-репозиторий `https://github.com/drfenixion/freecad.robotcad` с веткой `main`.
 4. Tools → Addon Manager → найти RobotCAD → Install.
 5. Перезапустить FreeCAD.
 
-Есть и скрипт быстрой установки, который кладёт FreeCAD + ROS2 + Gazebo в Docker:
-
-```bash
-cd ~/ && git clone https://github.com/drfenixion/freecad.robotcad.git && cd freecad.robotcad/docker && bash run.bash -c
-```
+В upstream есть Docker workflow для FreeCAD/RobotCAD и дополнительных ROS/Gazebo-функций. Некоторые варианты установки могут установить Docker или дополнительные системные зависимости. Используйте их только по отдельной инструкции и после проверки состава действий; на занятии базовая генерация модели не должна требовать установки ROS 2 на хост.
 
 ## Пример структуры сгенерированного пакета
 
@@ -115,7 +111,7 @@ my_robot/
 </joint>
 ```
 
-Масса `2.5` и положение центра масс `xyz="0 0 0.1"` — это то, что RobotCAD рассчитал по материалу.
+Значения массы и центра масс в примере условные. Экспорт зависит от геометрии, выбранного материала/массы и единиц модели. Проверяйте физическую правдоподобность, а не только наличие XML-полей.
 
 ## Ожидаемый результат
 
@@ -146,3 +142,4 @@ my_robot/
 - [FreeCAD](https://www.freecad.org/)
 - [FreeCAD: External workbenches](https://wiki.freecad.org/External_workbenches)
 - [URDF и Xacro — ROS2 docs](https://docs.ros.org/en/jazzy/Tutorials/Intermediate/URDF/URDF-Main.html)
+- Вариант материалов lecture-v2 занятия 4 — [`../1_lecture/lecture-v2_content_04_robotcad_v1.md`](../1_lecture/lecture-v2_content_04_robotcad_v1.md).

@@ -122,7 +122,7 @@ rqt_graph
 
 Если контейнер TIAgo не запускается:
 
-1. Показать схему подсистем и список узлов из [`3_Robot/TIAgo_humble/docs/tiago_architecture.md`](../../3_Robot/TIAgo_humble/docs/tiago_architecture.md) как текст.
+1. Показать схему подсистем и список узлов из [`3_Robot/TIAgo_humble/docs/tiago_architecture.md`](../3_Robot/TIAgo_humble/docs/tiago_architecture.md) как текст.
 2. Показать типовой вывод `ros2 node info /DiffDriveController` (Subscribers `/cmd_vel`, Publishers `/odom`) как текст.
 3. Полностью выполнить демонстрацию уровня 2 (создать и запустить узел, показать эффект без `spin()`).
 4. Нарисовать граф узлов на доске: узел → Executor → callbacks → событие.
@@ -133,9 +133,10 @@ rqt_graph
 - Практика — [`../2_practice/08_node.md`](../2_practice/08_node.md).
 - Домашнее задание — [`../2_homework/hw_08_node.md`](../2_homework/hw_08_node.md).
 - План занятия — [`../1_lecture/lecture_plan_08_node.md`](../1_lecture/lecture_plan_08_node.md).
+- Вариант lecture-v2 — [`../1_lecture/lecture-v2_plan_08_node_v1.md`](../1_lecture/lecture-v2_plan_08_node_v1.md).
 
 ## Связь с роботом
 
 - TIAgo — ~15 узлов с узкой ответственностью: `DiffDriveController` (привод базы), `joint_state_broadcaster` (`/joint_states`), `twist_mux` (приоритет скорости), `robot_state_publisher` (`/robot_description` и TF).
 - Каждый узел — отдельный Executor со своими callbacks: таймеры, подписки, сервисы.
-- Подробнее — [`3_Robot/TIAgo_humble/docs/tiago_architecture.md`](../../3_Robot/TIAgo_humble/docs/tiago_architecture.md).
+- Подробнее — [`3_Robot/TIAgo_humble/docs/tiago_architecture.md`](../3_Robot/TIAgo_humble/docs/tiago_architecture.md).

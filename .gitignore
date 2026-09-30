@@ -81,6 +81,11 @@ __pycache__/
 2_code/install/
 2_code/log/
 
+
+1_slides/DeepSeek_v4_1_flash
+1_slides/GPT_images
+1_slides/GPT6luna
+
 # --- Редакторы и ОС ---
 .DS_Store
 Thumbs.db

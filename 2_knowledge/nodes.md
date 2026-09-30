@@ -245,6 +245,7 @@ ros2 run my_first_pkg timer_node
 - [Actions](actions.md) — длительные задачи.
 - Практика занятия 8 — [`../2_practice/08_node.md`](../2_practice/08_node.md).
 - Домашнее задание 8 — [`../2_homework/hw_08_node.md`](../2_homework/hw_08_node.md).
+- Вариант lecture-v2 занятия 8 — [`../1_lecture/lecture-v2_content_08_node_v1.md`](../1_lecture/lecture-v2_content_08_node_v1.md).
 
 ## Источники
 

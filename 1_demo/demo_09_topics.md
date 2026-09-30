@@ -130,7 +130,7 @@ rqt_graph
 
 Если контейнер TIAgo не запускается:
 
-1. Показать таблицу topics TIAgo (`/cmd_vel`, `/odom`, `/scan`, `/joint_states`) и схему `twist_mux` из [`3_Robot/TIAgo_humble/docs/tiago_architecture.md`](../../3_Robot/TIAgo_humble/docs/tiago_architecture.md) как текст.
+1. Показать таблицу topics TIAgo (`/cmd_vel`, `/odom`, `/scan`, `/joint_states`) и схему `twist_mux` из [`3_Robot/TIAgo_humble/docs/tiago_architecture.md`](../3_Robot/TIAgo_humble/docs/tiago_architecture.md) как текст.
 2. Показать типовой вывод `ros2 topic info /cmd_vel --verbose` (тип `Twist`, QoS `RELIABLE`) как текст.
 3. Полностью выполнить демонстрацию уровня 2 (publisher/subscriber + CLI).
 4. Нарисовать на доске: publisher → `/cmd_vel` → `twist_mux` → привод.
@@ -141,6 +141,7 @@ rqt_graph
 - Практика — [`../2_practice/09_topic.md`](../2_practice/09_topic.md).
 - Домашнее задание — [`../2_homework/hw_09_topic.md`](../2_homework/hw_09_topic.md).
 - План занятия — [`../1_lecture/lecture_plan_09_topic.md`](../1_lecture/lecture_plan_09_topic.md).
+- Вариант lecture-v2 — [`../1_lecture/lecture-v2_plan_09_topic_v1.md`](../1_lecture/lecture-v2_plan_09_topic_v1.md).
 
 ## Связь с роботом
 
@@ -148,4 +149,4 @@ rqt_graph
 - `/odom` (`nav_msgs/msg/Odometry`) — `DiffDriveController`.
 - `/cmd_vel` (`geometry_msgs/msg/Twist`) — команды скорости: Nav2/teleop → `velocity_smoother` → `twist_mux` → `/cmd_vel_unstamped` → `DiffDriveController`.
 - `twist_mux` — диспетчер скорости с 4 приоритетами (Nav2 < teleop < joy < E-stop).
-- Подробнее — [`3_Robot/TIAgo_humble/docs/tiago_architecture.md`](../../3_Robot/TIAgo_humble/docs/tiago_architecture.md) и [`3_Robot/TIAgo_humble/docs/navigation.md`](../../3_Robot/TIAgo_humble/docs/navigation.md).
+- Подробнее — [`3_Robot/TIAgo_humble/docs/tiago_architecture.md`](../3_Robot/TIAgo_humble/docs/tiago_architecture.md) и [`3_Robot/TIAgo_humble/docs/navigation.md`](../3_Robot/TIAgo_humble/docs/navigation.md).

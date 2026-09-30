@@ -69,17 +69,20 @@ echo $ROBOT_NAME
 ### 5. SSH: ключи и подключение к локальному хосту
 
 ```bash
-ssh-keygen -t ed25519 -N "" -f ~/.ssh/id_ed25519
+key_dir="$(mktemp -d)"
+ssh-keygen -t ed25519 -N "" -f "$key_dir/course_demo_ed25519"
 sudo apt install -y openssh-server
 sudo service ssh start
-cat ~/.ssh/id_ed25519.pub >> ~/.ssh/authorized_keys
-chmod 700 ~/.ssh
+install -d -m 700 ~/.ssh
+cat "$key_dir/course_demo_ed25519.pub" >> ~/.ssh/authorized_keys
 chmod 600 ~/.ssh/authorized_keys
-ssh -o StrictHostKeyChecking=accept-new localhost
+ssh -i "$key_dir/course_demo_ed25519" -o IdentitiesOnly=yes -o StrictHostKeyChecking=accept-new "$(whoami)"@localhost
 # внутри: hostname, затем exit
+rm -f "$key_dir/course_demo_ed25519" "$key_dir/course_demo_ed25519.pub"
+rmdir "$key_dir"
 ```
 
-**Что сказать**: «SSH — дверь в другую машину. IP — номер дома, порт — квартира, ключ — ключ от двери. Публичный ключ кладут на машину, приватный хранят у себя и никому не показывают.»
+**Что сказать**: «SSH — защищённое соединение с другой машиной. В этой демонстрации localhost — тот же контейнер, поэтому мы показываем механику клиента и сервера, а не подключение к настоящему роботу. Используется временный ключ; личные ключи не трогаем.»
 
 ### 6. Кейс робота: ROS2 — это файлы (уровень 3)
 
@@ -115,7 +118,7 @@ ssh student@localhost -p 2222   # порт, на котором никто не 
 - `pwd` → `/home/ubuntu`, `whoami` → `ubuntu`.
 - `sudo apt update` завершается без ошибки; `tree` устанавливается и печатает дерево папок.
 - `which bash` → `/usr/bin/bash`; `echo $ROBOT_NAME` → `tiago`.
-- `ssh localhost` входит по ключу без пароля; `hostname` показывает имя контейнера.
+- `ssh localhost` входит по временному ключу; `hostname` показывает имя контейнера.
 - В контейнере робота `du -sh /opt/ros/humble` показывает объём ROS2; `ssh ... -p 2222` выдаёт `Connection refused`.
 
 ## Типичные проблемы
@@ -143,6 +146,7 @@ ssh student@localhost -p 2222   # порт, на котором никто не 
 - Практика — [`../2_practice/01_ubuntu_cli.md`](../2_practice/01_ubuntu_cli.md).
 - Домашнее задание — [`../2_homework/hw_01_ubuntu.md`](../2_homework/hw_01_ubuntu.md).
 - Настройка окружения дома — [`../2_knowledge/home_setup.md`](../2_knowledge/home_setup.md).
+- Вариант материалов lecture-v2 — [`../1_lecture/lecture-v2_plan_01_ubuntu_v1.md`](../1_lecture/lecture-v2_plan_01_ubuntu_v1.md).
 
 ## Связь с роботом
 

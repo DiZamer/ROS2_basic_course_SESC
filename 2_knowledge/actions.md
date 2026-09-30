@@ -269,7 +269,7 @@ ros2 run my_action_pkg fibonacci_action_client
 | `/follow_path` | `nav2_msgs/action/FollowPath` | Текущая точка пути |
 | MoveIt2 planning | `moveit_msgs` | Прогресс траектории |
 
-Nav2 и MoveIt2 построены вокруг actions. Подробнее — [`../3_Robot/TIAgo_humble/docs/navigation.md`](../../3_Robot/TIAgo_humble/docs/navigation.md).
+Nav2 и MoveIt2 построены вокруг actions. Подробнее — [`../3_Robot/TIAgo_humble/docs/navigation.md`](../3_Robot/TIAgo_humble/docs/navigation.md).
 
 ## Типичные ошибки
 
@@ -291,6 +291,7 @@ Nav2 и MoveIt2 построены вокруг actions. Подробнее — 
 - [MoveIt2 bridge](moveit2_bridge.md) — как MoveIt2 использует action.
 - Практика занятия 11 — [../2_practice/11_action.md](../2_practice/11_action.md).
 - Домашнее задание 11 — [../2_homework/hw_11_action.md](../2_homework/hw_11_action.md).
+- Вариант lecture-v2 занятия 11 — [../1_lecture/lecture-v2_content_11_action_v1.md](../1_lecture/lecture-v2_content_11_action_v1.md).
 
 ## Источники
 

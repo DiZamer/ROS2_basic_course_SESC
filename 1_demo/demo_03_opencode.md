@@ -30,7 +30,7 @@ opencode --version
 opencode agent list
 ```
 
-**Что сказать**: «`agent list` показывает встроенных primary-агентов — `build` (все инструменты) и `plan` (правки/команды требуют подтверждения), субагентов `general` и `explore` (read-only), служебных `title`, `summary`, `compaction`, и проектных `lecture-author`, `practice-coder`, `reviewer`.»
+**Что сказать**: «Состав агентов зависит от версии, конфигурации и подключённых проектных агентов. Посмотрим реальный список, затем проверим, какие права назначены выбранному агенту.»
 
 ### 2. Права агента
 
@@ -47,7 +47,7 @@ opencode agent list
 }
 ```
 
-**Что сказать**: «`allow` — без спроса, `ask` — спросить, `deny` — запретить. Здесь агент читает и правит свободно, но любую команду терминала, кроме `ls`, должен согласовать.»
+**Что сказать**: «`allow` — разрешить, `ask` — запросить подтверждение, `deny` — запретить. Здесь edit разрешён, а Bash-команды требуют подтверждения, кроме `ls`. Эффективные права выбранного агента могут включать и другие настройки — прочитайте их до запуска.»
 
 ### 3. Read-only запрос через Plan
 
@@ -72,14 +72,14 @@ ls 3_Robot/TIAgo_humble/ros2_ws/src/tiago_robot/tiago_description
 
 **Что сказать**: «Агент может назвать несуществующий пакет. Ответ всегда сверяем с `ls` и документацией. Совпало — доверяем, нет — нашли галлюцинацию.»
 
-### 5. Разница Plan и Build (опционально, с инструктором)
+### 5. Проверить ответ и отсутствие изменений
 
 ```bash
-opencode run --agent plan  "Найди, где в TIAgo задан лидар"
-opencode run --agent build "Найди, где в TIAgo задан лидар"
+git -C 3_Robot/TIAgo_humble status --short
+git status --short
 ```
 
-**Что сказать**: «Оба отвечают про `pal_urdf_utils`/`base_sensors`, но Build дополнительно может предложить правки. Если Build что-то изменил — `git status` и `git restore` в `3_Robot/TIAgo_humble/`.»
+**Что сказать**: «Сверяем состояние репозитория после read-only анализа. Не сравниваем Plan и Build на рабочей копии TIAGo и не используем `git restore`: он может удалить чужие незакоммиченные изменения.»
 
 ## Что сказать
 
@@ -119,6 +119,7 @@ opencode run --agent build "Найди, где в TIAgo задан лидар"
 - Практика — [`../2_practice/03_opencode.md`](../2_practice/03_opencode.md).
 - Домашнее задание — [`../2_homework/hw_03_opencode.md`](../2_homework/hw_03_opencode.md).
 - Правила проекта — [`../AGENTS.md`](../AGENTS.md), [`../opencode.jsonc`](../opencode.jsonc).
+- Вариант материалов lecture-v2 — [`../1_lecture/lecture-v2_plan_03_opencode_v1.md`](../1_lecture/lecture-v2_plan_03_opencode_v1.md).
 
 ## Связь с роботом
 

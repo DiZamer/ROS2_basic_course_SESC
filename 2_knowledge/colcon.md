@@ -125,7 +125,7 @@ colcon build
 
 ## Пример в реальном роботе
 
-Workspace TIAgo (`ros2_ws/`) собирается одной командой `colcon build` в контейнере. При отладке одного пакета (например, `tiago_description`) пересобирают только его: `colcon build --packages-select tiago_description`. Подробнее — [`3_Robot/TIAgo_humble/docs/tiago_architecture.md`](../../3_Robot/TIAgo_humble/docs/tiago_architecture.md).
+Workspace TIAgo (`ros2_ws/`) собирается одной командой `colcon build` в контейнере. При отладке одного пакета (например, `tiago_description`) пересобирают только его: `colcon build --packages-select tiago_description`. Подробнее — [`3_Robot/TIAgo_humble/docs/tiago_architecture.md`](../3_Robot/TIAgo_humble/docs/tiago_architecture.md).
 
 ## Связанные темы
 
@@ -134,6 +134,7 @@ Workspace TIAgo (`ros2_ws/`) собирается одной командой `c
 - [Nodes](nodes.md) — код узла в пакете
 - Практика 7 — [`../2_practice/07_workspace.md`](../2_practice/07_workspace.md)
 - Домашнее задание 7 — [`../2_homework/hw_07_workspace.md`](../2_homework/hw_07_workspace.md)
+- Вариант lecture-v2 занятия 7 — [`../1_lecture/lecture-v2_content_07_workspace_v1.md`](../1_lecture/lecture-v2_content_07_workspace_v1.md)
 
 ## Источники
 

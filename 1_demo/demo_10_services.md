@@ -97,7 +97,7 @@ ros2 topic pub /cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.0}, angular: {z:
 
 ## Что сказать
 
-- «Service — запрос и ответ: один на один, с гарантией ответа.»
+- «Service — модель запроса и ответа. Ответ можно получить, если server доступен и успешно обработал запрос; при недоступности нужен timeout/error handling.»
 - «Server обрабатывает запрос в callback и возвращает response. Client отправляет request и ждёт.»
 - «`ros2 service call` — ручной вызов service, чтобы увидеть ответ без написания кода.»
 - «Клиент должен дождаться готовности server — иначе вызов уйдёт в пустоту.»
@@ -124,7 +124,7 @@ ros2 topic pub /cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.0}, angular: {z:
 
 Если контейнер TIAgo не запускается:
 
-1. Показать таблицу services TIAgo и схему E-stop из [`3_Robot/TIAgo_humble/docs/safety.md`](../../3_Robot/TIAgo_humble/docs/safety.md) как текст.
+1. Показать таблицу services TIAgo и схему E-stop из [`3_Robot/TIAgo_humble/docs/safety.md`](../3_Robot/TIAgo_humble/docs/safety.md) как текст.
 2. Показать типовой вывод `ros2 service call /emergency_stop std_srvs/srv/Trigger "{}"` как пример.
 3. Полностью выполнить демонстрацию уровня 2 (server/client + CLI).
 4. Выполнить тест «несуществующий server» в контейнере уровня 2 — он не требует симуляции.
@@ -136,9 +136,10 @@ ros2 topic pub /cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.0}, angular: {z:
 - Практика — [`../2_practice/10_service.md`](../2_practice/10_service.md).
 - Домашнее задание — [`../2_homework/hw_10_service.md`](../2_homework/hw_10_service.md).
 - План занятия — [`../1_lecture/lecture_plan_10_service.md`](../1_lecture/lecture_plan_10_service.md).
+- Вариант lecture-v2 — [`../1_lecture/lecture-v2_plan_10_service_v1.md`](../1_lecture/lecture-v2_plan_10_service_v1.md).
 
 ## Связь с роботом
 
 - `/emergency_stop` (`std_srvs/srv/Trigger`) — аварийная остановка: поднимает приоритет `twist_mux` до максимума.
 - `/controller_manager/list_controllers` и `/controller_manager/switch_controller` (`controller_manager_msgs`) — управление контроллерами приводов через `ros2_control`.
-- Подробнее — [`3_Robot/TIAgo_humble/docs/safety.md`](../../3_Robot/TIAgo_humble/docs/safety.md) и [`3_Robot/TIAgo_humble/docs/ros2_control.md`](../../3_Robot/TIAgo_humble/docs/ros2_control.md).
+- Подробнее — [`3_Robot/TIAgo_humble/docs/safety.md`](../3_Robot/TIAgo_humble/docs/safety.md) и [`3_Robot/TIAgo_humble/docs/ros2_control.md`](../3_Robot/TIAgo_humble/docs/ros2_control.md).

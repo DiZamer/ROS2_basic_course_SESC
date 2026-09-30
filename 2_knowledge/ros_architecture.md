@@ -10,13 +10,12 @@ ROS2 — среда, в которой отдельные программы р�
 
 ROS2 — это middleware (промежуточный слой) для робототехнических приложений.
 
-Он не библиотека вроде OpenCV и не операционная система. Это **среда**, которая берет на себя:
-- доставку сообщений между программами;
-- обнаружение узлов в сети (discovery);
-- сериализацию и транспорт данных;
-- настройку качества доставки (QoS);
-- координатные преобразования (tf2);
-- запуск системы из многих узлов (launch).
+ROS 2 — не библиотека вроде OpenCV и не операционная система. В связке с выбранным middleware он предоставляет стандартные механизмы обмена и инструменты построения приложений:
+- ROS API для публикации/подписки и вызова service/action;
+- использование RMW и DDS/RTPS для discovery и доставки сообщений;
+- настройки QoS для обмена.
+
+`tf2` (координатные преобразования) и `launch` (запуск компонентов) — отдельные части экосистемы ROS 2, а не функции DDS/RMW.
 
 ## Зачем нужно
 
@@ -275,7 +274,7 @@ ROS2 не устанавливается на хост. Вся работа — 
 
 TIAGo — полный пример архитектуры ROS2: 5 подсистем (планирование, восприятие, координация, сенсоры, пользователь),
 многослойная архитектура с чётким разделением high-level planning и low-level control.
-В [`3_Robot/TIAgo_humble/docs/tiago_architecture.md`](../../3_Robot/TIAgo_humble/docs/tiago_architecture.md)
+В [`3_Robot/TIAgo_humble/docs/tiago_architecture.md`](../3_Robot/TIAgo_humble/docs/tiago_architecture.md)
 показана карта подсистем, путеводитель по архитектуре (10 шагов) и расширяющий материал.
 
 ## Связанные темы
@@ -298,3 +297,4 @@ TIAGo — полный пример архитектуры ROS2: 5 подсис�
 - [Why ROS2 (Design)](https://design.ros2.org/)
 - [About DDS and RMW vendors](https://docs.ros.org/en/jazzy/Concepts/Intermediate/About-Different-Middleware-Vendors.html)
 - [About Discovery](https://docs.ros.org/en/jazzy/Concepts/Intermediate/About-Discovery.html)
+- Вариант материалов lecture-v2 занятия 6 — [`../1_lecture/lecture-v2_content_06_ros_architecture_v1.md`](../1_lecture/lecture-v2_content_06_ros_architecture_v1.md).

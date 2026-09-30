@@ -115,7 +115,7 @@ colcon build --packages-select tiago_description
 
 Если контейнер TIAgo не запускается:
 
-1. Показать структуру `ros2_ws/src/` как текст (список папок и типов пакетов из [`3_Robot/TIAgo_humble/docs/tiago_architecture.md`](../../3_Robot/TIAgo_humble/docs/tiago_architecture.md)).
+1. Показать структуру `ros2_ws/src/` как текст (список папок и типов пакетов из [`3_Robot/TIAgo_humble/docs/tiago_architecture.md`](../3_Robot/TIAgo_humble/docs/tiago_architecture.md)).
 2. Показать `tiago.repos` — откуда берутся пакеты.
 3. Показать `package.xml` мета-пакета `tiago_robot` и пустой `CMakeLists.txt` как текст.
 4. Выполнить создание workspace и пакета в контейнере уровня 2 (работает без симуляции).
@@ -127,9 +127,10 @@ colcon build --packages-select tiago_description
 - colcon — [`../2_knowledge/colcon.md`](../2_knowledge/colcon.md).
 - Практика — [`../2_practice/07_workspace.md`](../2_practice/07_workspace.md).
 - Домашнее задание — [`../2_homework/hw_07_workspace.md`](../2_homework/hw_07_workspace.md).
+- Вариант lecture-v2 — [`../1_lecture/lecture-v2_plan_07_workspace_v1.md`](../1_lecture/lecture-v2_plan_07_workspace_v1.md).
 
 ## Связь с роботом
 
 - TIAgo — полный пример workspace в масштабе: `ros2_ws/` с `src/`, `build/`, `install/`, `log/`, сборка через `colcon build`.
 - Типы пакетов: description (`tiago_description`), bringup (`tiago_bringup`), интерфейсы (`pal_msgs`), конфиги (`tiago_controller_configuration`, `tiago_moveit_config`), мета-пакеты (`tiago_robot`, `pmb2_robot`).
-- Подробнее — [`3_Robot/TIAgo_humble/docs/tiago_architecture.md`](../../3_Robot/TIAgo_humble/docs/tiago_architecture.md) и [`3_Robot/TIAgo_humble/AGENTS.md`](../../3_Robot/TIAgo_humble/AGENTS.md).
+- Подробнее — [`3_Robot/TIAgo_humble/docs/tiago_architecture.md`](../3_Robot/TIAgo_humble/docs/tiago_architecture.md) и [`3_Robot/TIAgo_humble/AGENTS.md`](../3_Robot/TIAgo_humble/AGENTS.md).

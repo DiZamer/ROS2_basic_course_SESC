@@ -15,7 +15,7 @@
 - Вывод `ros2 doctor --report` — студент объясняет, что в нём про middleware.
 - Имя выбранного RMW и понимание, зачем его менять.
 - Граф из двух узлов (`talker` → `/chatter` → `listener`) в `rqt_graph`.
-- Демонстрация изоляции: узлы в разных `ROS_DOMAIN_ID` не видят друг друга.
+- Демонстрация изоляции: узлы в разных `ROS_DOMAIN_ID` не видят друг друга при одинаковом RMW.
 
 ## Шаг 1. Диагностика: `ros2 doctor --report`
 
@@ -59,27 +59,16 @@ rqt_graph
 
 В `rqt_graph` видно два узла и тему `/chatter` между ними. `rqt_graph` требует графического интерфейса (в Dev Container дисплей пробрасывается с хоста).
 
-## Шаг 4. Сменить middleware (если пакет есть)
+## Шаг 4. Проверить выбранный middleware
 
-Fast DDS можно заменить на Cyclone DDS, не меняя код узлов:
+Посмотрите выбранную реализацией middleware в этой среде:
 
 ```bash
-# проверить, установлен ли пакет
-dpkg -l | grep rmw-cyclonedds || sudo apt install -y ros-jazzy-rmw-cyclonedds-cpp
-
-# переключиться на Cyclone DDS
-export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+printenv RMW_IMPLEMENTATION
 ros2 doctor --report
-printenv RMW_IMPLEMENTATION   # теперь rmw_cyclonedds_cpp
 ```
 
-Узлы на разных RMW не видят друг друга: talker на Fast DDS и listener на Cyclone DDS не соединятся. Это ключевое свойство RMW — все узлы одной системы должны использовать один middleware.
-
-Возврат к дефолту:
-
-```bash
-unset RMW_IMPLEMENTATION
-```
+Пустой `RMW_IMPLEMENTATION` означает использование значения по умолчанию. Некоторые пары RMW могут обмениваться данными, но совместимость не гарантируется для всех реализаций и настроек. Не используйте тест «разные RMW → тишина» как универсальное правило.
 
 ## Шаг 5. Изоляция графа: `ROS_DOMAIN_ID`
 
@@ -139,7 +128,7 @@ ros2 topic list    # тема /chatter есть
 | `ros2 node list` пуст, хотя узел запущен | `ros2`-демон остался в другом домене | `ros2 daemon stop`, затем повторить в нужном домене |
 | `rqt_graph` не открывается | Нет графического интерфейса | Использовать `ros2 node list` и `ros2 topic list` как план Б |
 | `sudo apt install ros-jazzy-rmw-cyclonedds-cpp` не находит пакет | Не выполнен `apt update` | `sudo apt update` перед установкой |
-| talker и listener на разных RMW не видят друг друга | Разные `RMW_IMPLEMENTATION` | Использовать одинаковый RMW для всех узлов |
+| Узлы не видят друг друга | Domain ID, network/discovery, RMW, QoS или namespace | Сверить настройки обоих процессов и изучить CLI-вывод |
 | Путают домен и физическую сеть | Думают, что домен — это отдельная машина | Домен — логическая изоляция внутри одной сети |
 
 ## Дополнительное задание
